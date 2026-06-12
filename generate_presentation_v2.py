@@ -633,7 +633,7 @@ for t in ['Real-time risk gauge \u2014 updates as you type',
           'Individualized vs population survival curve',
           'Honest per-patient drivers (vs a typical case)',
           'Cohort context + downloadable report',
-          'Open on any phone on the same wifi']:
+          'Hosted on the web \u2014 open on any device, no install']:
     p = tf.add_paragraph(); p.space_after = Pt(8)
     r = p.add_run(); r.text = '\u2014  ' + t
     _set_font(r, 15.5, INK, font=BODY)
@@ -643,9 +643,10 @@ import os as _os
 if _os.path.exists('app_qr.png'):
     s.shapes.add_picture('app_qr.png', MARGIN, qr_y, height=Inches(1.25))
 _, tf = textbox(s, MARGIN + Inches(1.45), qr_y + Inches(0.1), Inches(4.4), Inches(1.2))
-para(tf, 'SCAN TO OPEN', 12, GREEN, bold=True, font=HEAD, first=True, space_after=2)
-para(tf, 'run_app.sh  \u2192  http://<wifi-ip>:8501', 12.5, NAVY, bold=True,
-     font=MONO, space_after=8)
+para(tf, 'SCAN TO OPEN THE APP', 12, GREEN, bold=True, font=HEAD, first=True, space_after=2)
+para(tf, 'mak-djulbegovic.github.io/cnv-risk-prediction-demo', 11, NAVY, bold=True,
+     font=MONO, space_after=8,
+     link='https://mak-djulbegovic.github.io/cnv-risk-prediction-demo/')
 para(tf, 'CODE ON GITHUB', 10.5, GREEN, bold=True, font=HEAD, space_after=2)
 para(tf, 'github.com/Mak-Djulbegovic/cnv-risk-prediction-demo', 10, NAVY,
      font=MONO, space_after=0,
