@@ -213,7 +213,7 @@ para(tf, 'Agentic Systems: From Research Question to Clinical Tool',
      34, WHITE, bold=True, font=HEAD, first=True, align=PP_ALIGN.CENTER,
      space_after=0, line=1.05)
 _, tf = textbox(s, Inches(1.0), Inches(5.7), Inches(11.3), Inches(0.5))
-para(tf, 'A live demonstration with Claude Code', 18,
+para(tf, 'A demonstration with Claude Code', 18,
      RGBColor(0xC7, 0xD3, 0xE0), font=BODY, first=True, align=PP_ALIGN.CENTER,
      space_after=0)
 # synthetic-data chip
@@ -367,7 +367,7 @@ para(tf, 'Which patients develop CNV \u2014 and how long until it appears?',
 # steps
 list_y = top + Inches(1.35)
 _, tf = textbox(s, MARGIN + Inches(0.2), list_y, CONTENT_W, Inches(3.0))
-para(tf, 'We will build the whole pipeline live, with Claude Code as the agent:',
+para(tf, 'We will build the whole pipeline with Claude Code as the agent:',
      15, GRAY, font=BODY, first=True, space_after=12)
 for i, t in enumerate([
         'Generate a synthetic database (1000 patients, 33 variables)',
@@ -383,7 +383,7 @@ for i, t in enumerate([
 footer(s, 6)
 
 # ===========================================================================
-# SLIDE 7 - LIVE DEMO divider
+# SLIDE 7 - Demo divider
 # ===========================================================================
 s = add_slide()
 gradient_bg(s, CRIMSON, RGBColor(0x8E, 0x24, 0x1A))
@@ -401,7 +401,7 @@ para(tf, 'A walkthrough of how Claude Code built the pipeline, end to end', 20,
 # ===========================================================================
 s = add_slide()
 top = header(s, 'A five-phase pipeline (~18 minutes)',
-             kicker='What the live demo covers')
+             kicker='What the demo covers')
 phases = [
     ('01', 'Data\ngeneration', '5 min', TEAL),
     ('02', 'Exploratory\nanalysis', '4 min', NAVY),
@@ -629,7 +629,7 @@ top = top + Inches(0.72)
 _, tf = textbox(s, MARGIN, top, Inches(5.4), Inches(3.2))
 para(tf, 'A deployable app, built in the same session', 17, NAVY, bold=True,
      font=HEAD, first=True, space_after=11)
-for t in ['Live risk gauge \u2014 updates as you type',
+for t in ['Real-time risk gauge \u2014 updates as you type',
           'Individualized vs population survival curve',
           'Honest per-patient drivers (vs a typical case)',
           'Cohort context + downloadable report',
