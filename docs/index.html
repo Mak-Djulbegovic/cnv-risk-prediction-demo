@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CNV Risk After Traumatic Choroidal Rupture</title>
+<style>
+  :root{
+    --navy:#16365C; --teal:#2C7A7B; --crimson:#C0392B; --amber:#B9770E;
+    --green:#2E8B57; --ink:#212529; --grid:#E3E7EB; --mute:#5A6570;
+    --paper:#FBFCFD; --line:#E9EDF1;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    font-family:'Helvetica Neue',Helvetica,Arial,system-ui,sans-serif;
+    color:var(--ink); background:#fff; line-height:1.45;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1240px; margin:0 auto; padding:32px 28px 64px}
+  header h1{font-size:27px; color:var(--navy); margin:0 0 6px; letter-spacing:-.01em}
+  .rule{height:4px; width:64px; background:var(--teal); border-radius:2px; margin:6px 0 14px}
+  .synthetic{
+    background:#FBEEE9; border-left:5px solid var(--crimson); color:var(--crimson);
+    padding:9px 16px; border-radius:5px; font-weight:600; font-size:13.5px;
+    display:inline-block; margin-bottom:10px;
+  }
+  .sub{color:var(--mute); font-size:14px; max-width:760px}
+  .grid{display:grid; grid-template-columns:320px 1fr; gap:26px; margin-top:24px}
+  @media (max-width:920px){.grid{grid-template-columns:1fr}}
+
+  /* controls */
+  .panel{border:1px solid var(--line); border-radius:12px; padding:18px 18px 20px; background:var(--paper)}
+  .panel h2{font-size:12px; letter-spacing:.10em; text-transform:uppercase;
+            color:var(--teal); margin:0 0 12px}
+  .presets{display:flex; flex-direction:column; gap:8px; margin-bottom:18px}
+  .presets button{
+    text-align:left; border:1px solid var(--line); background:#fff; color:var(--navy);
+    font:inherit; font-size:13.5px; font-weight:600; padding:10px 12px; border-radius:8px;
+    cursor:pointer; transition:all .12s;
+  }
+  .presets button:hover{border-color:var(--teal); box-shadow:0 1px 0 var(--teal)}
+  .grouplab{font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+            color:var(--mute); font-weight:700; margin:16px 0 8px}
+  .ctl{margin-bottom:13px}
+  .ctl .top{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:3px}
+  .ctl label{font-size:13.5px; color:var(--ink)}
+  .ctl .val{font-size:13px; font-weight:700; color:var(--navy); font-variant-numeric:tabular-nums}
+  input[type=range]{width:100%; accent-color:var(--teal); height:4px}
+  select{font:inherit; font-size:13.5px; padding:6px 8px; border:1px solid var(--line);
+         border-radius:7px; width:100%; color:var(--navy); background:#fff}
+  .checks{display:grid; grid-template-columns:1fr 1fr; gap:6px 14px; margin:6px 0 4px}
+  .chk{display:flex; align-items:center; gap:7px; font-size:13px; color:var(--ink); cursor:pointer}
+  .chk input{accent-color:var(--teal); width:15px; height:15px}
+  .snellen{font-size:12px; color:var(--mute); margin-top:2px}
+
+  /* results */
+  .cards{display:grid; gap:22px}
+  .card{border:1px solid var(--line); border-radius:12px; padding:18px 20px; background:#fff}
+  .card h3{font-size:15px; color:var(--navy); margin:0 0 2px}
+  .card .crule{height:3px; width:44px; background:var(--teal); border-radius:2px; margin:4px 0 14px}
+  .toprow{display:grid; grid-template-columns:1.05fr 1fr; gap:22px}
+  @media (max-width:920px){.toprow{grid-template-columns:1fr}}
+  .gaugewrap{text-align:center}
+  .bandtag{font-size:18px; font-weight:800; margin-top:-6px}
+  .metrics{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+  .metric{border:1px solid var(--line); border-radius:10px; padding:12px 14px; background:var(--paper)}
+  .metric .k{font-size:11.5px; color:var(--mute); letter-spacing:.03em}
+  .metric .v{font-size:25px; font-weight:800; color:var(--navy); font-variant-numeric:tabular-nums; line-height:1.15}
+  .charts{display:grid; grid-template-columns:1fr 1fr; gap:22px}
+  @media (max-width:920px){.charts{grid-template-columns:1fr}}
+  svg{display:block; width:100%; height:auto}
+  .cap{font-size:12px; color:var(--mute); margin-top:8px}
+  .legend{display:flex; gap:16px; flex-wrap:wrap; font-size:12px; color:var(--mute); margin-bottom:6px}
+  .legend span{display:inline-flex; align-items:center; gap:6px}
+  .swatch{width:16px; height:3px; border-radius:2px; display:inline-block}
+  footer{margin-top:34px; padding-top:16px; border-top:1px solid var(--line);
+         font-size:12px; color:var(--mute); max-width:900px}
+  footer a{color:var(--teal)}
+  .dl{margin-top:16px}
+  .dl button{font:inherit; font-size:13.5px; font-weight:700; color:#fff; background:var(--navy);
+             border:0; padding:10px 18px; border-radius:8px; cursor:pointer}
+  .dl button:hover{background:#0f284a}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>CNV risk after traumatic choroidal rupture</h1>
+    <div class="rule"></div>
+    <div class="synthetic">SYNTHETIC DATA &middot; educational demonstration only &middot; NOT for clinical use</div>
+    <div class="sub">Random&nbsp;forest risk + Cox individualized survival, trained on 1,000 synthetic
+      rupture cases. Everything runs in your browser &mdash; every control updates the prediction instantly.</div>
+  </header>
+
+  <div class="grid">
+    <!-- CONTROLS -->
+    <aside class="panel">
+      <h2>Clinical preset cases</h2>
+      <div class="presets" id="presets"></div>
+
+      <h2>Patient parameters</h2>
+      <div class="ctl">
+        <div class="top"><label>Age (years)</label><span class="val" id="v_age"></span></div>
+        <input type="range" id="age" min="10" max="85" step="1">
+      </div>
+      <div class="ctl">
+        <div class="top"><label for="sex">Sex</label></div>
+        <select id="sex"><option>Male</option><option>Female</option></select>
+      </div>
+
+      <div class="grouplab">Rupture</div>
+      <div class="ctl">
+        <div class="top"><label>Rupture length (mm)</label><span class="val" id="v_rupture_length_mm"></span></div>
+        <input type="range" id="rupture_length_mm" min="0.5" max="12" step="0.1">
+      </div>
+      <div class="ctl">
+        <div class="top"><label>Distance from fovea (&micro;m)</label><span class="val" id="v_distance_from_fovea_um"></span></div>
+        <input type="range" id="distance_from_fovea_um" min="0" max="5000" step="50">
+      </div>
+      <div class="ctl">
+        <div class="top"><label>Choroidal thickness (&micro;m)</label><span class="val" id="v_choroidal_thickness_um"></span></div>
+        <input type="range" id="choroidal_thickness_um" min="150" max="450" step="10">
+      </div>
+      <div class="checks">
+        <label class="chk"><input type="checkbox" id="foveal_involvement">Foveal involvement</label>
+        <label class="chk"><input type="checkbox" id="subretinal_hemorrhage">Subretinal hemorrhage</label>
+      </div>
+
+      <div class="grouplab">OCT biomarkers</div>
+      <div class="ctl">
+        <div class="top"><label>Central subfield thickness (&micro;m)</label><span class="val" id="v_baseline_cst_um"></span></div>
+        <input type="range" id="baseline_cst_um" min="180" max="600" step="10">
+      </div>
+      <div class="ctl">
+        <div class="top"><label>Outer retinal disruption</label><span class="val" id="v_outer_retinal_disruption_score"></span></div>
+        <input type="range" id="outer_retinal_disruption_score" min="0" max="3" step="1">
+      </div>
+      <div class="ctl">
+        <div class="top"><label>EZ integrity (%)</label><span class="val" id="v_ez_integrity_percent"></span></div>
+        <input type="range" id="ez_integrity_percent" min="0" max="100" step="5">
+      </div>
+      <div class="checks">
+        <label class="chk"><input type="checkbox" id="rpe_disruption">RPE disruption</label>
+        <label class="chk"><input type="checkbox" id="subretinal_fluid">Subretinal fluid</label>
+        <label class="chk"><input type="checkbox" id="intraretinal_cysts">Intraretinal cysts</label>
+      </div>
+
+      <div class="grouplab">Vision</div>
+      <div class="ctl">
+        <div class="top"><label>Baseline VA (logMAR)</label><span class="val" id="v_baseline_va_logmar"></span></div>
+        <input type="range" id="baseline_va_logmar" min="0" max="2" step="0.1">
+        <div class="snellen" id="snellen"></div>
+      </div>
+    </aside>
+
+    <!-- RESULTS -->
+    <main class="cards">
+      <section class="card">
+        <div class="toprow">
+          <div class="gaugewrap">
+            <svg id="gauge" viewBox="0 0 320 200" role="img" aria-label="risk gauge"></svg>
+            <div class="bandtag" id="bandtag"></div>
+          </div>
+          <div>
+            <h3>At a glance</h3><div class="crule"></div>
+            <div class="metrics">
+              <div class="metric"><div class="k">CNV probability</div><div class="v" id="m_prob"></div></div>
+              <div class="metric"><div class="k">Cohort percentile</div><div class="v" id="m_pct"></div></div>
+              <div class="metric"><div class="k">Median time to CNV</div><div class="v" id="m_med"></div></div>
+              <div class="metric"><div class="k">36-mo CNV-free</div><div class="v" id="m_surv"></div></div>
+            </div>
+            <div class="cap">Percentile is this patient&rsquo;s rank among 1,000 synthetic cases;
+              median time is when CNV-free survival falls to 50%.</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="charts">
+        <section class="card">
+          <h3>Individualized vs population survival</h3><div class="crule"></div>
+          <div class="legend">
+            <span><i class="swatch" style="background:var(--navy)"></i>This patient (Cox)</span>
+            <span><i class="swatch" style="background:var(--mute)"></i>Typical eye (Kaplan&ndash;Meier)</span>
+          </div>
+          <svg id="surv" viewBox="0 0 460 300"></svg>
+        </section>
+
+        <section class="card">
+          <h3>Why this patient (vs a typical case)</h3><div class="crule"></div>
+          <svg id="drivers" viewBox="0 0 460 300"></svg>
+          <div class="cap">Red pushes this patient&rsquo;s risk up, teal pulls it down &mdash;
+            each factor swapped to the cohort-median value.</div>
+        </section>
+      </div>
+
+      <section class="card">
+        <h3>Where this patient sits among 1,000 cases</h3><div class="crule"></div>
+        <svg id="hist" viewBox="0 0 940 260"></svg>
+      </section>
+
+      <div class="dl">
+        <button id="download">Download assessment (.txt)</button>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    Random&nbsp;forest (AUC &asymp; 0.77) for risk &middot; Cox proportional hazards for timing &middot;
+    explanations are model-based ceteris-paribus shifts, not SHAP. Model exported from the
+    scikit-learn / lifelines pipeline and evaluated entirely client-side.
+    <strong style="color:var(--crimson)">SYNTHETIC DATA &mdash; educational demonstration only, NOT for clinical use.</strong>
+  </footer>
+</div>
+
+<script>
+const C = {navy:'#16365C',teal:'#2C7A7B',crimson:'#C0392B',amber:'#B9770E',
+           green:'#2E8B57',ink:'#212529',grid:'#E3E7EB',mute:'#5A6570'};
+const SVGNS='http://www.w3.org/2000/svg';
+let M=null;
+
+const SLIDERS=['age','rupture_length_mm','distance_from_fovea_um','choroidal_thickness_um',
+  'baseline_cst_um','outer_retinal_disruption_score','ez_integrity_percent','baseline_va_logmar'];
+const CHECKS=['foveal_involvement','subretinal_hemorrhage','rpe_disruption','subretinal_fluid','intraretinal_cysts'];
+
+function fmt(id,v){
+  const map={
+    rupture_length_mm:v.toFixed(1)+' mm', distance_from_fovea_um:v+' \u00b5m',
+    choroidal_thickness_um:v+' \u00b5m', baseline_cst_um:v+' \u00b5m',
+    ez_integrity_percent:v+'%', baseline_va_logmar:v.toFixed(1),
+    age:v+' yr', outer_retinal_disruption_score:String(v)
+  };
+  return map[id]!==undefined?map[id]:String(v);
+}
+
+// ---- model math ----
+function inputsToRow(){
+  const g=id=>document.getElementById(id);
+  return {
+    age:+g('age').value, sex_binary:g('sex').value==='Male'?1:0,
+    rupture_length_mm:+g('rupture_length_mm').value,
+    distance_from_fovea_um:+g('distance_from_fovea_um').value,
+    foveal_involvement_binary:g('foveal_involvement').checked?1:0,
+    choroidal_thickness_um:+g('choroidal_thickness_um').value,
+    subretinal_hemorrhage_binary:g('subretinal_hemorrhage').checked?1:0,
+    baseline_cst_um:+g('baseline_cst_um').value,
+    outer_retinal_disruption_score:+g('outer_retinal_disruption_score').value,
+    rpe_disruption_binary:g('rpe_disruption').checked?1:0,
+    ez_integrity_percent:+g('ez_integrity_percent').value,
+    subretinal_fluid_binary:g('subretinal_fluid').checked?1:0,
+    intraretinal_cysts_binary:g('intraretinal_cysts').checked?1:0,
+    baseline_va_logmar:+g('baseline_va_logmar').value,
+  };
+}
+function predict(row){
+  const x=M.features.map(f=>row[f]); let tot=0;
+  for(const t of M.trees){
+    let n=0;
+    while(t.l[n]!==-1){ n = x[t.f[n]] <= t.t[n] ? t.l[n] : t.r[n]; }
+    tot+=t.p[n];
+  }
+  return tot/M.trees.length;
+}
+function band(p){
+  if(p<0.40) return ['Low',C.green];
+  if(p<0.70) return ['Medium',C.amber];
+  return ['High',C.crimson];
+}
+function survival(row){
+  let eta=0;
+  for(const f of M.features) eta += M.cox.coef[f]*(row[f]-M.cox.mean[f]);
+  const e=Math.exp(eta);
+  return M.cox.H0.map(h=>Math.exp(-h*e));
+}
+function medianTime(surv){
+  for(let i=0;i<surv.length;i++) if(surv[i]<=0.5) return M.cox.times[i];
+  return null;
+}
+function contributions(row,base){
+  const out=[];
+  for(const f of M.features){
+    let d=0;
+    if(row[f]!==M.reference[f]){ const cf={...row}; cf[f]=M.reference[f]; d=base-predict(cf); }
+    out.push({feature:f,label:M.labels[f]||f,delta:d});
+  }
+  out.sort((a,b)=>Math.abs(b.delta)-Math.abs(a.delta));
+  return out;
+}
+function percentile(v){ let c=0; for(const d of M.dist) if(d<v) c++; return c/M.dist.length*100; }
+
+// ---- svg helpers ----
+function el(tag,attrs,parent){const e=document.createElementNS(SVGNS,tag);
+  for(const k in attrs)e.setAttribute(k,attrs[k]); if(parent)parent.appendChild(e); return e;}
+function clear(id){const s=document.getElementById(id); while(s.firstChild)s.removeChild(s.firstChild); return s;}
+function txt(p,x,y,s,o={}){const t=el('text',{x,y,'font-size':o.size||12,
+  fill:o.fill||C.ink,'text-anchor':o.anchor||'start','font-weight':o.weight||400,
+  'font-family':"'Helvetica Neue',Helvetica,Arial,sans-serif"},p); t.textContent=s; return t;}
+
+function polar(cx,cy,r,deg){const a=(deg)*Math.PI/180; return [cx+r*Math.cos(a),cy+r*Math.sin(a)];}
+function arc(cx,cy,r,a0,a1){const[x0,y0]=polar(cx,cy,r,a0),[x1,y1]=polar(cx,cy,r,a1);
+  const large=Math.abs(a1-a0)>180?1:0; const sweep=a1>a0?1:0;
+  return `M${x0} ${y0} A${r} ${r} 0 ${large} ${sweep} ${x1} ${y1}`;}
+
+function drawGauge(risk,col){
+  const s=clear('gauge'); const cx=160,cy=164,r=120;
+  // 180deg (left) -> 360deg (right); value maps 0..100
+  const segs=[[0,40,'#E7F1EC'],[40,70,'#FBF1DF'],[70,100,'#FBE6E2']];
+  for(const[a,b,c] of segs){
+    el('path',{d:arc(cx,cy,r,180+a*1.8,180+b*1.8),stroke:c,'stroke-width':22,fill:'none','stroke-linecap':'butt'},s);
+  }
+  // value arc
+  el('path',{d:arc(cx,cy,r,180,180+risk*180),stroke:col,'stroke-width':22,fill:'none','stroke-linecap':'round'},s);
+  // ticks
+  [0,25,50,75,100].forEach(v=>{const[x,y]=polar(cx,cy,r-26,180+v*1.8);
+    txt(s,x,y+4,String(v),{size:10,fill:C.mute,anchor:'middle'});});
+  txt(s,cx,cy-8,(risk*100).toFixed(0)+'%',{size:46,fill:col,anchor:'middle',weight:800});
+}
+
+function axes(s,x0,y0,w,h){
+  el('line',{x1:x0,y1:y0,x2:x0,y2:y0-h,stroke:C.grid},s);
+  el('line',{x1:x0,y1:y0,x2:x0+w,y2:y0,stroke:C.grid},s);
+}
+
+function drawSurvival(times,surv,med){
+  const s=clear('surv'); const x0=46,y0=250,w=384,h=210;
+  // gridlines y
+  [0,25,50,75,100].forEach(v=>{const y=y0-v/100*h;
+    el('line',{x1:x0,y1:y,x2:x0+w,y2:y,stroke:C.grid},s);
+    txt(s,x0-8,y+4,v+'',{size:11,fill:C.mute,anchor:'end'});});
+  [0,12,24,36].forEach(t=>{const x=x0+t/36*w;
+    txt(s,x,y0+18,t+'',{size:11,fill:C.mute,anchor:'middle'});});
+  txt(s,x0+w/2,y0+34,'Months since rupture',{size:12,fill:C.mute,anchor:'middle'});
+  txt(s,14,y0-h/2,'CNV-free (%)',{size:12,fill:C.mute,anchor:'middle',
+    }).setAttribute('transform',`rotate(-90 14 ${y0-h/2})`);
+  const fov=document.getElementById('foveal_involvement').checked;
+  const km=M.km[fov?'true':'false'];
+  const px=t=>x0+t/36*w, py=v=>y0-v*h;
+  // KM dashed
+  let dk='M'+km.s.map((v,i)=>px(M.cox.times[i])+' '+py(v)).join(' L');
+  el('path',{d:dk,stroke:C.mute,'stroke-width':2,fill:'none','stroke-dasharray':'5 4'},s);
+  // patient area + line
+  let dp='M'+surv.map((v,i)=>px(times[i])+' '+py(v)).join(' L');
+  el('path',{d:dp+` L${px(36)} ${py(0)} L${px(0)} ${py(0)} Z`,fill:'rgba(22,54,92,0.07)',stroke:'none'},s);
+  el('path',{d:dp,stroke:C.navy,'stroke-width':3.2,fill:'none'},s);
+  el('line',{x1:x0,y1:py(0.5),x2:x0+w,y2:py(0.5),stroke:C.mute,'stroke-width':1,'stroke-dasharray':'2 3'},s);
+  if(med!==null){el('line',{x1:px(med),y1:y0,x2:px(med),y2:y0-h,stroke:C.crimson,'stroke-width':2,'stroke-dasharray':'5 4'},s);
+    txt(s,px(med)+6,y0-h+14,'median '+med+' mo',{size:12,fill:C.crimson,weight:700});}
+}
+
+function drawDrivers(contrib){
+  const s=clear('drivers');
+  const movers=contrib.filter(c=>Math.abs(c.delta)>1e-9).slice(0,7);
+  if(!movers.length){txt(s,230,150,'Matches the typical reference case on every driver.',
+    {size:13,fill:C.mute,anchor:'middle'}); return;}
+  const x0=176,w=208;  // bar zone; feature labels sit left of x0
+  const maxv=Math.max(...movers.map(c=>Math.abs(c.delta*100)),5);
+  const zx=x0+w/2;
+  const rowH=Math.min(34,250/movers.length); const top=20;
+  el('line',{x1:zx,y1:top-6,x2:zx,y2:top+movers.length*rowH+2,stroke:C.mute},s);
+  movers.forEach((c,i)=>{
+    const y=top+i*rowH; const d=c.delta*100; const len=Math.abs(d)/maxv*(w/2-22);
+    const col=d>0?C.crimson:C.teal;
+    const bx=d>0?zx:zx-len;
+    el('rect',{x:bx,y:y+4,width:len,height:rowH-12,rx:3,fill:col},s);
+    txt(s,x0-16,y+rowH/2+4,c.label,{size:12,fill:C.ink,anchor:'end'});
+    const lx=d>0?zx+len+5:zx-len-5;
+    txt(s,lx,y+rowH/2+4,(d>0?'+':'')+d.toFixed(0),{size:11.5,fill:col,weight:700,
+      anchor:d>0?'start':'end'});
+  });
+  txt(s,zx,top+movers.length*rowH+22,'Risk shift vs typical patient (pts)',
+    {size:11.5,fill:C.mute,anchor:'middle'});
+}
+
+function drawHist(risk,col,pct){
+  const s=clear('hist'); const x0=44,y0=210,w=860,h=170; const nb=30;
+  const bins=new Array(nb).fill(0);
+  for(const d of M.dist){let b=Math.min(nb-1,Math.floor(d*nb)); bins[b]++;}
+  const mx=Math.max(...bins);
+  [0,25,50,75,100].forEach(v=>{const x=x0+v/100*w;
+    txt(s,x,y0+18,v+'',{size:11,fill:C.mute,anchor:'middle'});});
+  txt(s,x0+w/2,y0+34,'Predicted CNV risk (%)',{size:12,fill:C.mute,anchor:'middle'});
+  const bw=w/nb;
+  bins.forEach((cnt,i)=>{const bh=cnt/mx*h;
+    el('rect',{x:x0+i*bw+1,y:y0-bh,width:bw-2,height:bh,fill:C.grid},s);});
+  const rx=x0+risk*w;
+  el('line',{x1:rx,y1:y0,x2:rx,y2:y0-h-6,stroke:col,'stroke-width':3},s);
+  txt(s,rx,y0-h-12,'this patient ('+pct.toFixed(0)+'th pct)',{size:12.5,fill:col,weight:700,anchor:'middle'});
+}
+
+// ---- main recompute ----
+let last={};
+function recompute(){
+  // slider readouts
+  SLIDERS.forEach(id=>{const v=+document.getElementById(id).value;
+    document.getElementById('v_'+id).textContent=fmt(id,v);});
+  const va=+document.getElementById('baseline_va_logmar').value;
+  document.getElementById('snellen').textContent='\u2248 Snellen 20/'+Math.round(20*Math.pow(10,va));
+
+  const row=inputsToRow();
+  const risk=predict(row); const[bn,col]=band(risk);
+  const surv=survival(row); const med=medianTime(surv);
+  const contrib=contributions(row,risk); const pct=percentile(risk);
+
+  drawGauge(risk,col);
+  const bt=document.getElementById('bandtag'); bt.textContent=bn+' risk of CNV development'; bt.style.color=col;
+  document.getElementById('m_prob').textContent=(risk*100).toFixed(0)+'%';
+  document.getElementById('m_pct').textContent=pct.toFixed(0)+'th';
+  document.getElementById('m_med').textContent=med!==null?med+' mo':'>36 mo';
+  document.getElementById('m_surv').textContent=(surv[surv.length-1]*100).toFixed(0)+'%';
+  drawSurvival(M.cox.times,surv,med);
+  drawDrivers(contrib);
+  drawHist(risk,col,pct);
+  last={row,risk,bn,col,surv,med,contrib,pct};
+}
+
+// ---- presets ----
+function applyPreset(d){
+  const g=id=>document.getElementById(id);
+  g('age').value=d.age; g('sex').value=d.sex;
+  g('rupture_length_mm').value=d.rupture_length_mm;
+  g('distance_from_fovea_um').value=d.distance_from_fovea_um;
+  g('foveal_involvement').checked=!!d.foveal_involvement;
+  g('choroidal_thickness_um').value=d.choroidal_thickness_um;
+  g('subretinal_hemorrhage').checked=!!d.subretinal_hemorrhage;
+  g('baseline_cst_um').value=d.baseline_cst_um;
+  g('outer_retinal_disruption_score').value=d.outer_retinal_disruption_score;
+  g('rpe_disruption').checked=!!d.rpe_disruption;
+  g('ez_integrity_percent').value=d.ez_integrity_percent;
+  g('subretinal_fluid').checked=!!d.subretinal_fluid;
+  g('intraretinal_cysts').checked=!!d.intraretinal_cysts;
+  g('baseline_va_logmar').value=d.baseline_va_logmar;
+  recompute();
+}
+
+function buildReport(){
+  const {row,risk,bn,med,surv,contrib,pct}=last;
+  const g=id=>document.getElementById(id);
+  const L=[];
+  L.push('CNV RISK ASSESSMENT  (SYNTHETIC DATA - educational, NOT for clinical use)');
+  L.push('='.repeat(72));
+  L.push('Generated: '+new Date().toISOString().slice(0,16).replace('T',' '));
+  L.push('');
+  L.push('RISK');
+  L.push('  CNV probability: '+(risk*100).toFixed(0)+'%  ('+bn+' band)');
+  L.push('  Cohort percentile: '+pct.toFixed(0)+'th of 1000 cases');
+  L.push('  Median time to CNV: '+(med!==null?med+' months':'not reached within 36 months'));
+  L.push('  36-month CNV-free probability: '+(surv[surv.length-1]*100).toFixed(0)+'%');
+  L.push('');
+  L.push('TOP INDIVIDUAL DRIVERS (vs a typical patient)');
+  contrib.filter(c=>Math.abs(c.delta)>1e-9).slice(0,5).forEach(c=>{
+    L.push('  '+c.label+': '+(c.delta>0?'raises':'lowers')+' risk by '+Math.abs(c.delta*100).toFixed(0)+' pts');
+  });
+  L.push('');
+  L.push('Model: random forest (AUC ~0.77) + Cox proportional hazards.');
+  L.push('Synthetic data. Educational demonstration only. NOT for clinical use.');
+  return L.join('\n');
+}
+
+fetch('model.json').then(r=>r.json()).then(m=>{
+  M=m;
+  // presets
+  const pc=document.getElementById('presets');
+  for(const name in M.presets){
+    const b=document.createElement('button'); b.textContent=name;
+    b.onclick=()=>applyPreset(M.presets[name]); pc.appendChild(b);
+  }
+  [...SLIDERS,...CHECKS,'sex'].forEach(id=>{
+    document.getElementById(id).addEventListener('input',recompute);
+  });
+  document.getElementById('download').onclick=()=>{
+    const blob=new Blob([buildReport()],{type:'text/plain'});
+    const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+    a.download='cnv_risk_assessment.txt'; a.click();
+  };
+  applyPreset(M.presets['Intermediate - juxtafoveal']);
+});
+</script>
+</body>
+</html>
