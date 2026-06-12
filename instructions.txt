@@ -1,0 +1,13 @@
+i want to show a group of ophthalmology residents how to use claude. the goal is to show how agentic systems (like cluade code) can help stream line research and data analysis. 
+there are many ways we can go but i want to be able to show them important use cases
+
+Tasks
+
+review what i have done and collabroated with you
+we need a story (maybe we can make a plan to help execute code for claude code to use with sonnet for making a powerpoint)
+ideally, we create a fake database and show the use cases. can we something focused on retina like to the neovasculariation after chorodial rupture and developing a model to predict how long until neovasculration happens. or can be response of uveitic macular edema with various types of anti-VEGF agents. can use brand names. refer to literature for expected outcomes and feel free to make a database with an example of 1000ish pateints with 20-30 variables for each. can also include you own thing to study as an example
+the goal is be engaging and have hte presentation interactive
+to start of the presnentation we need to say that there are no disclosures. there are many different models to use. we are focusing on claude today because we use that the most
+i want to have near the beginning of the presentation something about the recent transition from LLM to agentic systems so that people are aware
+the presentation will be 20-30 minutes, but again, we want to make this interactive, the power point should be simple, not many words, and demonstrate use cases
+ask clarifying questions

@@ -1,0 +1,1001 @@
+patient_id,age,sex,race,occupation_risk,mechanism_of_injury,rupture_location_clock_hours,rupture_length_mm,distance_from_fovea_um,foveal_involvement,choroidal_thickness_um,time_to_presentation_days,subretinal_hemorrhage,baseline_cst_um,outer_retinal_disruption_score,rpe_disruption,subfoveal_choroidal_thickness_um,subretinal_fluid,intraretinal_cysts,ez_integrity_percent,elm_intact,oct_quality_score,baseline_va_logmar,final_va_logmar,treatment_approach,anti_vegf_agent,number_of_injections,supplemental_laser,cnv_developed,time_to_cnv_months,cnv_type,treatment_response,follow_up_duration_months
+CR0001,42,M,White,Medium,Blunt trauma,6,1.43,134,Yes,242,4,Yes,245,3,Yes,301,Yes,Yes,78,Yes,10,0.87,1.32,Anti-VEGF,Lucentis,2,Yes,Yes,3.4,Occult,Poor,34.4
+CR0002,32,M,White,High,Blunt trauma,7,2.07,480,Yes,268,4,Yes,314,3,Yes,376,No,No,14,No,8,0.86,1.28,Anti-VEGF,Avastin,6,No,Yes,6.5,Occult,Poor,20.6
+CR0003,44,M,White,Medium,Motor vehicle accident,6,1.97,419,Yes,327,1,No,269,3,No,324,No,No,49,No,9,1.02,1.16,Anti-VEGF,Eylea,6,No,Yes,6.9,Occult,Good,16.9
+CR0004,57,M,White,Low,Sports injury,1,6.5,930,No,315,1,No,308,0,Yes,346,Yes,No,94,Yes,10,0.0,0.0,Observation,None,0,No,No,,None,NA,21.9
+CR0005,31,M,Hispanic,Medium,Blunt trauma,9,1.01,230,Yes,210,0,No,258,0,No,325,No,Yes,66,Yes,8,1.04,1.3,Observation,None,0,No,No,,None,NA,25.1
+CR0006,31,F,Black,Low,Assault,1,0.5,817,No,302,7,Yes,291,0,Yes,334,No,No,100,Yes,8,0.44,0.62,Observation,None,0,No,No,,None,NA,15.1
+CR0007,58,M,Black,Medium,Fall,9,6.23,1679,No,313,2,No,226,1,No,244,No,No,73,Yes,7,0.85,0.68,Observation,None,0,No,No,,None,NA,11.9
+CR0008,46,M,White,High,Sports injury,10,2.73,433,Yes,286,0,No,276,3,Yes,328,No,Yes,17,No,8,1.14,1.41,Anti-VEGF,Eylea,4,No,Yes,9.2,Occult,Good,40.0
+CR0009,27,M,Asian,High,Fall,6,0.82,1935,No,345,7,Yes,329,3,No,419,No,No,14,No,9,0.54,0.87,Anti-VEGF,Lucentis,1,No,Yes,6.1,Classic,Poor,29.5
+CR0010,43,F,White,Medium,Blunt trauma,7,4.64,3988,No,244,7,No,318,0,Yes,331,Yes,No,90,Yes,8,0.17,0.17,Observation,None,0,No,No,,None,NA,12.0
+CR0011,28,M,White,Medium,Motor vehicle accident,6,3.76,89,Yes,304,13,Yes,311,3,Yes,261,Yes,Yes,53,Yes,7,0.92,1.3,Anti-VEGF,Eylea,2,No,Yes,4.5,Occult,Poor,18.0
+CR0012,28,F,Black,High,Sports injury,6,7.19,212,Yes,210,6,Yes,294,3,No,423,No,No,71,Yes,6,1.61,1.76,Observation,None,0,No,No,,None,NA,14.5
+CR0013,38,M,White,Medium,Fall,10,2.89,2402,No,183,18,Yes,287,1,Yes,370,No,Yes,88,Yes,8,1.29,1.28,Anti-VEGF,Eylea,7,No,Yes,3.7,Occult,Moderate,26.8
+CR0014,10,F,White,Medium,Fall,10,10.58,2542,No,326,0,Yes,216,0,No,373,No,No,73,No,8,0.12,0.41,Observation,None,0,No,No,,None,NA,26.1
+CR0015,10,M,Black,Medium,Blunt trauma,5,2.28,82,Yes,281,5,Yes,269,2,No,371,Yes,No,49,No,9,1.25,1.49,Anti-VEGF,Eylea,4,No,Yes,6.7,Occult,Good,29.9
+CR0016,26,F,Hispanic,Medium,Assault,7,3.77,12,Yes,252,5,No,289,2,Yes,241,No,No,41,Yes,8,1.06,1.62,Anti-VEGF,Eylea,4,No,Yes,5.7,Occult,Poor,28.9
+CR0017,19,M,Black,Medium,Blunt trauma,11,4.15,140,Yes,216,0,Yes,223,3,No,365,No,No,33,No,6,1.36,1.64,Anti-VEGF,Eylea,1,No,Yes,3.1,Occult,Poor,22.7
+CR0018,39,F,Hispanic,High,Assault,12,1.77,4419,No,329,0,Yes,192,1,No,416,No,No,64,No,8,0.71,0.59,Observation,None,0,No,No,,None,NA,31.0
+CR0019,21,M,Other,High,Other,6,1.72,158,Yes,189,11,No,336,0,No,286,No,Yes,40,No,10,0.51,0.46,Observation,None,0,No,No,,None,NA,27.8
+CR0020,13,M,White,Medium,Blunt trauma,6,4.2,558,No,339,1,Yes,282,3,No,200,No,No,25,Yes,7,0.63,0.9,Anti-VEGF,Eylea,2,No,Yes,6.3,Occult,Good,37.2
+CR0021,56,M,White,Medium,Sports injury,5,0.76,1509,No,307,6,Yes,290,1,No,345,Yes,No,74,No,9,0.75,0.59,Observation,None,0,No,No,,None,NA,19.5
+CR0022,31,M,White,High,Blunt trauma,11,1.33,16,Yes,192,0,Yes,307,2,Yes,322,Yes,No,0,No,9,1.23,1.4,Anti-VEGF,Eylea,8,No,Yes,4.2,Classic,Good,33.2
+CR0023,36,M,White,Low,Motor vehicle accident,3,2.24,742,No,287,0,Yes,230,3,Yes,211,Yes,No,29,Yes,9,0.83,0.77,Observation,None,0,No,No,,None,NA,6.0
+CR0024,13,M,White,Low,Motor vehicle accident,7,7.05,259,Yes,439,1,Yes,259,1,No,362,No,Yes,93,Yes,7,1.08,1.23,Observation,None,0,No,No,,None,NA,21.6
+CR0025,26,M,Asian,Medium,Sports injury,5,4.21,1586,No,351,0,No,355,0,No,357,Yes,No,100,Yes,10,0.45,0.27,Observation,None,0,No,No,,None,NA,35.4
+CR0026,36,M,Hispanic,High,Assault,5,2.65,266,Yes,230,3,Yes,255,3,Yes,217,No,No,29,No,9,1.54,1.87,Anti-VEGF,Lucentis,2,No,Yes,5.7,Mixed,Good,25.4
+CR0027,17,F,Black,Low,Sports injury,6,1.63,928,No,323,2,No,266,1,No,452,No,No,63,No,10,0.64,0.71,Observation,None,0,No,No,,None,NA,12.1
+CR0028,40,M,White,Medium,Motor vehicle accident,12,8.91,897,No,195,0,Yes,246,2,No,372,No,No,25,No,7,0.59,0.69,Anti-VEGF,Eylea,6,No,Yes,7.7,Classic,Moderate,28.9
+CR0029,25,F,Hispanic,Low,Fall,1,2.39,200,Yes,197,0,Yes,242,2,Yes,200,No,Yes,28,No,9,1.19,1.29,Observation,None,0,No,No,,None,NA,13.1
+CR0030,30,M,Asian,Low,Other,7,1.33,28,Yes,275,1,Yes,335,0,No,377,No,No,97,Yes,9,0.78,1.32,Observation,None,0,No,Yes,5.1,Occult,NA,22.6
+CR0031,25,M,Hispanic,Low,Blunt trauma,2,10.01,421,Yes,313,0,No,180,2,Yes,375,No,No,72,Yes,8,0.91,1.15,Anti-VEGF,Eylea,12,No,Yes,8.2,Classic,Good,32.1
+CR0032,62,F,White,Medium,Other,3,0.79,273,Yes,328,4,Yes,257,1,Yes,419,Yes,No,41,No,8,0.94,1.14,Anti-VEGF,Eylea,1,Yes,Yes,5.1,Occult,Moderate,36.6
+CR0033,34,M,Black,High,Blunt trauma,6,5.92,1324,No,329,1,Yes,291,2,Yes,276,No,No,23,No,9,0.57,0.88,Anti-VEGF,Eylea,3,No,Yes,9.2,Occult,Moderate,32.2
+CR0034,19,M,White,Medium,Fall,7,2.53,1289,No,309,0,Yes,364,2,Yes,378,No,No,2,No,6,0.18,0.46,Anti-VEGF,Eylea,7,No,Yes,3.5,Occult,Good,20.8
+CR0035,47,M,White,Medium,Blunt trauma,4,4.2,488,Yes,183,1,Yes,223,3,No,303,No,No,39,No,9,1.44,1.69,Observation,None,0,No,No,,None,NA,14.6
+CR0036,16,M,White,Medium,Blunt trauma,5,3.69,746,No,276,0,Yes,214,2,No,281,No,No,30,No,5,0.84,0.98,Anti-VEGF,Eylea,5,No,Yes,1.9,Occult,Good,32.6
+CR0037,38,M,Black,High,Motor vehicle accident,2,4.16,741,Yes,338,0,Yes,236,1,Yes,259,No,No,82,Yes,7,1.09,1.27,Observation,None,0,No,No,,None,NA,25.3
+CR0038,10,F,Black,High,Sports injury,5,10.59,1404,No,306,0,Yes,315,2,Yes,200,No,No,53,No,9,0.82,0.96,Anti-VEGF,Lucentis,5,No,Yes,5.5,Classic,Moderate,28.3
+CR0039,15,F,White,Low,Motor vehicle accident,12,9.57,442,Yes,290,5,No,286,3,No,357,Yes,No,51,No,6,1.21,1.22,Observation,None,0,No,No,,None,NA,12.9
+CR0040,37,M,White,Medium,Blunt trauma,11,1.39,257,Yes,299,7,Yes,207,3,Yes,300,No,No,7,No,10,1.12,1.46,Anti-VEGF,Eylea,2,No,Yes,13.7,Classic,Moderate,36.2
+CR0041,46,M,Black,Low,Sports injury,5,3.6,246,Yes,298,5,Yes,284,3,No,200,Yes,Yes,39,No,10,1.49,2.03,Anti-VEGF,Eylea,2,No,Yes,8.6,Occult,Good,44.5
+CR0042,37,M,White,Low,Assault,7,0.5,614,No,162,1,Yes,357,1,No,325,Yes,Yes,41,No,9,0.19,0.09,Observation,None,0,No,No,,None,NA,29.0
+CR0043,33,M,White,Medium,Motor vehicle accident,11,4.47,477,Yes,349,0,Yes,293,2,No,401,Yes,No,74,Yes,10,0.83,0.97,Observation,None,0,No,No,,None,NA,35.9
+CR0044,30,M,White,Medium,Blunt trauma,1,5.2,464,Yes,273,2,No,288,3,Yes,228,Yes,No,32,No,10,1.36,1.62,Anti-VEGF,Lucentis,8,No,Yes,13.6,Mixed,Good,25.0
+CR0045,12,M,Hispanic,Low,Motor vehicle accident,9,0.5,76,Yes,322,3,Yes,291,2,No,270,Yes,No,12,No,7,1.21,1.5,Anti-VEGF,Eylea,2,No,Yes,3.1,Occult,Moderate,38.3
+CR0046,24,M,White,Medium,Blunt trauma,11,2.46,1014,No,150,15,Yes,300,0,No,350,No,No,64,Yes,10,0.53,0.63,Observation,None,0,No,No,,None,NA,30.3
+CR0047,28,F,White,Medium,Fall,2,4.19,192,Yes,379,0,No,216,3,No,200,No,No,44,No,7,0.82,1.26,Anti-VEGF,Eylea,1,No,Yes,4.5,Classic,Good,26.1
+CR0048,50,M,White,High,Fall,3,3.24,175,Yes,210,0,Yes,268,2,No,282,Yes,No,54,Yes,8,1.08,1.83,Anti-VEGF,Eylea,8,No,Yes,1.9,Occult,Moderate,23.4
+CR0049,40,M,Asian,Medium,Sports injury,12,0.81,425,Yes,432,3,Yes,271,1,Yes,344,No,No,100,Yes,9,0.67,0.75,Anti-VEGF,Eylea,6,No,Yes,1.5,Occult,Good,22.3
+CR0050,10,M,Black,Medium,Motor vehicle accident,7,0.9,206,Yes,407,5,Yes,255,0,No,280,Yes,No,76,Yes,9,1.01,1.27,Anti-VEGF,Lucentis,6,No,Yes,12.4,Occult,Good,29.3
+CR0051,39,M,Black,High,Fall,1,2.24,701,No,200,5,No,314,2,No,229,Yes,No,33,Yes,5,0.93,0.89,Observation,None,0,No,No,,None,NA,8.0
+CR0052,29,M,White,High,Sports injury,4,1.77,371,Yes,329,3,No,248,2,No,232,No,No,53,No,7,1.23,1.33,Anti-VEGF,Eylea,6,No,Yes,11.5,Mixed,Good,43.5
+CR0053,24,F,Black,High,Fall,6,1.91,476,Yes,218,9,No,262,3,No,207,No,No,53,Yes,9,1.11,1.46,Anti-VEGF,Avastin,4,No,Yes,7.2,Occult,Poor,19.7
+CR0054,44,M,White,High,Sports injury,8,0.7,616,No,241,2,Yes,216,1,No,275,Yes,No,77,No,8,0.26,0.34,Anti-VEGF,Eylea,4,No,Yes,5.3,Classic,Good,33.4
+CR0055,50,F,Black,High,Fall,8,2.56,182,Yes,242,7,No,298,2,Yes,393,Yes,Yes,56,No,9,1.0,1.13,Anti-VEGF,Eylea,12,No,Yes,7.8,Classic,Good,11.9
+CR0056,48,M,Asian,Medium,Sports injury,12,7.08,135,Yes,306,10,Yes,327,2,Yes,485,No,No,27,Yes,9,0.89,1.09,Anti-VEGF,Lucentis,1,Yes,Yes,10.9,Occult,Moderate,46.4
+CR0057,22,M,Black,Low,Motor vehicle accident,5,0.84,1699,No,299,5,Yes,261,2,No,322,Yes,No,39,No,7,0.56,0.78,Anti-VEGF,Avastin,2,No,Yes,14.8,Occult,Moderate,40.0
+CR0058,30,M,Hispanic,Medium,Other,7,2.1,454,Yes,207,1,No,320,2,Yes,373,No,Yes,0,No,6,0.91,0.94,Anti-VEGF,Avastin,2,No,Yes,1.1,Classic,Good,17.2
+CR0059,39,M,Hispanic,High,Motor vehicle accident,7,3.88,424,Yes,306,0,Yes,272,3,No,254,No,No,67,Yes,9,0.9,0.95,Observation,None,0,No,No,,None,NA,22.4
+CR0060,49,F,White,High,Sports injury,6,0.54,29,Yes,267,2,Yes,180,3,Yes,200,Yes,No,30,No,8,1.35,1.49,Observation,None,0,No,No,,None,NA,18.1
+CR0061,27,F,Asian,Medium,Blunt trauma,3,2.58,551,Yes,170,1,Yes,277,3,No,449,No,No,67,No,7,1.36,1.45,Observation,None,0,No,No,,None,NA,21.2
+CR0062,32,M,White,Medium,Sports injury,12,5.09,646,No,253,6,Yes,271,3,No,278,Yes,No,26,No,8,1.17,1.43,Observation,None,0,No,Yes,3.6,Mixed,NA,35.1
+CR0063,18,M,Black,Low,Sports injury,10,1.03,654,No,379,0,No,285,1,No,370,No,Yes,81,No,8,0.34,0.47,Observation,None,0,No,No,,None,NA,13.6
+CR0064,17,M,White,Medium,Blunt trauma,6,2.77,982,Yes,255,0,Yes,292,2,Yes,331,No,No,41,No,6,0.63,0.87,Observation,None,0,No,No,,None,NA,19.6
+CR0065,47,F,White,Low,Blunt trauma,7,4.85,156,Yes,169,4,Yes,245,3,No,389,No,No,27,No,8,1.45,1.66,Anti-VEGF,Lucentis,2,No,Yes,3.3,Occult,Good,15.5
+CR0066,55,M,White,High,Sports injury,4,10.24,232,Yes,328,0,Yes,353,3,No,386,No,Yes,49,No,9,1.48,1.53,Anti-VEGF,Lucentis,1,No,Yes,4.0,Occult,Good,30.7
+CR0067,33,M,White,Medium,Fall,7,2.67,1331,No,224,1,No,276,3,No,339,No,Yes,65,Yes,9,1.04,1.21,Anti-VEGF,Eylea,9,No,Yes,6.8,Classic,Good,13.5
+CR0068,50,M,Black,High,Motor vehicle accident,8,1.36,2352,No,292,1,No,270,2,Yes,347,Yes,No,75,Yes,10,0.97,1.17,Observation,None,0,No,No,,None,NA,30.4
+CR0069,40,M,Black,Low,Blunt trauma,7,1.37,116,Yes,269,2,Yes,317,3,Yes,404,No,Yes,54,Yes,6,1.62,1.86,Observation,None,0,No,No,,None,NA,8.3
+CR0070,25,M,White,Medium,Sports injury,12,0.66,550,No,385,0,No,280,1,Yes,291,No,No,50,No,8,0.21,0.03,Observation,None,0,No,No,,None,NA,22.4
+CR0071,40,M,White,High,Blunt trauma,7,7.46,192,Yes,269,5,No,408,3,Yes,428,No,No,11,No,9,1.64,1.81,Anti-VEGF,Eylea,5,No,Yes,1.0,Mixed,Good,36.6
+CR0072,58,F,Black,High,Motor vehicle accident,6,4.65,49,Yes,211,1,Yes,269,3,No,270,No,No,62,No,9,1.17,1.26,Anti-VEGF,Avastin,4,No,Yes,3.1,Mixed,Good,44.9
+CR0073,34,M,White,High,Blunt trauma,9,0.9,315,Yes,251,7,Yes,297,3,No,325,Yes,No,20,Yes,9,1.45,1.51,Anti-VEGF,Eylea,1,Yes,Yes,3.4,Classic,Good,44.2
+CR0074,58,M,Hispanic,Medium,Blunt trauma,3,1.29,124,Yes,206,1,Yes,242,2,Yes,364,No,No,52,No,9,1.16,1.53,Anti-VEGF,Eylea,2,No,Yes,5.0,Mixed,Good,41.2
+CR0075,10,F,Black,High,Blunt trauma,6,2.63,990,Yes,267,0,No,323,3,Yes,205,No,Yes,42,Yes,9,1.01,1.22,Observation,None,0,No,No,,None,NA,19.9
+CR0076,47,M,Hispanic,Medium,Motor vehicle accident,5,5.07,610,No,386,0,Yes,295,3,Yes,416,No,No,66,No,6,1.04,1.36,Anti-VEGF,Avastin,12,No,Yes,5.5,Occult,Good,38.9
+CR0077,36,F,Black,High,Blunt trauma,6,3.6,124,Yes,354,0,Yes,263,2,No,353,No,No,50,No,9,0.99,1.16,Observation,None,0,No,No,,None,NA,22.2
+CR0078,30,M,White,Medium,Motor vehicle accident,9,3.36,7,Yes,402,2,Yes,236,3,No,500,Yes,No,39,No,9,1.71,1.9,Anti-VEGF,Eylea,5,No,Yes,4.0,Occult,Good,32.9
+CR0079,36,M,Black,Low,Motor vehicle accident,6,2.91,1320,Yes,308,0,No,214,2,No,465,No,No,81,Yes,10,0.91,1.14,Anti-VEGF,Eylea,5,No,Yes,16.8,Mixed,Good,25.0
+CR0080,10,F,White,Low,Motor vehicle accident,9,0.94,155,Yes,288,1,Yes,300,3,Yes,319,Yes,No,56,No,9,1.0,1.06,Anti-VEGF,Eylea,9,No,Yes,4.3,Occult,Good,43.9
+CR0081,31,M,White,Low,Motor vehicle accident,7,2.66,745,No,220,2,No,210,1,No,444,No,Yes,86,Yes,9,0.28,0.37,Observation,None,0,No,No,,None,NA,13.6
+CR0082,40,M,Hispanic,High,Fall,5,2.42,328,Yes,296,0,No,345,2,Yes,379,No,No,26,No,8,1.47,1.56,Anti-VEGF,Lucentis,5,No,Yes,6.8,Mixed,Good,21.4
+CR0083,57,M,White,High,Blunt trauma,9,0.65,704,No,272,0,Yes,216,1,Yes,336,No,No,52,No,10,0.06,0.2,Anti-VEGF,Eylea,2,No,Yes,12.8,Mixed,Moderate,33.3
+CR0084,27,M,Hispanic,Medium,Motor vehicle accident,4,7.34,303,Yes,326,4,Yes,271,3,No,203,No,No,34,Yes,10,1.48,1.63,Anti-VEGF,Lucentis,6,No,Yes,2.2,Mixed,Good,15.7
+CR0085,22,M,Hispanic,Medium,Blunt trauma,4,1.52,72,Yes,212,8,Yes,235,1,No,220,No,Yes,45,No,9,1.41,1.2,Observation,None,0,No,No,,None,NA,20.9
+CR0086,27,M,Hispanic,Medium,Blunt trauma,6,0.67,201,Yes,283,0,No,281,3,Yes,320,Yes,Yes,33,No,9,1.21,1.54,Anti-VEGF,Eylea,9,No,Yes,2.3,Classic,Good,43.1
+CR0087,48,F,Asian,High,Sports injury,5,1.75,166,Yes,185,0,Yes,281,3,Yes,285,Yes,Yes,56,No,6,1.15,1.36,Anti-VEGF,Avastin,5,No,Yes,7.8,Occult,Moderate,33.3
+CR0088,39,M,White,High,Sports injury,1,2.03,446,Yes,300,9,Yes,302,3,Yes,335,Yes,No,59,No,9,1.27,1.57,Anti-VEGF,Eylea,2,No,Yes,11.6,Occult,Good,30.3
+CR0089,27,M,White,High,Assault,7,2.37,859,No,320,0,Yes,203,0,No,416,No,No,68,Yes,9,0.02,0.0,Observation,None,0,No,No,,None,NA,13.3
+CR0090,42,M,Black,Low,Sports injury,7,2.01,245,Yes,182,11,Yes,241,3,No,380,No,No,98,No,9,1.91,1.96,Observation,None,0,No,No,,None,NA,8.0
+CR0091,36,F,White,High,Other,6,2.47,9,Yes,199,0,No,328,3,No,271,No,No,65,Yes,6,1.42,1.41,Observation,None,0,No,No,,None,NA,26.9
+CR0092,49,M,Black,Medium,Blunt trauma,12,2.8,585,No,202,6,Yes,312,0,Yes,384,No,Yes,74,No,9,0.0,0.09,Observation,None,0,No,No,,None,NA,20.2
+CR0093,24,F,Hispanic,High,Blunt trauma,7,2.69,744,No,269,1,No,180,0,Yes,256,No,No,97,No,7,0.1,0.21,Observation,None,0,No,No,,None,NA,25.0
+CR0094,30,M,Black,Medium,Blunt trauma,10,3.34,2634,No,196,8,Yes,298,0,Yes,240,Yes,No,63,No,9,0.34,0.39,Observation,None,0,No,No,,None,NA,6.0
+CR0095,29,M,White,High,Blunt trauma,3,3.49,712,No,362,1,Yes,228,2,No,346,Yes,No,45,No,7,0.28,0.37,Anti-VEGF,Eylea,10,No,Yes,14.7,Occult,Good,35.9
+CR0096,13,M,White,Low,Motor vehicle accident,7,3.55,509,No,306,3,No,250,0,No,262,Yes,No,67,Yes,9,0.0,0.0,Observation,None,0,No,No,,None,NA,35.9
+CR0097,39,M,White,Low,Sports injury,10,4.19,681,No,315,0,Yes,268,0,No,275,No,No,50,Yes,7,0.37,0.43,Observation,None,0,No,No,,None,NA,30.7
+CR0098,38,M,White,High,Blunt trauma,7,1.38,2103,No,184,0,No,357,2,Yes,389,Yes,No,50,Yes,5,0.85,1.13,Anti-VEGF,Lucentis,1,No,Yes,3.7,Occult,Poor,32.4
+CR0099,35,M,Asian,Low,Assault,8,1.43,1409,No,357,4,Yes,227,1,No,366,No,Yes,74,Yes,9,0.68,0.76,Observation,None,0,No,No,,None,NA,11.6
+CR0100,31,F,White,Low,Fall,6,5.08,312,Yes,318,2,Yes,209,3,No,293,No,No,41,No,6,1.24,1.3,Anti-VEGF,Avastin,1,No,Yes,9.6,Classic,Good,31.0
+CR0101,13,M,White,Low,Blunt trauma,2,1.79,216,Yes,239,7,Yes,302,3,No,206,No,Yes,39,Yes,9,1.18,1.78,Observation,None,0,No,Yes,4.7,Mixed,NA,31.2
+CR0102,28,M,White,Low,Blunt trauma,6,2.27,243,Yes,187,1,No,278,1,No,268,Yes,No,57,No,10,0.96,1.35,Anti-VEGF,Eylea,12,No,Yes,11.5,Mixed,Good,26.0
+CR0103,29,M,Black,High,Blunt trauma,6,2.11,561,No,275,6,No,340,3,No,455,Yes,Yes,71,Yes,10,1.0,0.84,Observation,None,0,No,No,,None,NA,16.6
+CR0104,22,M,Black,Medium,Blunt trauma,10,10.0,1090,Yes,252,1,Yes,262,2,No,387,Yes,No,44,No,7,0.79,1.01,Anti-VEGF,Eylea,4,No,Yes,6.2,Occult,Moderate,46.8
+CR0105,32,M,White,High,Blunt trauma,4,1.19,559,No,254,11,Yes,340,1,Yes,419,No,No,69,No,10,0.26,0.3,Anti-VEGF,Eylea,2,No,Yes,12.1,Classic,Good,22.3
+CR0106,41,M,White,High,Motor vehicle accident,12,1.17,56,Yes,237,9,Yes,280,3,Yes,337,Yes,No,13,No,8,1.16,1.3,Observation,None,0,No,No,,None,NA,16.6
+CR0107,63,M,White,Low,Blunt trauma,11,2.48,1028,No,323,1,Yes,306,0,Yes,295,No,No,100,Yes,10,0.24,0.35,Anti-VEGF,Eylea,2,No,Yes,21.5,Classic,Moderate,34.5
+CR0108,37,M,White,High,Motor vehicle accident,4,2.16,1311,No,150,6,No,361,3,No,383,No,Yes,58,Yes,9,0.74,0.8,Anti-VEGF,Eylea,2,No,Yes,13.8,Classic,Good,47.4
+CR0109,38,M,Black,Medium,Other,5,0.89,273,Yes,365,5,Yes,271,2,No,409,Yes,No,40,No,6,1.09,0.98,Anti-VEGF,Lucentis,5,No,Yes,5.3,Occult,Good,27.6
+CR0110,33,M,Black,Low,Sports injury,10,2.33,872,No,339,0,No,332,0,Yes,286,No,No,49,No,8,0.47,0.78,Anti-VEGF,Lucentis,2,No,Yes,1.7,Mixed,Moderate,15.6
+CR0111,10,F,White,Low,Assault,12,2.53,444,Yes,292,2,Yes,249,3,No,270,No,No,73,Yes,8,0.81,1.28,Anti-VEGF,Lucentis,3,No,Yes,2.6,Classic,Moderate,12.9
+CR0112,34,F,White,Low,Blunt trauma,6,1.65,1759,No,271,0,No,291,1,No,213,No,No,67,No,9,0.05,0.15,Observation,None,0,No,No,,None,NA,40.2
+CR0113,35,M,Other,High,Motor vehicle accident,5,2.22,1492,No,344,5,Yes,207,2,No,268,Yes,No,26,Yes,8,0.43,0.44,Observation,None,0,No,No,,None,NA,6.0
+CR0114,71,F,Black,High,Sports injury,7,1.29,596,No,277,0,Yes,254,1,No,366,Yes,No,74,No,9,0.67,0.58,Observation,None,0,No,No,,None,NA,20.6
+CR0115,32,M,Black,Medium,Blunt trauma,8,0.89,940,No,263,0,No,227,2,No,278,Yes,Yes,47,No,9,0.44,0.29,Observation,None,0,No,No,,None,NA,7.9
+CR0116,39,M,White,High,Blunt trauma,5,1.78,1718,No,348,1,Yes,341,0,No,385,Yes,Yes,71,No,10,0.29,0.16,Observation,None,0,No,No,,None,NA,13.7
+CR0117,34,M,Black,High,Sports injury,8,1.03,547,No,405,2,No,366,1,Yes,457,No,Yes,7,No,10,0.48,0.42,Observation,None,0,No,No,,None,NA,14.8
+CR0118,17,M,White,Medium,Sports injury,1,0.73,300,Yes,221,5,No,262,2,No,321,No,No,44,No,8,1.18,1.2,Observation,None,0,No,No,,None,NA,6.0
+CR0119,52,M,Black,Low,Motor vehicle accident,1,0.5,1120,No,305,10,Yes,241,0,No,318,No,No,93,Yes,9,0.69,0.56,Observation,None,0,No,No,,None,NA,29.8
+CR0120,46,F,Other,Medium,Motor vehicle accident,6,2.95,198,Yes,214,1,Yes,214,3,Yes,358,Yes,No,22,No,10,1.42,1.86,Observation,None,0,No,Yes,18.5,Occult,NA,33.4
+CR0121,46,M,White,High,Motor vehicle accident,5,1.73,393,Yes,310,0,Yes,293,2,No,279,Yes,No,71,No,10,1.35,1.56,Anti-VEGF,Eylea,1,No,Yes,7.5,Occult,Poor,26.6
+CR0122,21,M,White,Medium,Blunt trauma,5,5.1,1606,No,233,4,Yes,249,1,No,274,No,No,92,Yes,6,0.42,0.32,Anti-VEGF,Lucentis,2,No,Yes,2.2,Classic,Good,25.4
+CR0123,56,M,White,High,Motor vehicle accident,6,1.85,1031,No,352,2,Yes,252,0,No,276,Yes,No,84,Yes,8,0.67,0.64,Observation,None,0,No,No,,None,NA,28.7
+CR0124,13,F,White,High,Blunt trauma,5,2.94,413,Yes,273,1,Yes,361,3,Yes,239,Yes,Yes,19,No,8,1.27,1.51,Anti-VEGF,Eylea,1,No,Yes,3.0,Occult,Good,30.7
+CR0125,43,M,White,Low,Blunt trauma,4,1.46,193,Yes,282,1,Yes,265,3,No,382,No,Yes,45,Yes,8,0.76,1.34,Anti-VEGF,Lucentis,4,No,Yes,10.3,Occult,Poor,46.7
+CR0126,67,M,White,Medium,Other,5,2.42,352,Yes,377,2,Yes,309,2,Yes,285,Yes,No,47,Yes,7,1.71,1.93,Anti-VEGF,Eylea,12,No,Yes,16.6,Mixed,Good,26.4
+CR0127,20,M,Hispanic,Low,Sports injury,12,0.5,267,Yes,236,1,Yes,282,3,Yes,397,No,No,38,No,8,1.26,1.61,Anti-VEGF,Eylea,5,No,Yes,5.0,Occult,Moderate,33.4
+CR0128,26,M,Black,High,Sports injury,6,1.76,154,Yes,321,4,Yes,212,2,No,357,Yes,No,57,No,9,1.23,1.39,Observation,None,0,No,No,,None,NA,10.1
+CR0129,36,F,White,Low,Motor vehicle accident,6,1.19,1087,No,241,2,Yes,187,2,Yes,318,No,No,32,No,8,0.33,0.3,Observation,None,0,No,No,,None,NA,16.5
+CR0130,27,F,Asian,Medium,Motor vehicle accident,7,4.76,232,Yes,351,6,Yes,304,0,Yes,376,No,No,69,No,9,1.35,1.4,Anti-VEGF,Eylea,4,No,Yes,11.5,Occult,Good,38.3
+CR0131,11,M,White,Medium,Blunt trauma,12,2.8,484,Yes,387,2,Yes,365,2,No,253,Yes,No,26,No,6,0.9,1.13,Anti-VEGF,Avastin,3,No,Yes,9.5,Occult,Moderate,39.4
+CR0132,36,F,Asian,Medium,Blunt trauma,4,4.31,390,Yes,264,0,Yes,295,3,Yes,265,No,No,30,Yes,10,1.15,1.6,Anti-VEGF,Lucentis,7,No,Yes,6.3,Classic,Good,44.7
+CR0133,19,M,White,Low,Blunt trauma,8,5.49,3217,No,150,5,Yes,311,3,No,369,No,No,37,No,10,0.37,1.05,Anti-VEGF,Eylea,1,No,Yes,8.2,Classic,Moderate,33.6
+CR0134,42,F,Asian,Medium,Fall,8,1.64,396,Yes,238,2,Yes,234,2,No,200,No,Yes,36,No,9,1.19,1.75,Anti-VEGF,Lucentis,12,No,Yes,6.1,Occult,Poor,39.9
+CR0135,21,M,Black,Medium,Sports injury,7,2.71,66,Yes,425,0,No,330,3,No,321,Yes,Yes,35,Yes,10,1.18,1.38,Anti-VEGF,Lucentis,1,No,Yes,11.8,Classic,Moderate,35.0
+CR0136,58,M,Hispanic,Low,Motor vehicle accident,2,0.94,75,Yes,244,2,Yes,330,3,Yes,361,No,Yes,58,No,6,0.86,1.15,Observation,None,0,No,No,,None,NA,16.7
+CR0137,23,M,Other,Low,Motor vehicle accident,8,3.26,714,No,386,1,Yes,245,3,No,411,No,No,70,Yes,9,0.73,0.64,Observation,None,0,No,No,,None,NA,7.9
+CR0138,30,M,White,Medium,Assault,2,3.61,731,Yes,243,5,No,307,2,Yes,426,No,No,14,No,6,1.12,1.38,Anti-VEGF,Eylea,5,Yes,Yes,8.5,Classic,Good,28.1
+CR0139,47,M,Other,Medium,Blunt trauma,7,3.11,434,Yes,242,1,No,191,2,No,310,No,Yes,69,No,8,1.04,1.24,Anti-VEGF,Avastin,9,No,Yes,1.1,Occult,Good,20.8
+CR0140,16,M,White,Medium,Blunt trauma,8,1.64,452,Yes,326,3,Yes,316,3,Yes,373,No,No,53,Yes,8,0.79,1.02,Anti-VEGF,Lucentis,12,No,Yes,4.2,Occult,Good,38.4
+CR0141,38,M,White,High,Motor vehicle accident,4,7.79,44,Yes,319,0,Yes,251,0,Yes,263,No,No,57,No,9,0.87,1.15,Anti-VEGF,Eylea,2,No,Yes,2.2,Classic,Moderate,38.9
+CR0142,54,M,White,Medium,Fall,10,2.53,581,No,331,1,Yes,218,0,No,288,Yes,No,68,No,8,0.0,0.08,Observation,None,0,No,No,,None,NA,11.9
+CR0143,10,M,Black,Low,Other,1,0.94,562,No,280,12,Yes,300,0,No,415,Yes,No,80,Yes,9,0.52,0.54,Anti-VEGF,Eylea,7,No,Yes,9.0,Classic,Good,38.9
+CR0144,37,M,White,Low,Blunt trauma,10,3.85,129,Yes,342,4,No,191,3,Yes,317,No,No,6,No,8,1.11,1.4,Anti-VEGF,Eylea,5,No,Yes,4.0,Occult,Good,20.6
+CR0145,38,F,Black,High,Assault,6,4.85,87,Yes,337,0,Yes,297,0,No,331,No,No,73,Yes,10,1.03,1.57,Observation,None,0,No,Yes,2.9,Occult,NA,41.6
+CR0146,46,M,Black,Medium,Fall,4,0.96,105,Yes,348,0,No,223,3,No,247,No,No,50,No,9,1.25,1.43,Anti-VEGF,Lucentis,2,No,Yes,1.6,Occult,Good,28.7
+CR0147,16,M,Hispanic,High,Blunt trauma,3,2.03,85,Yes,242,1,Yes,212,2,Yes,349,No,No,25,No,7,1.12,1.09,Anti-VEGF,Avastin,4,Yes,Yes,1.0,Occult,Good,33.7
+CR0148,15,M,Hispanic,Low,Motor vehicle accident,11,0.65,752,No,342,3,No,282,0,No,372,No,Yes,45,No,8,0.62,0.55,Anti-VEGF,Avastin,10,No,Yes,19.5,Classic,Good,41.6
+CR0149,42,F,White,Low,Motor vehicle accident,2,5.63,175,Yes,248,4,Yes,271,2,Yes,370,No,No,43,No,10,0.9,1.36,Anti-VEGF,Eylea,3,No,Yes,11.7,Classic,Moderate,34.8
+CR0150,39,M,White,Medium,Other,4,2.31,231,Yes,270,4,Yes,352,1,No,235,Yes,Yes,100,Yes,8,0.68,0.93,Anti-VEGF,Lucentis,3,No,Yes,1.5,Classic,Good,28.9
+CR0151,38,M,White,Low,Blunt trauma,5,1.2,152,Yes,269,2,Yes,215,3,No,389,Yes,No,25,No,8,1.39,1.47,Anti-VEGF,Eylea,5,No,Yes,6.2,Classic,Good,37.0
+CR0152,40,F,White,Medium,Fall,7,4.89,2532,No,220,4,Yes,348,2,Yes,250,No,No,26,No,9,0.27,0.33,Anti-VEGF,Eylea,8,No,Yes,1.0,Mixed,Good,22.3
+CR0153,24,F,White,Medium,Motor vehicle accident,7,2.47,1542,No,175,1,Yes,223,1,No,318,No,No,70,No,8,0.25,0.33,Anti-VEGF,Eylea,5,No,Yes,4.1,Occult,Good,14.6
+CR0154,38,M,White,High,Sports injury,3,4.45,209,Yes,353,0,No,325,0,Yes,206,No,No,100,Yes,7,0.41,0.85,Anti-VEGF,Eylea,9,No,Yes,3.8,Occult,Moderate,39.2
+CR0155,39,M,White,Medium,Motor vehicle accident,5,3.41,317,Yes,237,2,Yes,335,3,Yes,307,Yes,Yes,6,No,8,1.54,2.01,Anti-VEGF,Lucentis,12,No,Yes,2.7,Occult,Good,19.5
+CR0156,24,M,Other,Medium,Sports injury,4,1.06,188,Yes,263,9,No,296,3,Yes,249,No,No,55,No,7,1.0,1.11,Anti-VEGF,Lucentis,5,No,Yes,7.5,Classic,Poor,37.4
+CR0157,62,F,Black,Medium,Fall,4,1.6,541,No,236,4,Yes,240,2,No,288,No,No,30,No,7,0.44,0.51,Observation,None,0,No,No,,None,NA,21.1
+CR0158,42,M,White,Medium,Fall,6,1.23,15,Yes,264,2,Yes,203,3,No,324,Yes,No,32,No,6,0.93,1.05,Observation,None,0,No,No,,None,NA,19.9
+CR0159,17,M,Black,Low,Fall,8,0.88,890,No,249,3,No,182,0,No,377,No,No,54,No,8,0.2,0.05,Observation,None,0,No,No,,None,NA,12.4
+CR0160,44,F,White,High,Blunt trauma,4,0.5,592,No,356,8,Yes,372,3,Yes,375,No,Yes,35,Yes,8,0.71,0.78,Anti-VEGF,Avastin,5,No,Yes,1.0,Classic,Good,26.4
+CR0161,20,M,White,Medium,Sports injury,6,8.82,1831,No,244,1,Yes,265,1,No,200,No,Yes,55,No,10,0.66,0.75,Observation,None,0,No,No,,None,NA,20.1
+CR0162,46,M,Black,Medium,Blunt trauma,6,3.07,143,Yes,382,1,Yes,224,0,No,367,No,No,64,Yes,9,0.47,0.93,Anti-VEGF,Eylea,2,No,Yes,2.4,Mixed,Good,31.6
+CR0163,52,M,Black,Medium,Motor vehicle accident,12,3.4,1304,No,348,11,Yes,222,2,No,334,No,Yes,0,No,9,0.45,0.3,Observation,None,0,No,No,,None,NA,12.8
+CR0164,22,M,White,Medium,Motor vehicle accident,11,5.27,1256,No,251,5,No,288,3,No,280,No,Yes,5,No,5,1.11,1.18,Anti-VEGF,Eylea,8,No,Yes,9.0,Mixed,Moderate,35.9
+CR0165,49,M,Other,High,Motor vehicle accident,9,1.58,108,Yes,299,1,Yes,260,3,Yes,258,No,No,46,No,6,1.51,1.52,Anti-VEGF,Eylea,12,No,Yes,1.0,Occult,Good,36.5
+CR0166,41,M,Asian,High,Motor vehicle accident,4,0.7,406,Yes,311,1,Yes,184,2,Yes,315,No,No,65,No,10,0.93,1.05,Observation,None,0,No,No,,None,NA,23.9
+CR0167,47,M,Black,Medium,Other,2,4.18,149,Yes,330,1,No,323,2,No,336,Yes,No,100,No,9,1.09,1.33,Anti-VEGF,Lucentis,1,No,Yes,2.7,Occult,Good,26.5
+CR0168,63,M,Black,Medium,Blunt trauma,5,0.82,235,Yes,336,0,Yes,296,2,Yes,346,No,No,58,No,7,1.59,1.79,Observation,None,0,No,No,,None,NA,26.9
+CR0169,31,F,Black,High,Sports injury,5,4.11,244,Yes,291,9,Yes,371,3,Yes,306,No,No,29,No,8,0.95,1.22,Anti-VEGF,Eylea,3,Yes,Yes,9.9,Mixed,Good,35.0
+CR0170,23,M,White,Medium,Motor vehicle accident,6,0.6,649,No,222,1,No,337,0,Yes,200,Yes,Yes,35,No,8,0.0,0.33,Anti-VEGF,Avastin,1,No,Yes,29.6,Classic,Moderate,39.271356197295084
+CR0171,21,F,White,Medium,Blunt trauma,9,0.77,424,Yes,318,6,Yes,180,3,Yes,285,No,No,50,No,10,1.12,1.11,Anti-VEGF,Eylea,4,No,Yes,11.7,Classic,Good,31.7
+CR0172,22,M,White,Medium,Blunt trauma,10,1.45,2361,No,265,0,No,350,1,No,237,Yes,No,45,No,6,0.43,0.56,Observation,None,0,No,No,,None,NA,35.5
+CR0173,33,F,Black,Low,Assault,10,4.01,108,Yes,150,2,Yes,340,3,Yes,463,No,Yes,23,No,9,1.05,1.59,Anti-VEGF,Lucentis,1,No,Yes,3.7,Classic,Moderate,37.8
+CR0174,40,F,Black,High,Assault,5,7.13,2910,No,303,0,No,243,3,Yes,324,Yes,No,57,No,9,0.99,0.96,Anti-VEGF,Eylea,2,No,Yes,17.7,Occult,Good,39.2
+CR0175,39,M,White,High,Assault,8,3.39,209,Yes,235,4,No,258,2,No,371,Yes,No,45,No,10,1.15,1.23,Anti-VEGF,Eylea,5,No,Yes,9.2,Classic,Good,24.4
+CR0176,47,M,Other,Low,Other,5,1.5,1185,No,252,2,Yes,300,1,No,364,No,No,56,Yes,10,0.3,0.61,Anti-VEGF,Avastin,1,No,Yes,2.6,Occult,Moderate,31.0
+CR0177,35,F,Asian,Medium,Blunt trauma,2,4.71,331,Yes,280,2,Yes,229,3,No,341,No,Yes,5,No,7,1.12,1.24,Anti-VEGF,Lucentis,2,No,Yes,1.0,Occult,Moderate,28.5
+CR0178,56,M,Hispanic,Medium,Motor vehicle accident,8,0.58,123,Yes,186,0,Yes,267,2,Yes,290,No,No,44,No,9,0.91,1.25,Anti-VEGF,Eylea,1,No,Yes,8.7,Occult,Poor,30.0
+CR0179,31,M,Black,Low,Sports injury,1,1.11,1560,No,288,0,No,330,2,No,281,No,No,46,Yes,9,0.81,0.66,Observation,None,0,No,No,,None,NA,15.9
+CR0180,75,M,Hispanic,Low,Motor vehicle accident,6,2.66,295,Yes,260,0,Yes,305,3,No,200,No,No,70,Yes,9,1.13,1.47,Anti-VEGF,Lucentis,4,No,Yes,4.3,Classic,Moderate,20.1
+CR0181,44,F,White,Low,Motor vehicle accident,5,4.28,860,No,227,1,Yes,246,0,No,329,No,No,25,No,10,0.0,0.0,Observation,None,0,No,No,,None,NA,20.5
+CR0182,22,F,Hispanic,Medium,Motor vehicle accident,8,2.12,668,No,282,2,Yes,331,2,Yes,341,No,No,42,No,10,0.84,0.77,Anti-VEGF,Eylea,4,No,Yes,1.5,Occult,Good,23.8
+CR0183,18,F,White,Medium,Sports injury,9,1.94,510,No,178,2,No,295,0,No,316,No,No,93,Yes,6,0.23,0.15,Anti-VEGF,Avastin,1,No,Yes,6.9,Occult,Good,34.7
+CR0184,42,M,Hispanic,Medium,Sports injury,5,2.03,547,Yes,284,2,Yes,293,3,No,330,Yes,No,31,No,6,0.91,1.01,Anti-VEGF,Eylea,2,No,Yes,10.4,Classic,Good,29.8
+CR0185,31,F,White,High,Blunt trauma,9,5.24,1054,No,308,2,Yes,254,1,No,235,No,Yes,43,No,9,0.88,0.71,Observation,None,0,No,No,,None,NA,6.0
+CR0186,45,M,Hispanic,Medium,Motor vehicle accident,5,1.3,73,Yes,298,0,Yes,279,3,Yes,299,No,Yes,21,No,7,1.4,1.83,Anti-VEGF,Avastin,2,No,Yes,2.8,Classic,Moderate,41.1
+CR0187,42,M,Asian,High,Sports injury,6,1.04,882,Yes,327,0,Yes,241,2,Yes,274,No,No,40,No,6,1.11,1.73,Anti-VEGF,Lucentis,8,No,Yes,2.7,Occult,Poor,33.5
+CR0188,33,M,White,Low,Sports injury,8,2.01,1809,No,349,0,Yes,182,1,No,366,Yes,No,65,No,8,0.4,0.39,Observation,None,0,No,No,,None,NA,16.3
+CR0189,22,M,Black,Medium,Blunt trauma,8,5.73,47,Yes,275,5,Yes,266,2,No,322,No,No,46,No,10,1.03,1.27,Observation,None,0,No,No,,None,NA,17.3
+CR0190,12,M,Other,Medium,Sports injury,12,1.43,121,Yes,345,2,No,273,3,Yes,275,No,No,65,No,6,1.17,1.24,Anti-VEGF,Eylea,3,No,Yes,4.1,Classic,Good,20.2
+CR0191,28,M,Black,Medium,Blunt trauma,4,2.03,1008,No,274,0,No,286,1,No,308,No,Yes,67,Yes,9,0.38,0.26,Observation,None,0,No,No,,None,NA,19.5
+CR0192,47,M,Hispanic,High,Motor vehicle accident,8,0.57,459,Yes,238,0,Yes,340,3,No,247,No,Yes,64,Yes,5,1.1,1.62,Anti-VEGF,Avastin,2,No,Yes,4.6,Mixed,Poor,35.4
+CR0193,38,M,Black,High,Fall,7,2.1,413,Yes,256,6,Yes,247,2,No,297,No,No,37,No,6,1.07,1.23,Observation,None,0,No,No,,None,NA,34.0
+CR0194,16,M,White,Medium,Sports injury,11,2.96,117,Yes,296,4,Yes,261,3,No,360,Yes,No,46,Yes,8,1.1,1.3,Anti-VEGF,Lucentis,1,No,Yes,3.5,Occult,Good,29.3
+CR0195,37,M,White,High,Blunt trauma,3,0.82,565,No,345,3,Yes,318,2,Yes,226,No,No,37,No,6,0.66,0.61,Observation,None,0,No,No,,None,NA,20.4
+CR0196,40,M,White,Medium,Sports injury,8,5.24,108,Yes,280,1,Yes,242,1,No,315,No,No,82,No,10,0.94,0.98,Anti-VEGF,Lucentis,4,No,Yes,7.6,Classic,Good,39.5
+CR0197,21,M,Hispanic,Low,Sports injury,7,2.93,517,No,239,0,Yes,287,1,No,267,No,No,85,No,10,0.27,0.0,Observation,None,0,No,No,,None,NA,10.7
+CR0198,37,M,White,Low,Fall,5,1.63,1153,No,366,11,Yes,259,1,No,226,Yes,Yes,87,No,9,0.43,0.44,Observation,None,0,No,No,,None,NA,21.2
+CR0199,35,M,Black,Medium,Sports injury,6,2.95,239,Yes,193,4,No,267,2,Yes,450,No,No,40,No,7,1.24,1.59,Anti-VEGF,Lucentis,9,No,Yes,8.2,Occult,Good,23.9
+CR0200,17,M,Black,High,Sports injury,5,3.54,524,No,239,1,No,317,1,No,407,No,No,8,No,8,0.0,0.23,Observation,None,0,No,Yes,4.5,Occult,NA,31.0
+CR0201,40,M,Black,Low,Motor vehicle accident,7,0.5,3864,No,333,5,Yes,261,2,Yes,278,No,No,51,Yes,7,0.74,0.63,Observation,None,0,No,No,,None,NA,27.5
+CR0202,43,M,Hispanic,Low,Blunt trauma,10,3.03,928,No,385,4,Yes,319,0,Yes,299,No,Yes,35,No,7,0.0,0.0,Observation,None,0,No,No,,None,NA,6.8
+CR0203,51,M,Other,High,Blunt trauma,7,5.6,1472,No,308,1,No,182,2,No,200,No,No,27,No,8,0.49,0.48,Anti-VEGF,Eylea,10,No,Yes,2.6,Classic,Good,38.9
+CR0204,50,F,White,Medium,Motor vehicle accident,7,1.28,428,Yes,294,1,No,208,3,No,208,Yes,No,0,No,9,0.54,1.14,Anti-VEGF,Lucentis,3,No,Yes,3.1,Classic,Poor,32.9
+CR0205,14,M,Hispanic,High,Sports injury,7,1.65,1168,No,262,0,Yes,180,1,No,241,No,No,100,Yes,6,0.59,0.75,Observation,None,0,No,Yes,20.8,Occult,NA,31.1
+CR0206,20,M,Hispanic,Low,Motor vehicle accident,1,1.89,33,Yes,312,0,Yes,221,3,Yes,317,No,No,48,No,7,1.06,1.61,Observation,None,0,No,Yes,17.5,Classic,NA,40.8
+CR0207,42,M,Black,Low,Blunt trauma,4,4.31,104,Yes,287,3,Yes,372,1,No,311,Yes,No,68,No,10,0.83,0.96,Anti-VEGF,Eylea,7,No,Yes,1.3,Classic,Good,23.7
+CR0208,42,M,Asian,High,Blunt trauma,6,0.96,181,Yes,234,0,Yes,279,3,Yes,343,Yes,Yes,68,No,8,1.27,1.17,Anti-VEGF,Lucentis,7,No,Yes,1.7,Classic,Good,19.3
+CR0209,42,M,White,Low,Motor vehicle accident,5,3.42,411,Yes,261,5,Yes,243,2,No,367,Yes,No,50,No,10,0.61,0.76,Anti-VEGF,Avastin,1,No,Yes,3.0,Classic,Good,21.8
+CR0210,85,M,White,Medium,Blunt trauma,4,1.91,1495,No,227,16,Yes,319,2,Yes,339,No,No,42,No,10,0.62,0.73,Observation,None,0,No,No,,None,NA,24.3
+CR0211,43,M,Hispanic,Low,Sports injury,6,7.35,340,Yes,280,0,Yes,326,3,No,244,Yes,No,47,No,8,1.41,1.76,Anti-VEGF,Lucentis,7,No,Yes,12.7,Occult,Poor,26.0
+CR0212,52,M,White,Medium,Blunt trauma,5,2.0,850,No,289,1,Yes,218,1,No,342,No,No,67,No,7,0.49,0.42,Observation,None,0,No,No,,None,NA,13.0
+CR0213,49,M,Hispanic,Low,Sports injury,4,0.5,988,No,378,4,Yes,404,2,Yes,364,Yes,No,15,Yes,9,0.5,0.45,Observation,None,0,No,No,,None,NA,12.2
+CR0214,44,F,Asian,High,Assault,6,3.89,705,No,244,4,No,293,1,Yes,290,No,Yes,94,Yes,7,0.46,0.54,Anti-VEGF,Eylea,4,No,Yes,5.8,Mixed,Good,31.4
+CR0215,30,F,White,High,Blunt trauma,3,3.3,353,Yes,269,4,Yes,300,1,No,200,No,Yes,73,No,7,0.93,1.51,Anti-VEGF,Eylea,7,Yes,Yes,7.5,Occult,Moderate,29.8
+CR0216,46,M,Asian,High,Motor vehicle accident,11,2.84,688,No,355,1,Yes,304,2,No,402,No,Yes,4,No,9,0.79,0.72,Anti-VEGF,Lucentis,2,No,Yes,4.1,Occult,Good,18.6
+CR0217,23,F,White,Low,Blunt trauma,10,5.49,335,Yes,388,1,Yes,304,0,No,326,No,No,85,Yes,8,1.11,1.46,Anti-VEGF,Eylea,3,No,Yes,3.1,Mixed,Moderate,18.9
+CR0218,31,M,Black,Low,Sports injury,8,0.5,70,Yes,308,2,Yes,248,3,No,200,No,No,40,No,7,1.15,1.46,Anti-VEGF,Eylea,7,No,Yes,3.9,Classic,Good,25.8
+CR0219,27,M,Black,Low,Sports injury,2,1.13,3947,No,264,10,Yes,385,0,No,464,Yes,Yes,100,Yes,9,0.36,0.24,Observation,None,0,No,No,,None,NA,27.3
+CR0220,36,M,Asian,Low,Motor vehicle accident,9,2.41,108,Yes,251,1,Yes,265,3,Yes,286,No,No,45,No,9,1.08,1.44,Anti-VEGF,Lucentis,2,No,Yes,1.5,Classic,Moderate,26.6
+CR0221,69,M,White,High,Motor vehicle accident,9,2.73,60,Yes,169,7,Yes,327,1,Yes,490,Yes,No,51,No,6,1.05,1.4,Anti-VEGF,Eylea,12,No,Yes,8.2,Occult,Good,18.2
+CR0222,10,F,Black,Medium,Assault,9,2.15,1686,No,224,0,Yes,256,1,Yes,346,Yes,No,39,No,7,0.57,0.54,Anti-VEGF,Lucentis,6,No,Yes,2.6,Occult,Good,29.3
+CR0223,45,M,Black,High,Blunt trauma,2,0.58,287,Yes,286,13,Yes,247,3,No,305,No,No,65,No,7,1.21,1.38,Anti-VEGF,Lucentis,3,No,Yes,2.8,Occult,Good,30.3
+CR0224,10,F,Hispanic,High,Blunt trauma,7,1.67,840,No,269,3,No,375,1,Yes,332,Yes,No,73,Yes,8,0.58,0.41,Observation,None,0,No,No,,None,NA,8.1
+CR0225,27,M,Black,High,Fall,9,7.01,319,Yes,317,1,Yes,274,2,No,270,No,No,22,Yes,9,1.1,1.44,Anti-VEGF,Lucentis,12,No,Yes,2.3,Classic,Good,20.3
+CR0226,51,F,White,Medium,Sports injury,7,0.92,397,Yes,268,2,Yes,278,2,No,324,Yes,No,25,No,9,1.09,1.31,Anti-VEGF,Lucentis,4,No,Yes,13.9,Classic,Good,36.0
+CR0227,35,M,White,High,Assault,7,2.37,243,Yes,236,0,Yes,294,2,No,460,No,No,65,No,9,0.88,1.27,Anti-VEGF,Eylea,3,No,Yes,3.3,Occult,Poor,20.2
+CR0228,18,M,White,High,Sports injury,6,3.43,336,Yes,300,0,Yes,410,2,No,257,Yes,No,49,No,5,1.14,1.29,Anti-VEGF,Lucentis,5,No,Yes,5.7,Mixed,Good,36.3
+CR0229,24,M,Hispanic,High,Fall,7,4.22,423,Yes,430,0,Yes,388,2,Yes,357,Yes,No,61,No,6,0.96,1.16,Anti-VEGF,Lucentis,7,No,Yes,1.0,Occult,Good,17.6
+CR0230,45,M,White,High,Motor vehicle accident,1,3.87,1019,No,260,0,Yes,344,1,No,269,Yes,No,79,Yes,7,0.67,0.65,Observation,None,0,No,No,,None,NA,7.9
+CR0231,24,M,White,Low,Sports injury,7,1.57,573,No,288,1,No,422,0,Yes,308,No,No,58,No,7,0.09,0.0,Observation,None,0,No,No,,None,NA,20.2
+CR0232,38,M,Asian,Low,Assault,2,1.12,2299,No,330,4,No,232,3,Yes,458,No,Yes,75,No,6,0.82,1.03,Anti-VEGF,Lucentis,1,No,Yes,1.0,Classic,Poor,24.0
+CR0233,35,F,White,Low,Sports injury,6,7.39,34,Yes,245,2,Yes,312,2,No,356,No,No,32,No,8,1.03,1.19,Anti-VEGF,Lucentis,3,Yes,Yes,1.6,Occult,Good,25.7
+CR0234,25,M,Other,Medium,Blunt trauma,5,4.51,559,No,356,0,No,283,0,Yes,372,No,No,91,No,6,0.37,0.34,Observation,None,0,No,No,,None,NA,21.2
+CR0235,67,M,Black,High,Blunt trauma,7,2.55,702,No,185,5,Yes,191,1,No,324,No,Yes,96,No,9,0.44,0.88,Anti-VEGF,Avastin,12,No,Yes,16.5,Classic,Moderate,25.5
+CR0236,44,M,Hispanic,Low,Blunt trauma,3,6.13,2022,No,255,2,No,303,3,No,500,No,No,40,No,9,0.55,0.63,Anti-VEGF,Eylea,4,No,Yes,5.4,Classic,Moderate,22.4
+CR0237,10,M,White,High,Blunt trauma,8,0.71,40,Yes,261,9,Yes,255,0,No,253,No,Yes,52,Yes,9,1.07,1.17,Anti-VEGF,Lucentis,2,No,Yes,14.9,Occult,Moderate,33.9
+CR0238,37,M,White,High,Motor vehicle accident,9,0.5,681,No,289,3,Yes,356,2,Yes,209,Yes,No,26,No,6,0.38,0.47,Observation,None,0,No,No,,None,NA,21.4
+CR0239,25,M,Hispanic,High,Sports injury,3,2.7,1537,No,161,0,Yes,260,1,No,438,No,Yes,88,Yes,10,0.61,0.47,Observation,None,0,No,No,,None,NA,20.3
+CR0240,47,M,Hispanic,High,Sports injury,2,2.8,221,Yes,361,1,Yes,257,1,Yes,293,No,Yes,85,No,10,0.53,0.78,Observation,None,0,No,No,,None,NA,19.9
+CR0241,23,M,Hispanic,High,Motor vehicle accident,3,0.64,1671,No,304,3,No,356,2,No,348,Yes,No,66,No,7,0.53,0.92,Anti-VEGF,Eylea,3,Yes,Yes,11.0,Occult,Moderate,23.6
+CR0242,33,M,White,Medium,Sports injury,10,4.4,15,Yes,347,0,No,276,2,Yes,440,Yes,No,62,No,9,1.48,1.76,Anti-VEGF,Lucentis,1,No,Yes,2.3,Mixed,Good,21.9
+CR0243,42,M,Hispanic,Medium,Blunt trauma,7,0.5,1054,No,376,0,Yes,338,1,No,349,No,Yes,55,No,10,0.38,0.86,Anti-VEGF,Eylea,3,No,Yes,6.9,Occult,Poor,27.2
+CR0244,47,M,Hispanic,High,Blunt trauma,6,3.15,2163,No,235,0,No,301,2,Yes,476,No,No,68,No,8,0.62,0.39,Observation,None,0,No,No,,None,NA,13.7
+CR0245,16,M,Black,High,Blunt trauma,2,3.68,856,No,150,0,No,301,2,Yes,329,No,No,19,No,8,1.0,0.81,Observation,None,0,No,No,,None,NA,19.9
+CR0246,29,M,Hispanic,Low,Motor vehicle accident,7,2.68,462,Yes,348,1,Yes,267,3,Yes,270,No,No,51,Yes,8,1.21,1.6,Anti-VEGF,Lucentis,2,No,Yes,12.2,Occult,Moderate,26.9
+CR0247,27,M,Hispanic,High,Blunt trauma,10,0.55,36,Yes,262,2,Yes,305,3,Yes,200,No,No,88,Yes,8,1.31,1.7,Anti-VEGF,Avastin,11,No,Yes,3.8,Occult,Poor,30.1
+CR0248,25,M,Black,High,Blunt trauma,9,5.45,2021,No,212,0,Yes,273,2,No,341,Yes,No,46,No,8,0.75,0.62,Observation,None,0,No,No,,None,NA,19.3
+CR0249,61,F,White,Low,Motor vehicle accident,7,1.61,508,No,314,3,Yes,239,2,Yes,200,Yes,No,4,No,10,0.26,0.43,Anti-VEGF,Eylea,7,No,Yes,13.3,Classic,Good,44.1
+CR0250,41,M,Black,High,Fall,2,1.62,23,Yes,427,2,Yes,274,1,Yes,342,Yes,Yes,68,No,9,0.83,1.07,Anti-VEGF,Eylea,8,No,Yes,1.3,Mixed,Good,18.9
+CR0251,16,F,White,High,Blunt trauma,2,1.36,936,No,273,1,Yes,344,2,No,422,Yes,Yes,83,Yes,7,0.63,0.68,Observation,None,0,No,No,,None,NA,18.5
+CR0252,48,M,White,Medium,Sports injury,1,3.97,525,No,337,0,Yes,306,2,Yes,318,Yes,No,35,No,9,0.2,0.11,Observation,None,0,No,No,,None,NA,11.1
+CR0253,66,M,White,High,Sports injury,4,1.55,106,Yes,220,0,Yes,318,1,No,333,No,No,100,No,9,1.29,1.74,Anti-VEGF,Lucentis,8,No,Yes,6.2,Occult,Poor,26.1
+CR0254,50,M,White,Medium,Fall,3,0.84,192,Yes,178,1,No,280,2,No,384,No,No,20,No,6,1.29,1.97,Anti-VEGF,Avastin,5,No,Yes,4.7,Classic,Poor,23.5
+CR0255,12,F,White,Low,Assault,5,4.76,53,Yes,334,0,Yes,183,1,Yes,366,No,No,67,Yes,8,1.1,1.36,Anti-VEGF,Eylea,2,No,Yes,2.4,Occult,Poor,35.1
+CR0256,27,M,White,High,Blunt trauma,6,2.33,683,No,312,1,Yes,218,2,Yes,401,No,No,35,No,10,0.93,1.22,Anti-VEGF,Avastin,2,Yes,Yes,4.3,Occult,Poor,18.2
+CR0257,54,F,Hispanic,Medium,Blunt trauma,11,4.87,778,No,252,2,Yes,265,1,Yes,318,No,No,100,No,9,0.63,0.49,Observation,None,0,No,No,,None,NA,26.2
+CR0258,24,F,Asian,Medium,Assault,7,2.46,563,No,382,2,Yes,223,3,Yes,200,No,No,33,No,7,0.69,1.14,Anti-VEGF,Avastin,3,No,Yes,6.1,Mixed,Moderate,34.2
+CR0259,41,M,White,High,Motor vehicle accident,9,1.28,1359,No,174,0,Yes,253,0,No,402,No,No,37,No,6,0.0,0.41,Anti-VEGF,Eylea,5,No,Yes,16.1,Mixed,Good,46.4
+CR0260,46,M,Asian,Medium,Sports injury,8,0.5,1578,No,206,1,Yes,251,2,Yes,303,No,No,87,Yes,8,0.43,0.4,Observation,None,0,No,No,,None,NA,34.4
+CR0261,21,M,Black,High,Sports injury,2,2.71,764,No,247,2,Yes,253,0,No,258,Yes,No,79,Yes,8,0.14,0.14,Observation,None,0,No,No,,None,NA,13.6
+CR0262,34,M,White,Medium,Sports injury,8,1.89,10,Yes,258,5,Yes,351,3,Yes,343,No,No,53,Yes,8,1.4,1.58,Anti-VEGF,Lucentis,4,No,Yes,14.1,Classic,Good,39.9
+CR0263,10,F,White,High,Assault,5,4.08,950,Yes,367,4,Yes,277,3,Yes,333,Yes,No,7,No,9,1.27,1.6,Anti-VEGF,Avastin,1,No,Yes,8.8,Occult,Moderate,27.4
+CR0264,19,F,Black,Medium,Other,7,1.49,433,Yes,282,2,Yes,326,3,Yes,267,No,No,45,No,6,0.86,1.07,Anti-VEGF,Lucentis,2,Yes,Yes,11.4,Occult,Good,32.4
+CR0265,31,M,Hispanic,High,Sports injury,5,3.22,666,No,268,1,Yes,288,2,No,230,Yes,No,40,No,6,0.82,0.92,Observation,None,0,No,Yes,2.1,Classic,NA,43.8
+CR0266,16,M,Hispanic,Low,Blunt trauma,12,2.39,837,No,203,1,Yes,350,3,No,352,No,No,20,No,8,1.08,1.23,Anti-VEGF,Eylea,12,No,Yes,1.7,Occult,Good,23.9
+CR0267,59,F,White,High,Assault,5,1.19,344,Yes,345,6,Yes,331,1,No,260,No,No,88,No,6,1.32,1.62,Anti-VEGF,Eylea,2,No,Yes,7.3,Occult,Poor,30.4
+CR0268,13,M,White,Medium,Blunt trauma,5,1.59,1992,No,211,0,Yes,250,1,No,328,Yes,No,40,No,10,0.17,0.32,Anti-VEGF,Eylea,7,No,Yes,2.3,Classic,Moderate,14.4
+CR0269,28,F,White,Medium,Blunt trauma,11,0.69,115,Yes,203,13,No,378,3,Yes,346,No,No,20,No,6,1.33,1.53,Anti-VEGF,Eylea,7,No,Yes,4.0,Occult,Good,37.1
+CR0270,36,M,White,Medium,Assault,1,7.73,890,No,255,3,Yes,257,1,Yes,387,Yes,No,99,Yes,9,0.2,0.14,Anti-VEGF,Eylea,6,No,Yes,8.6,Occult,Good,46.8
+CR0271,56,M,White,Medium,Blunt trauma,8,3.17,3,Yes,289,3,No,290,1,Yes,468,Yes,No,60,No,8,1.43,1.59,Observation,None,0,No,No,,None,NA,24.6
+CR0272,13,M,White,Medium,Blunt trauma,8,0.65,2068,No,236,0,No,298,1,No,336,Yes,No,65,Yes,8,0.46,0.36,Observation,None,0,No,No,,None,NA,30.9
+CR0273,52,M,Hispanic,Low,Blunt trauma,9,7.47,95,Yes,322,2,Yes,304,2,Yes,290,No,No,41,Yes,9,1.01,1.37,Anti-VEGF,Eylea,12,No,Yes,12.7,Classic,Good,39.1
+CR0274,35,M,Asian,Low,Fall,12,0.91,79,Yes,263,1,Yes,319,2,Yes,436,Yes,No,32,No,8,0.96,1.18,Anti-VEGF,Eylea,2,No,Yes,6.3,Occult,Moderate,24.3
+CR0275,20,M,White,High,Motor vehicle accident,12,1.47,323,Yes,343,0,Yes,242,3,Yes,393,No,Yes,53,Yes,9,1.33,1.5,Anti-VEGF,Eylea,1,No,Yes,1.9,Occult,Good,32.6
+CR0276,41,M,Asian,Medium,Sports injury,2,2.0,374,Yes,310,0,Yes,315,2,Yes,331,Yes,Yes,43,No,8,1.23,1.27,Anti-VEGF,Lucentis,5,No,Yes,4.9,Classic,Good,34.0
+CR0277,37,M,White,Low,Blunt trauma,9,2.43,192,Yes,387,6,Yes,309,0,Yes,336,Yes,No,44,No,9,0.39,0.59,Observation,None,0,No,No,,None,NA,10.7
+CR0278,25,F,Black,Low,Fall,7,4.01,703,No,253,2,Yes,280,0,Yes,321,No,No,60,No,9,0.65,0.65,Anti-VEGF,Eylea,1,No,Yes,8.9,Mixed,Good,41.6
+CR0279,36,M,White,Low,Fall,7,0.5,468,Yes,330,1,Yes,270,3,No,331,Yes,No,23,No,9,1.37,1.41,Observation,None,0,No,No,,None,NA,16.0
+CR0280,29,M,Black,Medium,Motor vehicle accident,3,2.46,27,Yes,172,0,Yes,239,3,Yes,312,Yes,Yes,30,No,9,1.6,1.77,Anti-VEGF,Eylea,3,No,Yes,2.6,Classic,Good,28.3
+CR0281,36,M,Other,High,Motor vehicle accident,7,1.92,308,Yes,450,3,No,304,3,No,251,Yes,No,42,No,9,1.68,1.77,Observation,None,0,No,No,,None,NA,17.9
+CR0282,44,M,Black,Medium,Blunt trauma,12,2.75,1330,Yes,327,3,Yes,246,2,No,320,No,No,46,No,10,1.08,1.34,Anti-VEGF,Lucentis,3,No,Yes,1.0,Classic,Good,30.3
+CR0283,58,M,White,Medium,Other,11,1.84,936,No,262,2,No,291,3,Yes,443,No,No,0,No,8,0.96,1.09,Anti-VEGF,Eylea,4,No,Yes,14.6,Classic,Good,48.0
+CR0284,16,M,Black,Medium,Sports injury,6,1.65,1032,No,264,2,No,274,2,Yes,262,Yes,No,60,Yes,9,0.46,0.39,Observation,None,0,No,No,,None,NA,15.1
+CR0285,66,M,White,Medium,Assault,1,2.19,958,No,265,1,No,213,2,Yes,301,Yes,No,38,No,6,0.48,0.52,Anti-VEGF,Lucentis,2,No,Yes,6.8,Occult,Good,17.6
+CR0286,10,M,Asian,Low,Motor vehicle accident,6,7.2,297,Yes,390,2,No,233,3,No,257,No,No,17,No,8,1.64,1.37,Anti-VEGF,Eylea,7,No,Yes,7.9,Occult,Good,31.3
+CR0287,32,M,Black,Medium,Fall,9,1.68,83,Yes,333,0,Yes,300,2,Yes,401,Yes,No,59,No,8,0.92,1.05,Anti-VEGF,Avastin,6,No,Yes,5.9,Occult,Good,23.1
+CR0288,43,M,White,Low,Fall,8,5.29,254,Yes,253,8,Yes,253,2,Yes,378,No,No,0,No,10,1.15,1.71,Anti-VEGF,Lucentis,3,No,Yes,4.1,Classic,Moderate,26.7
+CR0289,39,F,Black,Medium,Sports injury,6,2.66,1426,Yes,205,2,Yes,252,1,Yes,230,No,No,43,No,8,0.72,0.86,Observation,None,0,No,No,,None,NA,25.0
+CR0290,25,M,Black,High,Other,1,2.57,3148,No,351,1,Yes,241,1,No,200,No,No,100,Yes,9,0.29,0.13,Observation,None,0,No,No,,None,NA,11.3
+CR0291,31,M,White,Medium,Motor vehicle accident,6,2.77,544,No,330,1,No,243,2,No,380,Yes,Yes,42,No,5,0.47,0.38,Observation,None,0,No,No,,None,NA,17.1
+CR0292,27,M,Black,Low,Blunt trauma,6,3.42,7,Yes,322,4,No,362,3,No,226,No,No,25,No,8,1.61,1.97,Anti-VEGF,Avastin,4,No,Yes,3.6,Mixed,Poor,32.3
+CR0293,26,M,White,High,Sports injury,11,1.79,120,Yes,274,0,Yes,224,3,Yes,377,No,No,42,Yes,10,1.38,1.74,Anti-VEGF,Lucentis,8,Yes,Yes,4.6,Classic,Good,23.8
+CR0294,47,M,Hispanic,High,Sports injury,7,5.05,310,Yes,262,1,Yes,353,2,No,275,No,No,36,No,7,1.31,1.66,Anti-VEGF,Lucentis,3,Yes,Yes,7.2,Classic,Good,29.7
+CR0295,40,M,Hispanic,Low,Sports injury,5,3.43,691,No,381,3,Yes,263,0,No,368,No,No,75,No,5,0.0,0.0,Observation,None,0,No,No,,None,NA,22.3
+CR0296,24,F,Hispanic,High,Blunt trauma,7,0.75,62,Yes,386,1,Yes,247,1,No,351,No,Yes,84,No,8,0.96,1.16,Anti-VEGF,Eylea,3,No,Yes,1.0,Classic,Good,29.1
+CR0297,48,M,Black,Medium,Motor vehicle accident,2,0.5,2296,Yes,318,4,Yes,299,2,No,282,No,No,36,No,9,1.0,1.03,Anti-VEGF,Eylea,6,No,Yes,7.1,Classic,Good,31.3
+CR0298,39,M,Black,Medium,Motor vehicle accident,12,7.05,363,Yes,338,0,Yes,282,2,No,258,Yes,No,47,No,8,1.22,1.48,Anti-VEGF,Eylea,3,No,Yes,6.7,Occult,Moderate,32.9
+CR0299,47,M,White,Medium,Motor vehicle accident,6,2.83,1949,No,294,4,No,270,2,Yes,360,No,No,36,No,8,1.2,1.09,Observation,None,0,No,No,,None,NA,14.6
+CR0300,44,M,Hispanic,Medium,Sports injury,6,0.67,1213,No,197,0,Yes,290,0,Yes,271,Yes,No,58,Yes,9,0.0,0.0,Observation,None,0,No,No,,None,NA,8.3
+CR0301,22,M,White,High,Sports injury,5,1.68,1126,No,221,0,No,281,3,No,397,No,No,17,No,7,0.85,0.84,Observation,None,0,No,No,,None,NA,11.7
+CR0302,26,M,Black,Medium,Blunt trauma,8,4.51,746,No,348,6,Yes,269,1,No,261,No,No,100,Yes,9,1.0,1.08,Observation,None,0,No,No,,None,NA,10.4
+CR0303,46,M,White,Medium,Motor vehicle accident,8,2.09,788,No,356,2,No,326,2,No,344,No,No,52,No,7,0.47,0.41,Observation,None,0,No,No,,None,NA,29.9
+CR0304,44,F,White,Medium,Blunt trauma,8,2.24,812,No,343,1,Yes,207,1,No,292,No,Yes,95,Yes,8,0.49,0.33,Observation,None,0,No,No,,None,NA,6.1
+CR0305,34,M,Black,High,Blunt trauma,5,3.95,792,Yes,300,0,No,234,1,No,320,Yes,No,75,Yes,9,1.12,1.6,Observation,None,0,No,Yes,8.7,Classic,NA,35.0
+CR0306,36,M,White,Medium,Fall,5,3.04,645,No,345,2,Yes,240,2,No,270,Yes,No,44,Yes,10,0.06,0.03,Observation,None,0,No,No,,None,NA,14.5
+CR0307,54,M,Hispanic,High,Assault,3,3.61,3438,Yes,276,2,Yes,227,3,No,307,No,Yes,36,No,9,1.32,1.4,Observation,None,0,No,No,,None,NA,28.3
+CR0308,26,M,White,High,Motor vehicle accident,7,3.92,1054,No,317,14,Yes,284,1,Yes,200,No,No,98,Yes,9,0.25,0.39,Observation,None,0,No,No,,None,NA,16.6
+CR0309,43,M,White,High,Fall,1,1.32,1200,No,267,12,No,305,1,No,263,No,No,68,Yes,8,0.96,0.93,Observation,None,0,No,No,,None,NA,20.2
+CR0310,31,M,Black,High,Assault,7,1.43,1647,Yes,216,3,Yes,181,1,No,278,Yes,No,55,No,6,0.9,1.34,Anti-VEGF,Avastin,8,No,Yes,13.2,Classic,Moderate,34.1
+CR0311,31,M,White,Low,Fall,10,1.18,194,Yes,331,1,Yes,256,3,No,314,No,Yes,50,No,7,1.07,1.18,Anti-VEGF,Avastin,5,No,Yes,2.7,Mixed,Poor,40.0
+CR0312,51,F,White,High,Blunt trauma,10,1.49,70,Yes,356,2,Yes,263,3,Yes,410,No,No,36,No,10,1.46,1.77,Anti-VEGF,Lucentis,4,No,Yes,1.2,Classic,Poor,25.4
+CR0313,47,M,Hispanic,Low,Other,6,2.17,527,No,428,3,Yes,265,0,Yes,271,No,No,79,No,10,0.42,0.42,Observation,None,0,No,No,,None,NA,15.1
+CR0314,47,M,White,Low,Motor vehicle accident,6,2.29,577,No,295,0,No,215,1,No,418,No,Yes,89,No,10,0.67,0.65,Observation,None,0,No,No,,None,NA,24.1
+CR0315,54,F,Hispanic,Medium,Motor vehicle accident,2,6.01,1413,No,217,1,Yes,264,3,No,259,No,No,28,No,6,1.23,1.14,Observation,None,0,No,No,,None,NA,7.3
+CR0316,35,M,White,High,Blunt trauma,8,2.93,469,Yes,260,0,Yes,234,2,No,242,No,No,35,No,8,0.95,1.22,Anti-VEGF,Eylea,7,Yes,Yes,5.6,Mixed,Good,16.3
+CR0317,45,M,White,Medium,Motor vehicle accident,9,2.2,676,No,271,0,No,263,2,Yes,200,No,Yes,33,No,9,1.03,1.22,Anti-VEGF,Eylea,6,No,Yes,8.8,Occult,Good,32.9
+CR0318,30,M,Hispanic,Low,Blunt trauma,4,0.96,599,No,288,0,No,194,1,No,362,Yes,No,100,No,9,0.92,0.9,Anti-VEGF,Eylea,3,No,Yes,6.1,Occult,Good,35.4
+CR0319,39,M,White,Medium,Blunt trauma,6,1.88,31,Yes,308,1,No,263,3,No,326,No,No,40,No,9,1.06,1.1,Observation,None,0,No,No,,None,NA,22.7
+CR0320,33,M,White,High,Motor vehicle accident,9,7.41,764,No,301,4,Yes,244,1,Yes,358,No,No,78,No,9,0.28,0.44,Anti-VEGF,Eylea,1,No,Yes,6.9,Occult,Moderate,29.2
+CR0321,36,F,White,Medium,Fall,10,7.33,1408,No,326,1,Yes,266,1,No,329,No,Yes,51,Yes,8,0.46,0.58,Anti-VEGF,Eylea,10,No,Yes,2.9,Occult,Good,25.7
+CR0322,43,M,White,Low,Assault,4,1.86,137,Yes,291,1,Yes,295,0,No,319,No,No,89,No,7,0.75,1.01,Anti-VEGF,Lucentis,4,Yes,Yes,4.1,Classic,Moderate,42.7
+CR0323,22,M,Hispanic,Low,Motor vehicle accident,7,0.5,721,Yes,150,0,No,277,3,No,339,No,No,48,No,7,1.68,2.01,Anti-VEGF,Eylea,8,No,Yes,7.1,Mixed,Good,43.7
+CR0324,66,M,White,High,Fall,4,1.66,720,No,293,2,Yes,319,2,No,470,No,No,23,No,5,0.38,0.28,Observation,None,0,No,No,,None,NA,20.9
+CR0325,19,M,Hispanic,Medium,Fall,2,6.05,143,Yes,285,0,Yes,261,3,No,286,No,Yes,78,Yes,8,1.31,1.43,Anti-VEGF,Lucentis,1,No,Yes,3.7,Occult,Good,24.5
+CR0326,16,M,Asian,High,Fall,11,2.18,105,Yes,313,2,Yes,310,3,No,463,No,No,46,Yes,6,1.06,1.76,Anti-VEGF,Avastin,1,No,Yes,5.3,Mixed,Moderate,21.9
+CR0327,52,M,White,High,Blunt trauma,9,3.95,3131,No,258,11,Yes,336,0,Yes,379,No,No,62,No,8,0.33,0.16,Observation,None,0,No,No,,None,NA,23.4
+CR0328,46,F,Asian,Low,Sports injury,9,2.38,400,Yes,293,0,No,293,0,No,345,Yes,Yes,74,No,9,1.34,1.91,Anti-VEGF,Lucentis,2,No,Yes,3.8,Mixed,Poor,20.2
+CR0329,44,M,White,High,Assault,1,0.61,206,Yes,313,0,Yes,278,3,Yes,358,No,No,32,No,10,1.71,1.64,Anti-VEGF,Eylea,6,Yes,Yes,1.9,Classic,Good,20.4
+CR0330,44,M,Other,High,Sports injury,10,2.44,150,Yes,270,1,Yes,300,2,Yes,200,No,No,70,No,10,1.19,1.49,Anti-VEGF,Eylea,3,No,Yes,8.6,Classic,Good,26.1
+CR0331,34,M,White,High,Motor vehicle accident,6,4.32,881,Yes,320,10,No,295,2,Yes,301,Yes,Yes,58,Yes,7,1.26,1.63,Observation,None,0,No,No,,None,NA,24.1
+CR0332,21,M,Black,Low,Motor vehicle accident,5,1.48,752,No,284,4,Yes,330,0,Yes,273,Yes,No,84,Yes,6,0.42,0.78,Anti-VEGF,Eylea,3,No,Yes,13.5,Classic,Moderate,41.7
+CR0333,36,M,Black,Low,Sports injury,7,4.24,825,No,289,6,Yes,319,0,No,467,No,No,100,Yes,7,0.22,0.3,Observation,None,0,No,No,,None,NA,22.0
+CR0334,24,M,White,Medium,Motor vehicle accident,2,2.56,73,Yes,150,1,No,320,2,No,296,No,Yes,19,No,10,1.58,1.77,Anti-VEGF,Eylea,6,No,Yes,7.9,Mixed,Good,34.0
+CR0335,49,F,Black,Low,Blunt trauma,8,4.09,1791,No,211,14,No,282,2,Yes,317,No,No,55,Yes,8,0.93,1.12,Anti-VEGF,Eylea,1,No,Yes,7.3,Mixed,Good,37.9
+CR0336,32,M,Hispanic,High,Motor vehicle accident,7,3.07,394,Yes,211,0,Yes,297,3,No,316,Yes,No,50,Yes,7,1.31,1.43,Observation,None,0,No,No,,None,NA,27.1
+CR0337,22,M,White,Medium,Fall,4,1.02,300,Yes,292,0,Yes,296,3,No,228,Yes,No,35,Yes,10,1.2,1.5,Observation,None,0,No,No,,None,NA,15.6
+CR0338,30,F,White,Medium,Fall,4,1.89,496,Yes,356,5,Yes,219,3,No,280,No,No,35,No,8,1.21,1.49,Observation,None,0,No,Yes,9.1,Occult,NA,37.0
+CR0339,41,F,Hispanic,High,Blunt trauma,4,1.84,395,Yes,272,7,No,333,3,No,377,Yes,No,58,No,10,1.33,1.71,Anti-VEGF,Eylea,1,No,Yes,9.4,Classic,Good,38.3
+CR0340,26,M,Black,Medium,Other,1,1.42,1593,Yes,330,0,No,196,2,Yes,200,Yes,No,56,No,7,1.09,1.35,Anti-VEGF,Eylea,5,No,Yes,12.1,Classic,Good,32.5
+CR0341,22,M,Other,Low,Motor vehicle accident,7,2.89,2119,No,318,0,Yes,315,0,No,341,Yes,No,46,Yes,8,0.58,0.44,Observation,None,0,No,No,,None,NA,21.1
+CR0342,38,M,Hispanic,High,Sports injury,10,8.28,289,Yes,288,0,Yes,293,3,No,256,Yes,No,76,Yes,8,1.37,1.53,Anti-VEGF,Avastin,1,No,Yes,4.4,Mixed,Good,34.8
+CR0343,38,F,Asian,High,Fall,1,5.05,1595,No,314,0,Yes,265,0,No,410,Yes,No,97,No,10,0.06,0.0,Anti-VEGF,Avastin,8,Yes,Yes,9.3,Mixed,Good,34.0
+CR0344,27,F,Hispanic,High,Fall,1,5.51,1216,No,294,0,Yes,299,1,No,347,No,No,69,No,10,0.16,0.0,Anti-VEGF,Avastin,6,No,Yes,1.9,Classic,Good,15.1
+CR0345,27,M,White,High,Assault,7,1.34,2136,No,271,10,Yes,300,0,No,213,Yes,No,59,Yes,9,0.55,0.38,Observation,None,0,No,No,,None,NA,23.4
+CR0346,38,F,White,Low,Motor vehicle accident,9,5.57,225,Yes,303,3,No,214,2,No,290,No,No,62,Yes,7,0.81,0.95,Anti-VEGF,Eylea,1,Yes,Yes,13.2,Classic,Good,39.4
+CR0347,13,M,Hispanic,Medium,Fall,5,6.83,688,No,366,4,Yes,350,1,No,351,No,No,84,No,8,0.36,0.67,Anti-VEGF,Eylea,11,No,Yes,3.8,Occult,Poor,37.9
+CR0348,13,M,Black,Medium,Blunt trauma,5,1.31,256,Yes,308,4,Yes,283,1,No,298,No,No,89,No,10,0.84,0.84,Anti-VEGF,Lucentis,4,No,Yes,1.5,Classic,Good,33.0
+CR0349,24,M,White,Low,Sports injury,7,3.32,1390,No,293,2,Yes,395,1,Yes,330,No,No,86,Yes,9,0.14,0.14,Anti-VEGF,Lucentis,9,No,Yes,20.6,Mixed,Good,31.2
+CR0350,31,F,White,High,Sports injury,5,3.38,4,Yes,227,4,Yes,319,3,Yes,318,No,No,64,No,9,1.33,1.45,Observation,None,0,No,No,,None,NA,16.8
+CR0351,39,M,Asian,Medium,Sports injury,1,2.0,665,No,364,2,Yes,282,1,Yes,380,No,No,92,No,8,0.42,0.53,Anti-VEGF,Eylea,11,No,Yes,7.1,Occult,Moderate,29.1
+CR0352,57,F,Black,Medium,Blunt trauma,8,2.73,331,Yes,195,1,Yes,245,3,No,350,No,No,29,No,8,1.09,1.28,Anti-VEGF,Eylea,7,No,Yes,16.7,Occult,Moderate,35.8
+CR0353,47,F,White,Medium,Assault,7,3.5,311,Yes,177,2,Yes,274,1,No,316,No,No,63,Yes,8,1.47,1.71,Anti-VEGF,Avastin,12,No,Yes,5.0,Occult,Moderate,33.1
+CR0354,32,M,Black,Low,Blunt trauma,7,2.11,828,No,302,2,Yes,287,0,Yes,321,No,No,82,No,9,0.0,0.08,Observation,None,0,No,No,,None,NA,27.2
+CR0355,34,M,White,Low,Blunt trauma,8,4.89,1525,No,227,5,Yes,353,1,No,244,No,No,100,Yes,10,0.23,0.01,Observation,None,0,No,No,,None,NA,15.8
+CR0356,19,M,White,Medium,Sports injury,8,0.76,751,No,345,12,No,341,1,No,422,Yes,No,72,No,8,0.31,0.38,Observation,None,0,No,No,,None,NA,28.7
+CR0357,34,M,White,Low,Motor vehicle accident,4,1.84,1534,No,178,1,Yes,302,2,No,500,No,No,47,No,8,0.26,0.35,Observation,None,0,No,No,,None,NA,15.1
+CR0358,30,M,White,High,Fall,5,4.01,245,Yes,337,4,Yes,368,3,Yes,296,No,No,57,No,8,1.81,1.87,Observation,None,0,No,No,,None,NA,21.6
+CR0359,39,M,Hispanic,High,Motor vehicle accident,3,7.72,586,No,329,0,No,180,2,No,323,No,Yes,31,No,7,1.16,1.16,Observation,None,0,No,No,,None,NA,15.5
+CR0360,22,F,White,High,Blunt trauma,3,5.1,479,Yes,287,4,Yes,303,3,No,391,Yes,No,55,No,10,1.08,1.1,Observation,None,0,No,No,,None,NA,19.2
+CR0361,42,M,Hispanic,High,Fall,8,2.68,9,Yes,154,1,No,342,2,No,390,Yes,No,40,Yes,8,1.42,1.66,Anti-VEGF,Eylea,1,No,Yes,2.6,Occult,Good,46.3
+CR0362,57,M,Hispanic,Medium,Motor vehicle accident,10,2.19,651,No,176,0,Yes,307,0,No,332,No,Yes,99,Yes,10,0.45,0.62,Observation,None,0,No,No,,None,NA,24.1
+CR0363,33,M,White,Medium,Blunt trauma,12,1.92,866,No,294,1,No,213,1,No,251,Yes,No,56,No,9,0.86,1.35,Anti-VEGF,Eylea,5,No,Yes,14.7,Classic,Poor,31.8
+CR0364,41,M,Black,Low,Sports injury,7,1.93,717,No,266,2,No,349,0,No,447,No,No,100,Yes,9,0.27,0.24,Anti-VEGF,Lucentis,2,No,Yes,6.8,Mixed,Good,41.3
+CR0365,45,M,Black,Medium,Motor vehicle accident,4,0.5,1066,No,323,0,No,318,1,No,367,No,No,68,No,10,0.56,0.56,Anti-VEGF,Eylea,6,Yes,Yes,12.8,Occult,Moderate,23.378609884887588
+CR0366,28,M,Asian,Medium,Sports injury,2,7.51,677,No,275,7,Yes,297,0,Yes,335,No,No,85,Yes,9,0.65,0.81,Anti-VEGF,Lucentis,4,No,Yes,2.8,Occult,Moderate,28.7
+CR0367,38,F,White,High,Motor vehicle accident,9,2.32,55,Yes,270,0,Yes,284,2,Yes,269,No,No,40,No,10,1.41,1.65,Anti-VEGF,Avastin,2,No,Yes,7.1,Occult,Good,26.0
+CR0368,35,M,Black,High,Fall,7,1.24,99,Yes,150,7,Yes,379,1,Yes,324,No,No,53,Yes,7,0.99,1.45,Anti-VEGF,Lucentis,4,No,Yes,3.6,Classic,Moderate,23.1
+CR0369,36,F,Black,Medium,Fall,7,3.28,726,No,329,3,Yes,302,0,No,200,No,Yes,91,Yes,9,0.06,0.09,Anti-VEGF,Eylea,8,No,Yes,14.1,Classic,Good,17.8
+CR0370,23,F,White,Medium,Sports injury,9,1.32,257,Yes,241,1,No,267,3,Yes,371,No,Yes,34,No,9,1.06,1.53,Anti-VEGF,Eylea,5,No,Yes,4.6,Occult,Good,28.2
+CR0371,35,M,White,Low,Blunt trauma,8,4.58,66,Yes,256,1,Yes,239,3,No,388,No,Yes,50,No,7,0.79,0.99,Anti-VEGF,Eylea,6,No,Yes,5.6,Occult,Good,35.5
+CR0372,42,F,Black,High,Fall,9,1.27,449,Yes,215,4,Yes,317,3,No,336,No,Yes,23,No,9,1.45,1.58,Anti-VEGF,Lucentis,12,No,Yes,4.0,Occult,Good,28.8
+CR0373,56,M,Hispanic,High,Sports injury,1,4.13,646,No,187,2,Yes,329,2,No,252,No,No,34,Yes,9,0.65,0.78,Anti-VEGF,Lucentis,9,No,Yes,7.9,Mixed,Good,36.4
+CR0374,49,F,White,Medium,Sports injury,8,1.9,318,Yes,368,3,Yes,282,1,No,351,No,No,69,No,10,1.02,1.48,Anti-VEGF,Eylea,9,No,Yes,8.3,Occult,Moderate,30.6
+CR0375,67,M,Black,High,Motor vehicle accident,10,2.98,1019,No,327,1,No,252,1,Yes,375,Yes,Yes,86,No,8,0.44,0.31,Observation,None,0,No,No,,None,NA,29.3
+CR0376,23,F,White,High,Assault,5,4.35,825,No,328,2,No,346,0,Yes,267,Yes,Yes,81,Yes,9,0.01,0.0,Anti-VEGF,Avastin,7,Yes,Yes,3.1,Occult,Good,26.0
+CR0377,48,F,Hispanic,Medium,Sports injury,7,1.57,323,Yes,267,13,Yes,235,3,No,385,No,No,36,Yes,8,1.33,1.28,Anti-VEGF,Eylea,5,No,Yes,6.1,Classic,Good,15.0
+CR0378,37,F,White,High,Blunt trauma,5,4.28,1124,No,175,0,Yes,378,2,No,356,Yes,No,32,No,9,0.75,0.91,Anti-VEGF,Eylea,2,No,Yes,22.4,Mixed,Moderate,28.79811816632977
+CR0379,67,F,Asian,Medium,Motor vehicle accident,11,0.5,836,No,406,1,Yes,243,0,No,300,No,No,81,Yes,8,0.08,0.15,Observation,None,0,No,No,,None,NA,16.0
+CR0380,22,M,White,High,Assault,1,6.48,811,No,305,1,Yes,216,1,No,280,Yes,Yes,78,No,9,0.44,0.59,Anti-VEGF,Lucentis,9,No,Yes,11.2,Occult,Good,23.0
+CR0381,22,M,White,High,Blunt trauma,7,4.79,644,No,288,4,No,222,3,No,307,No,No,42,No,8,0.59,0.81,Anti-VEGF,Eylea,8,No,Yes,4.4,Classic,Good,25.3
+CR0382,26,M,White,Medium,Other,3,2.25,9,Yes,258,4,No,224,3,No,252,Yes,No,79,Yes,7,1.2,1.23,Observation,None,0,No,No,,None,NA,29.1
+CR0383,10,M,White,Low,Sports injury,8,5.38,953,No,157,1,Yes,268,2,No,338,No,No,51,No,7,0.32,0.5,Anti-VEGF,Avastin,2,No,Yes,5.3,Occult,Moderate,18.0
+CR0384,27,M,Black,Medium,Sports injury,3,5.01,377,Yes,348,0,Yes,256,2,Yes,359,Yes,No,78,No,6,1.03,0.94,Observation,None,0,No,No,,None,NA,32.1
+CR0385,23,M,White,Low,Blunt trauma,4,2.42,2286,No,216,0,Yes,331,0,No,401,No,No,73,Yes,9,0.71,0.76,Observation,None,0,No,No,,None,NA,13.6
+CR0386,37,F,Hispanic,High,Blunt trauma,6,2.4,1362,Yes,312,1,Yes,324,3,No,340,Yes,Yes,39,No,10,1.12,1.67,Anti-VEGF,Eylea,1,Yes,Yes,3.4,Occult,Moderate,20.0
+CR0387,40,M,White,Low,Assault,11,1.11,708,No,326,1,Yes,268,2,No,347,Yes,No,29,No,5,0.43,0.27,Observation,None,0,No,No,,None,NA,18.9
+CR0388,63,F,White,High,Blunt trauma,4,2.51,232,Yes,300,13,Yes,435,3,Yes,301,No,No,46,No,6,1.1,1.54,Anti-VEGF,Lucentis,4,No,Yes,7.5,Mixed,Good,42.0
+CR0389,49,M,White,Medium,Fall,3,0.59,182,Yes,308,1,Yes,268,3,No,258,Yes,No,33,No,8,1.2,1.36,Anti-VEGF,Lucentis,2,No,Yes,1.5,Mixed,Good,24.3
+CR0390,26,F,White,Medium,Motor vehicle accident,8,4.1,332,Yes,360,0,Yes,274,3,Yes,289,Yes,No,30,No,9,1.7,1.74,Anti-VEGF,Eylea,4,No,Yes,3.6,Occult,Good,25.2
+CR0391,21,F,White,Low,Blunt trauma,6,4.16,517,No,232,6,Yes,216,2,No,419,No,No,1,No,7,0.95,1.2,Anti-VEGF,Avastin,3,No,Yes,2.6,Occult,Poor,25.7
+CR0392,42,M,White,Medium,Blunt trauma,11,0.5,280,Yes,289,2,No,275,2,Yes,364,Yes,No,69,Yes,7,1.06,1.35,Anti-VEGF,Avastin,4,No,Yes,3.5,Classic,Good,39.2
+CR0393,15,M,Black,High,Motor vehicle accident,3,6.07,578,No,266,2,No,294,1,Yes,348,No,No,67,Yes,7,0.29,0.33,Anti-VEGF,Eylea,1,Yes,Yes,5.9,Occult,Good,26.4
+CR0394,62,F,White,High,Other,7,1.45,144,Yes,169,0,Yes,220,3,No,200,Yes,No,69,Yes,8,0.81,0.85,Observation,None,0,No,No,,None,NA,23.6
+CR0395,52,M,Black,Low,Motor vehicle accident,4,12.0,3042,No,297,1,Yes,255,1,Yes,341,Yes,Yes,73,No,7,0.22,0.23,Observation,None,0,No,No,,None,NA,21.0
+CR0396,27,M,Black,Medium,Motor vehicle accident,3,2.86,91,Yes,355,8,Yes,296,2,Yes,226,No,No,52,Yes,8,0.61,0.91,Anti-VEGF,Avastin,2,No,Yes,1.0,Mixed,Good,29.1
+CR0397,10,M,White,Low,Motor vehicle accident,8,6.11,2149,No,362,2,Yes,253,2,Yes,231,Yes,No,41,No,9,0.79,0.72,Observation,None,0,No,No,,None,NA,16.0
+CR0398,55,M,Black,High,Motor vehicle accident,7,1.07,1958,No,391,1,Yes,243,3,Yes,239,No,No,48,No,9,1.08,0.99,Observation,None,0,No,No,,None,NA,35.8
+CR0399,33,M,Other,High,Motor vehicle accident,8,1.89,596,No,173,2,No,319,1,No,265,No,Yes,54,Yes,6,0.36,0.33,Anti-VEGF,Eylea,5,No,Yes,6.5,Occult,Good,48.0
+CR0400,53,M,Black,High,Assault,5,1.56,1032,No,377,7,Yes,215,1,No,378,Yes,Yes,98,Yes,9,0.55,0.55,Observation,None,0,No,No,,None,NA,12.9
+CR0401,11,M,Black,Low,Motor vehicle accident,6,0.58,458,Yes,291,0,Yes,225,3,No,335,No,No,32,Yes,8,0.98,0.94,Anti-VEGF,Eylea,12,No,Yes,3.2,Occult,Good,21.4
+CR0402,26,M,White,Medium,Motor vehicle accident,6,0.76,795,No,376,2,Yes,288,2,Yes,253,Yes,No,58,Yes,10,0.12,0.0,Observation,None,0,No,No,,None,NA,20.3
+CR0403,35,F,Hispanic,Low,Blunt trauma,12,2.19,333,Yes,256,9,No,322,3,No,279,Yes,Yes,10,No,7,1.26,1.34,Observation,None,0,No,No,,None,NA,6.0
+CR0404,35,M,Hispanic,High,Other,5,3.2,286,Yes,248,0,No,295,2,No,354,Yes,No,24,No,9,1.2,1.43,Anti-VEGF,Lucentis,1,No,Yes,9.7,Mixed,Moderate,30.4
+CR0405,28,F,Black,Medium,Blunt trauma,5,0.97,690,No,207,3,Yes,268,1,No,368,No,No,82,Yes,9,0.88,0.86,Observation,None,0,No,No,,None,NA,36.1
+CR0406,44,M,Other,Medium,Blunt trauma,5,1.8,551,No,326,2,Yes,264,2,No,329,No,No,36,No,7,1.12,1.09,Observation,None,0,No,No,,None,NA,15.2
+CR0407,18,M,White,High,Sports injury,7,1.32,693,No,310,3,Yes,330,3,No,239,Yes,Yes,49,Yes,10,0.68,0.88,Observation,None,0,No,No,,None,NA,28.6
+CR0408,32,M,White,Low,Sports injury,4,2.3,270,Yes,212,1,Yes,322,3,No,291,No,No,44,No,8,1.48,1.72,Anti-VEGF,Eylea,2,No,Yes,2.2,Classic,Moderate,41.8
+CR0409,36,M,Hispanic,Low,Motor vehicle accident,11,3.88,365,Yes,150,1,Yes,282,1,Yes,486,No,No,100,Yes,9,1.03,1.23,Anti-VEGF,Eylea,5,No,Yes,5.9,Classic,Good,23.1
+CR0410,42,M,Hispanic,Low,Motor vehicle accident,5,2.61,70,Yes,304,3,Yes,266,2,Yes,235,Yes,No,50,No,6,1.1,1.1,Observation,None,0,No,No,,None,NA,21.4
+CR0411,45,M,White,Medium,Fall,10,1.5,42,Yes,311,0,Yes,281,2,No,346,No,No,31,No,7,1.09,1.58,Anti-VEGF,Eylea,10,No,Yes,4.4,Occult,Good,32.8
+CR0412,18,M,White,High,Blunt trauma,2,4.9,233,Yes,220,1,Yes,243,3,Yes,468,No,No,32,Yes,9,1.21,1.67,Anti-VEGF,Lucentis,4,No,Yes,10.2,Mixed,Good,35.8
+CR0413,11,M,White,High,Fall,7,3.12,61,Yes,208,0,Yes,272,3,Yes,300,Yes,No,64,No,8,1.22,1.16,Observation,None,0,No,No,,None,NA,26.4
+CR0414,54,M,White,Low,Sports injury,11,2.67,87,Yes,319,0,No,255,2,Yes,448,Yes,Yes,9,No,8,1.51,1.69,Anti-VEGF,Lucentis,5,No,Yes,9.2,Mixed,Good,39.0
+CR0415,39,M,Hispanic,High,Motor vehicle accident,3,0.98,1341,No,391,10,Yes,274,0,No,271,No,Yes,86,No,8,0.35,0.3,Observation,None,0,No,No,,None,NA,13.7
+CR0416,23,M,Black,Medium,Motor vehicle accident,12,4.55,31,Yes,250,1,Yes,257,3,No,200,No,No,17,Yes,9,1.69,1.84,Anti-VEGF,Lucentis,5,No,Yes,14.7,Occult,Good,31.4
+CR0417,58,F,White,Medium,Blunt trauma,6,3.35,860,No,227,10,Yes,306,0,Yes,279,No,Yes,97,No,8,0.08,0.06,Anti-VEGF,Eylea,1,No,Yes,17.3,Mixed,Good,41.9
+CR0418,36,M,White,Medium,Fall,11,3.48,254,Yes,297,0,Yes,320,3,Yes,266,Yes,Yes,31,No,5,0.54,1.01,Anti-VEGF,Eylea,1,No,Yes,6.2,Occult,Moderate,42.7
+CR0419,52,M,White,Low,Motor vehicle accident,8,2.03,1641,Yes,318,2,Yes,261,3,No,203,No,No,50,No,9,1.13,1.6,Anti-VEGF,Eylea,9,No,Yes,8.8,Classic,Good,31.8
+CR0420,36,F,White,High,Motor vehicle accident,5,1.75,530,No,258,0,Yes,239,1,No,290,No,No,75,Yes,8,0.24,0.41,Anti-VEGF,Eylea,3,No,Yes,6.7,Mixed,Good,25.7
+CR0421,65,M,Black,High,Sports injury,4,7.54,291,Yes,401,4,Yes,315,2,Yes,389,No,No,12,No,8,0.73,1.21,Anti-VEGF,Lucentis,1,No,Yes,5.4,Classic,Moderate,38.3
+CR0422,61,M,Other,High,Other,5,1.73,583,No,334,4,Yes,289,3,No,278,Yes,No,52,Yes,6,1.08,1.08,Anti-VEGF,Lucentis,4,No,Yes,5.6,Classic,Good,34.3
+CR0423,31,F,Hispanic,Medium,Motor vehicle accident,2,0.81,384,Yes,257,0,Yes,261,2,No,293,No,No,25,No,7,0.77,0.97,Observation,None,0,No,No,,None,NA,24.1
+CR0424,49,M,White,High,Assault,3,2.77,664,No,184,7,Yes,348,0,No,415,Yes,Yes,91,Yes,7,0.45,0.5,Observation,None,0,No,No,,None,NA,26.2
+CR0425,44,M,Asian,High,Motor vehicle accident,2,2.4,97,Yes,359,0,No,251,3,No,267,No,Yes,19,No,10,1.75,2.03,Anti-VEGF,Eylea,4,No,Yes,2.3,Occult,Moderate,22.4
+CR0426,55,M,Hispanic,Low,Blunt trauma,6,5.05,4644,No,351,2,Yes,180,2,No,363,No,Yes,44,No,8,0.31,0.33,Anti-VEGF,Eylea,5,No,Yes,16.5,Occult,Good,36.8
+CR0427,20,M,Hispanic,Low,Blunt trauma,9,2.15,443,Yes,261,12,Yes,244,3,Yes,200,No,Yes,40,No,5,1.19,1.15,Anti-VEGF,Lucentis,2,No,Yes,12.5,Occult,Good,31.2
+CR0428,45,M,Black,High,Motor vehicle accident,3,3.8,342,Yes,301,6,Yes,360,1,Yes,252,Yes,Yes,62,No,6,1.29,1.29,Anti-VEGF,Eylea,8,No,Yes,4.4,Classic,Good,39.1
+CR0429,50,M,White,Medium,Blunt trauma,3,6.35,990,No,270,9,No,264,0,No,305,No,No,100,Yes,6,0.2,0.43,Anti-VEGF,Eylea,4,No,Yes,7.8,Classic,Poor,30.2
+CR0430,10,M,White,Low,Blunt trauma,7,3.21,361,Yes,311,1,Yes,254,0,Yes,404,No,No,75,Yes,9,0.88,0.87,Observation,None,0,No,No,,None,NA,24.7
+CR0431,17,M,White,High,Assault,4,1.03,1433,No,218,0,No,281,0,Yes,256,No,No,66,Yes,7,0.46,0.49,Observation,None,0,No,No,,None,NA,23.7
+CR0432,10,F,White,High,Fall,2,3.28,484,Yes,209,0,No,330,3,Yes,255,No,No,45,Yes,8,1.29,1.72,Anti-VEGF,Lucentis,1,No,Yes,2.9,Classic,Poor,25.6
+CR0433,30,F,White,High,Sports injury,3,1.83,1017,No,328,2,Yes,275,0,No,339,Yes,No,45,No,8,0.19,0.19,Observation,None,0,No,No,,None,NA,12.8
+CR0434,45,M,Black,Medium,Blunt trauma,11,2.91,90,Yes,336,4,Yes,309,3,No,350,No,No,89,Yes,10,1.05,1.07,Anti-VEGF,Avastin,7,No,Yes,1.7,Occult,Good,36.5
+CR0435,57,M,Hispanic,High,Blunt trauma,9,2.41,1497,No,250,0,Yes,270,1,No,247,No,Yes,53,No,8,0.18,0.42,Anti-VEGF,Eylea,8,No,Yes,13.5,Mixed,Good,23.1
+CR0436,36,M,Black,Low,Blunt trauma,5,0.79,1064,No,235,3,No,309,1,No,283,No,No,86,No,8,0.6,0.6,Observation,None,0,No,No,,None,NA,17.3
+CR0437,59,M,White,Medium,Sports injury,7,2.14,190,Yes,348,1,Yes,289,3,Yes,396,No,No,41,No,9,1.09,1.5,Anti-VEGF,Eylea,1,No,Yes,1.8,Mixed,Moderate,27.1
+CR0438,14,M,Asian,Medium,Assault,7,0.98,125,Yes,237,1,Yes,260,2,Yes,237,No,Yes,63,No,8,1.4,1.74,Anti-VEGF,Avastin,1,No,Yes,1.7,Mixed,Good,32.9
+CR0439,10,M,Asian,High,Motor vehicle accident,8,1.62,304,Yes,283,3,Yes,292,2,Yes,343,No,No,43,Yes,9,1.5,1.75,Anti-VEGF,Lucentis,4,No,Yes,7.8,Occult,Good,35.4
+CR0440,34,F,Hispanic,Medium,Blunt trauma,8,4.54,2986,No,275,1,Yes,252,1,No,283,Yes,No,62,No,9,0.16,0.01,Observation,None,0,No,No,,None,NA,7.5
+CR0441,40,M,Other,Medium,Motor vehicle accident,7,2.56,237,Yes,191,5,Yes,211,1,Yes,418,No,Yes,37,No,8,1.13,1.67,Observation,None,0,No,Yes,5.7,Occult,NA,24.2
+CR0442,34,M,Black,Low,Motor vehicle accident,5,3.64,487,Yes,291,0,Yes,279,2,No,360,No,No,4,No,8,1.61,1.84,Anti-VEGF,Lucentis,6,No,Yes,8.1,Classic,Moderate,23.8
+CR0443,10,M,Other,Low,Motor vehicle accident,1,2.71,24,Yes,285,4,Yes,215,2,No,381,No,No,35,No,10,0.89,1.27,Anti-VEGF,Eylea,1,No,Yes,2.6,Classic,Moderate,28.2
+CR0444,33,M,White,Medium,Sports injury,6,1.93,404,Yes,301,0,Yes,309,3,Yes,282,No,No,67,No,9,1.55,1.63,Anti-VEGF,Eylea,1,No,Yes,15.9,Occult,Good,19.019788175075792
+CR0445,15,F,White,Low,Sports injury,10,2.92,677,Yes,289,0,Yes,278,3,Yes,377,Yes,No,6,No,10,1.39,2.09,Anti-VEGF,Eylea,5,No,Yes,2.2,Occult,Poor,39.1
+CR0446,45,M,White,Low,Blunt trauma,7,0.5,2448,No,408,3,No,351,1,No,375,No,No,100,Yes,7,0.69,0.84,Anti-VEGF,Eylea,2,No,Yes,5.4,Mixed,Good,30.5
+CR0447,40,F,White,Low,Blunt trauma,9,4.11,581,No,349,5,Yes,263,0,No,356,Yes,No,96,No,8,0.11,0.16,Observation,None,0,No,No,,None,NA,18.9
+CR0448,20,M,White,High,Other,12,1.21,1367,No,282,0,No,278,2,No,300,Yes,Yes,13,No,10,1.08,1.02,Anti-VEGF,Eylea,11,No,Yes,2.7,Occult,Good,36.0
+CR0449,27,M,Black,High,Blunt trauma,3,3.48,633,No,287,1,Yes,206,0,No,331,Yes,No,53,Yes,8,0.13,0.22,Anti-VEGF,Lucentis,9,No,Yes,26.0,Classic,Good,34.1
+CR0450,19,M,Hispanic,High,Blunt trauma,8,1.87,33,Yes,385,2,Yes,224,3,No,200,No,No,20,No,10,1.41,1.79,Anti-VEGF,Eylea,1,No,Yes,3.6,Mixed,Moderate,34.1
+CR0451,34,M,Black,Medium,Blunt trauma,8,0.79,302,Yes,331,0,No,196,3,Yes,443,No,No,45,Yes,6,1.23,1.45,Anti-VEGF,Eylea,6,No,Yes,2.1,Occult,Good,29.9
+CR0452,49,M,White,Medium,Blunt trauma,12,1.39,685,No,206,5,Yes,333,0,No,277,Yes,No,73,No,10,0.43,0.34,Anti-VEGF,Eylea,2,No,Yes,35.8,Mixed,Moderate,41.137623445370316
+CR0453,20,F,Hispanic,Medium,Motor vehicle accident,12,3.49,2406,No,336,4,No,257,2,No,296,No,No,38,No,8,0.35,0.69,Anti-VEGF,Lucentis,7,No,Yes,14.0,Mixed,Good,36.8
+CR0454,42,M,Black,Low,Fall,8,9.16,1567,No,354,0,No,346,3,No,227,No,No,29,Yes,6,0.44,0.39,Observation,None,0,No,No,,None,NA,24.3
+CR0455,27,M,White,Low,Motor vehicle accident,4,2.3,207,Yes,377,1,Yes,180,3,Yes,367,No,No,43,Yes,10,1.32,1.85,Observation,None,0,No,Yes,11.3,Classic,NA,43.8
+CR0456,23,M,Black,Low,Motor vehicle accident,9,8.46,198,Yes,255,4,Yes,357,2,No,357,No,Yes,56,No,7,1.01,1.26,Anti-VEGF,Eylea,7,No,Yes,13.4,Classic,Poor,31.1
+CR0457,33,M,White,High,Sports injury,2,0.5,179,Yes,251,1,Yes,276,3,Yes,299,No,No,37,No,5,1.15,1.4,Observation,None,0,No,No,,None,NA,25.2
+CR0458,19,M,White,Medium,Motor vehicle accident,9,1.99,2045,No,223,3,Yes,296,3,Yes,200,Yes,No,26,Yes,6,0.89,1.3,Anti-VEGF,Avastin,1,No,Yes,2.2,Classic,Moderate,29.0
+CR0459,26,F,Asian,High,Fall,11,2.3,1532,Yes,298,0,Yes,226,2,Yes,270,No,Yes,59,No,9,0.73,1.31,Anti-VEGF,Eylea,6,No,Yes,14.7,Classic,Poor,32.6
+CR0460,17,F,White,High,Fall,6,3.62,1192,No,323,2,Yes,306,2,No,352,No,No,35,No,10,0.9,0.99,Anti-VEGF,Eylea,4,Yes,Yes,4.2,Classic,Good,33.0
+CR0461,64,F,Black,High,Blunt trauma,7,1.44,399,Yes,249,0,Yes,261,0,No,337,No,No,86,No,6,0.83,1.38,Anti-VEGF,Lucentis,11,No,Yes,10.7,Occult,Good,26.4
+CR0462,35,M,Asian,High,Fall,6,3.12,561,No,271,5,Yes,220,0,Yes,316,Yes,No,73,Yes,8,0.49,0.54,Observation,None,0,No,No,,None,NA,14.8
+CR0463,24,M,Hispanic,Medium,Motor vehicle accident,6,2.07,499,Yes,156,1,No,219,3,No,290,No,Yes,61,Yes,7,1.38,1.38,Anti-VEGF,Avastin,1,No,Yes,4.9,Mixed,Good,35.1
+CR0464,38,M,White,Low,Other,5,5.54,233,Yes,370,0,No,218,3,Yes,209,No,Yes,64,No,9,1.4,1.88,Anti-VEGF,Avastin,3,No,Yes,12.5,Mixed,Poor,33.6
+CR0465,33,M,White,High,Motor vehicle accident,9,2.77,562,No,186,5,Yes,299,2,Yes,387,Yes,No,63,No,6,0.3,0.31,Observation,None,0,No,No,,None,NA,31.7
+CR0466,31,F,White,Medium,Other,11,12.0,24,Yes,302,0,No,248,3,Yes,219,No,No,28,No,7,1.54,1.91,Anti-VEGF,Avastin,6,No,Yes,1.0,Occult,Moderate,30.0
+CR0467,44,M,Black,Medium,Fall,11,2.08,113,Yes,294,1,Yes,197,1,No,305,No,No,63,No,7,1.02,1.46,Anti-VEGF,Lucentis,4,No,Yes,1.9,Classic,Moderate,22.0
+CR0468,46,M,White,High,Blunt trauma,3,5.3,1741,No,282,1,Yes,298,0,No,247,No,No,92,Yes,9,0.18,0.7,Anti-VEGF,Lucentis,9,Yes,Yes,22.4,Occult,Poor,30.1
+CR0469,27,M,White,Medium,Motor vehicle accident,10,6.46,1114,No,284,1,Yes,180,3,Yes,389,No,No,38,Yes,10,0.72,0.74,Anti-VEGF,Avastin,12,No,Yes,2.9,Occult,Good,36.2
+CR0470,26,M,Asian,High,Other,8,0.5,439,Yes,219,7,Yes,346,1,No,360,Yes,No,74,No,8,1.04,1.18,Anti-VEGF,Lucentis,4,No,Yes,12.2,Classic,Good,13.0
+CR0471,30,M,Black,Medium,Fall,4,4.07,582,No,260,4,Yes,379,2,Yes,294,No,Yes,26,No,6,0.65,0.54,Anti-VEGF,Eylea,5,No,Yes,2.8,Mixed,Good,30.0
+CR0472,10,M,White,Medium,Blunt trauma,2,2.02,369,Yes,338,0,No,214,2,No,368,No,No,68,No,9,1.25,1.17,Anti-VEGF,Avastin,7,No,Yes,4.1,Mixed,Good,35.3
+CR0473,12,M,Black,High,Sports injury,5,0.9,1080,No,355,3,No,332,0,Yes,215,No,No,95,No,9,0.71,0.63,Observation,None,0,No,No,,None,NA,21.9
+CR0474,55,M,Black,High,Motor vehicle accident,11,5.61,1226,No,254,2,Yes,297,1,No,314,No,No,72,No,6,0.19,0.07,Observation,None,0,No,No,,None,NA,17.1
+CR0475,59,M,White,Medium,Blunt trauma,7,1.51,1152,No,186,6,No,254,1,No,246,Yes,No,62,No,6,0.64,0.57,Observation,None,0,No,No,,None,NA,10.4
+CR0476,31,F,White,Low,Motor vehicle accident,8,0.5,1025,Yes,233,1,Yes,257,3,No,391,No,No,26,No,7,1.22,1.48,Anti-VEGF,Lucentis,2,No,Yes,16.8,Occult,Moderate,29.9
+CR0477,43,F,Hispanic,High,Blunt trauma,4,2.82,183,Yes,391,2,Yes,312,3,Yes,346,No,No,42,No,9,1.54,1.73,Anti-VEGF,Avastin,5,No,Yes,8.7,Occult,Moderate,20.2
+CR0478,39,F,Black,Medium,Fall,8,6.17,329,Yes,236,2,No,278,3,No,365,Yes,Yes,47,No,9,1.66,1.78,Anti-VEGF,Lucentis,3,Yes,Yes,5.7,Classic,Good,35.4
+CR0479,81,F,Black,Medium,Motor vehicle accident,1,0.91,507,No,274,2,Yes,180,1,Yes,281,No,No,57,No,8,0.5,0.5,Observation,None,0,No,No,,None,NA,20.5
+CR0480,51,M,White,Low,Fall,6,4.45,321,Yes,364,1,Yes,383,2,No,372,No,No,15,No,7,1.26,1.53,Anti-VEGF,Avastin,3,Yes,Yes,7.3,Occult,Moderate,42.0
+CR0481,33,M,White,Low,Blunt trauma,7,0.5,1125,No,248,0,Yes,301,0,Yes,241,No,No,76,Yes,8,0.6,0.53,Observation,None,0,No,No,,None,NA,6.0
+CR0482,20,M,White,Medium,Motor vehicle accident,3,6.47,319,Yes,270,4,Yes,277,2,Yes,251,Yes,No,57,No,10,1.35,1.86,Anti-VEGF,Lucentis,1,No,Yes,10.4,Classic,Good,27.3
+CR0483,10,M,White,Medium,Blunt trauma,9,3.26,119,Yes,327,1,Yes,244,0,No,307,No,No,76,Yes,7,1.11,1.62,Anti-VEGF,Eylea,3,No,Yes,5.5,Classic,Moderate,35.9
+CR0484,38,F,White,Low,Blunt trauma,4,0.83,407,Yes,382,9,Yes,270,2,No,254,No,No,35,No,10,1.03,1.41,Anti-VEGF,Avastin,8,No,Yes,7.7,Occult,Moderate,39.1
+CR0485,23,M,White,Medium,Blunt trauma,7,4.17,3126,No,241,0,Yes,343,1,Yes,369,Yes,Yes,52,No,9,0.32,0.3,Observation,None,0,No,No,,None,NA,26.2
+CR0486,13,F,Hispanic,High,Blunt trauma,6,1.59,204,Yes,363,3,Yes,293,2,No,286,No,No,27,No,6,0.82,0.91,Anti-VEGF,Eylea,11,No,Yes,21.8,Occult,Good,22.4
+CR0487,25,M,Other,High,Sports injury,7,1.11,757,No,263,8,Yes,298,0,No,244,Yes,No,92,No,8,0.25,0.16,Observation,None,0,No,No,,None,NA,16.2
+CR0488,18,M,Hispanic,Low,Blunt trauma,2,1.56,453,Yes,226,3,Yes,217,3,No,235,No,Yes,14,No,10,1.23,1.39,Anti-VEGF,Eylea,4,No,Yes,2.0,Occult,Good,12.1
+CR0489,60,M,Hispanic,Low,Motor vehicle accident,1,3.88,58,Yes,294,6,No,262,2,No,368,Yes,Yes,75,Yes,8,1.06,1.53,Observation,None,0,No,Yes,5.7,Occult,NA,30.4
+CR0490,48,F,White,High,Motor vehicle accident,11,1.04,535,No,210,5,Yes,282,0,No,200,Yes,No,76,Yes,10,0.42,0.37,Observation,None,0,No,No,,None,NA,29.3
+CR0491,34,M,Other,Medium,Assault,5,0.5,968,No,308,1,Yes,314,3,Yes,249,Yes,No,8,No,7,0.88,0.72,Observation,None,0,No,No,,None,NA,20.1
+CR0492,57,M,White,Medium,Assault,9,1.62,575,No,450,2,Yes,259,0,No,418,No,No,85,Yes,9,0.28,0.42,Anti-VEGF,Eylea,7,No,Yes,5.6,Occult,Good,34.6
+CR0493,36,M,Asian,High,Motor vehicle accident,12,5.76,1645,No,346,0,Yes,326,3,No,295,No,No,49,Yes,10,0.84,0.73,Observation,None,0,No,No,,None,NA,24.4
+CR0494,22,M,Other,Low,Motor vehicle accident,4,5.71,272,Yes,273,2,Yes,222,0,No,370,No,No,66,Yes,10,1.01,1.75,Anti-VEGF,Lucentis,7,No,Yes,2.4,Mixed,Poor,27.5
+CR0495,57,M,Hispanic,High,Blunt trauma,5,1.56,72,Yes,343,0,Yes,283,3,No,349,Yes,No,58,Yes,8,1.05,1.44,Anti-VEGF,Lucentis,5,No,Yes,5.6,Mixed,Good,10.5
+CR0496,43,M,Other,High,Other,8,1.51,2206,No,224,4,No,275,0,Yes,306,No,No,62,No,9,0.53,0.31,Observation,None,0,No,No,,None,NA,30.7
+CR0497,19,M,Black,Medium,Blunt trauma,12,1.43,380,Yes,234,2,Yes,204,3,Yes,203,No,No,52,No,5,1.1,1.26,Anti-VEGF,Eylea,4,No,Yes,2.4,Mixed,Good,33.5
+CR0498,32,M,White,Medium,Blunt trauma,11,1.38,687,No,275,1,Yes,277,1,Yes,227,Yes,No,74,Yes,7,0.81,0.92,Observation,None,0,No,No,,None,NA,10.0
+CR0499,21,M,White,High,Blunt trauma,6,1.46,1256,No,285,0,Yes,250,2,No,226,No,No,34,No,7,0.64,0.94,Anti-VEGF,Eylea,5,No,Yes,2.1,Mixed,Moderate,33.0
+CR0500,14,M,Black,Medium,Motor vehicle accident,9,2.93,313,Yes,202,19,Yes,350,2,Yes,353,No,Yes,66,Yes,6,1.12,1.33,Anti-VEGF,Eylea,4,No,Yes,4.6,Occult,Good,31.6
+CR0501,48,M,White,Medium,Blunt trauma,3,5.86,1007,No,261,0,Yes,259,0,No,366,No,Yes,94,No,7,0.0,0.0,Anti-VEGF,Eylea,3,No,Yes,12.6,Occult,Good,40.5
+CR0502,63,M,Black,High,Fall,12,1.04,116,Yes,271,0,Yes,297,3,No,258,Yes,Yes,17,No,8,1.41,1.58,Anti-VEGF,Lucentis,6,No,Yes,7.1,Classic,Good,33.8
+CR0503,14,M,Other,High,Blunt trauma,12,1.23,275,Yes,372,0,No,218,1,No,314,Yes,No,82,No,10,0.97,1.2,Anti-VEGF,Lucentis,4,No,Yes,4.7,Classic,Good,33.8
+CR0504,43,M,White,Medium,Sports injury,3,3.18,125,Yes,202,10,Yes,291,3,No,320,No,No,77,Yes,9,1.29,1.18,Anti-VEGF,Avastin,12,No,Yes,1.5,Mixed,Good,31.6
+CR0505,25,F,Hispanic,High,Blunt trauma,5,4.04,1333,No,196,11,No,259,0,No,325,No,No,100,Yes,8,0.28,0.29,Observation,None,0,No,No,,None,NA,13.8
+CR0506,27,M,Asian,Low,Blunt trauma,2,0.59,201,Yes,290,3,Yes,241,2,Yes,266,Yes,No,21,No,10,1.26,1.35,Anti-VEGF,Eylea,1,No,Yes,1.4,Mixed,Good,35.4
+CR0507,26,M,Asian,Low,Assault,5,7.34,1010,No,349,6,Yes,421,2,Yes,434,Yes,No,71,Yes,7,0.81,0.79,Observation,None,0,No,No,,None,NA,19.8
+CR0508,22,M,Other,Low,Blunt trauma,9,1.88,2295,No,313,0,Yes,262,1,No,367,No,No,93,No,8,0.57,0.53,Observation,None,0,No,No,,None,NA,12.4
+CR0509,35,M,Black,High,Fall,6,0.65,600,Yes,298,10,Yes,269,2,No,325,No,No,19,No,9,1.43,1.74,Anti-VEGF,Lucentis,2,No,Yes,6.6,Occult,Moderate,24.7
+CR0510,22,F,Other,Low,Motor vehicle accident,2,0.56,621,No,262,0,No,325,2,No,283,No,No,44,No,6,0.42,0.59,Anti-VEGF,Eylea,5,No,Yes,3.0,Occult,Good,20.9
+CR0511,39,M,Hispanic,Medium,Blunt trauma,5,0.52,494,Yes,320,0,Yes,241,3,Yes,261,Yes,No,49,No,9,1.1,1.34,Anti-VEGF,Eylea,7,No,Yes,5.9,Classic,Good,38.5
+CR0512,34,M,White,High,Other,12,5.23,315,Yes,329,0,Yes,300,3,Yes,347,No,Yes,18,No,6,1.35,2.11,Anti-VEGF,Eylea,5,No,Yes,5.4,Occult,Moderate,45.8
+CR0513,31,M,Black,High,Blunt trauma,7,2.57,516,No,264,2,No,305,1,No,286,Yes,No,89,Yes,6,0.62,0.94,Anti-VEGF,Eylea,3,No,Yes,1.3,Occult,Good,39.2
+CR0514,21,M,Hispanic,High,Fall,6,5.27,738,No,223,4,No,292,1,No,329,Yes,No,100,No,7,0.58,0.63,Anti-VEGF,Lucentis,2,No,Yes,13.6,Occult,Moderate,33.0
+CR0515,26,M,White,Medium,Blunt trauma,3,2.22,3414,No,223,1,No,394,1,No,200,Yes,No,100,Yes,10,0.13,0.36,Anti-VEGF,Eylea,12,Yes,Yes,2.3,Mixed,Good,29.5
+CR0516,46,F,Black,Medium,Fall,12,5.17,2221,Yes,332,11,No,239,2,No,282,No,Yes,43,No,9,0.8,1.04,Anti-VEGF,Eylea,1,No,Yes,4.1,Classic,Moderate,27.7
+CR0517,42,M,Black,High,Blunt trauma,9,2.17,1585,No,187,1,Yes,356,2,No,312,No,No,34,No,9,0.55,0.38,Observation,None,0,No,No,,None,NA,12.1
+CR0518,20,M,White,Medium,Motor vehicle accident,5,3.61,1759,Yes,380,0,No,303,2,No,387,No,No,46,No,9,0.65,0.63,Anti-VEGF,Eylea,1,Yes,Yes,1.6,Occult,Good,45.6
+CR0519,36,M,Black,High,Fall,2,2.34,504,No,252,1,Yes,325,1,No,255,Yes,No,55,Yes,7,0.52,0.43,Observation,None,0,No,No,,None,NA,11.7
+CR0520,46,F,Hispanic,Medium,Assault,1,2.07,857,No,298,3,No,297,1,No,215,Yes,Yes,65,No,9,0.43,0.63,Anti-VEGF,Eylea,2,No,Yes,4.9,Occult,Good,23.2
+CR0521,10,M,Black,Medium,Assault,3,1.14,1803,No,322,5,No,373,2,No,351,Yes,No,0,No,8,0.37,0.34,Observation,None,0,No,No,,None,NA,18.4
+CR0522,43,F,White,Low,Fall,7,3.97,399,Yes,238,1,Yes,263,3,No,315,Yes,No,48,Yes,6,1.11,1.64,Observation,None,0,No,Yes,3.2,Mixed,NA,29.1
+CR0523,25,M,White,Low,Assault,11,0.92,2611,No,252,2,No,304,2,No,200,No,Yes,33,No,9,0.63,0.26,Observation,None,0,No,No,,None,NA,24.8
+CR0524,43,M,White,Medium,Blunt trauma,6,3.97,429,Yes,287,0,Yes,345,2,Yes,202,Yes,No,52,No,6,0.73,1.05,Anti-VEGF,Eylea,3,No,Yes,3.5,Mixed,Moderate,24.6
+CR0525,23,M,Asian,Medium,Blunt trauma,10,2.66,735,No,228,3,Yes,252,2,No,274,Yes,Yes,42,No,7,0.45,0.59,Anti-VEGF,Lucentis,3,No,Yes,4.2,Occult,Poor,14.1
+CR0526,10,M,White,Medium,Blunt trauma,6,4.04,989,No,215,12,Yes,330,2,No,314,Yes,No,19,No,10,0.53,0.59,Observation,None,0,No,Yes,15.6,Mixed,NA,28.1
+CR0527,10,M,Black,Low,Motor vehicle accident,8,2.84,2406,No,221,0,No,279,0,Yes,417,Yes,No,79,Yes,9,0.23,0.1,Anti-VEGF,Lucentis,1,Yes,Yes,3.8,Occult,Good,28.7
+CR0528,35,F,White,High,Motor vehicle accident,8,5.56,224,Yes,352,6,Yes,218,1,No,244,No,No,60,Yes,9,0.88,0.99,Observation,None,0,No,No,,None,NA,18.0
+CR0529,38,M,White,High,Motor vehicle accident,3,3.37,1096,No,303,2,Yes,207,0,Yes,357,No,No,100,No,8,0.64,0.66,Observation,None,0,No,No,,None,NA,17.9
+CR0530,21,M,Hispanic,High,Blunt trauma,6,2.7,588,No,232,0,Yes,275,1,No,200,No,No,58,No,8,0.69,0.55,Observation,None,0,No,No,,None,NA,17.2
+CR0531,44,M,Hispanic,Medium,Sports injury,7,0.5,250,Yes,332,9,No,329,3,No,345,No,Yes,30,Yes,9,1.09,1.53,Anti-VEGF,Avastin,4,No,Yes,7.8,Classic,Moderate,19.4
+CR0532,10,F,White,Medium,Blunt trauma,2,5.71,1199,Yes,235,1,Yes,180,2,Yes,425,Yes,No,19,No,9,0.84,1.02,Observation,None,0,No,No,,None,NA,31.7
+CR0533,34,F,White,Low,Motor vehicle accident,6,0.52,642,Yes,162,1,No,290,2,No,329,Yes,Yes,17,No,8,1.0,1.25,Anti-VEGF,Eylea,4,No,Yes,11.3,Occult,Good,41.2
+CR0534,16,M,White,High,Motor vehicle accident,7,0.72,865,No,321,0,No,324,3,No,273,No,No,40,No,10,1.06,0.98,Anti-VEGF,Lucentis,10,No,Yes,7.2,Classic,Good,41.2
+CR0535,25,F,Black,Medium,Fall,12,4.31,311,Yes,378,0,Yes,216,3,No,406,No,Yes,15,No,10,0.72,0.77,Observation,None,0,No,No,,None,NA,10.5
+CR0536,35,M,Black,Low,Sports injury,6,2.5,525,No,313,5,Yes,248,2,Yes,344,Yes,Yes,36,No,8,0.62,0.72,Anti-VEGF,Eylea,3,No,Yes,12.9,Occult,Good,33.2
+CR0537,22,M,White,Low,Sports injury,9,0.54,768,No,166,2,No,308,1,No,330,Yes,No,83,Yes,10,0.37,0.31,Anti-VEGF,Lucentis,2,No,Yes,12.1,Mixed,Good,26.6
+CR0538,29,M,White,Medium,Blunt trauma,6,1.51,415,Yes,278,7,No,322,1,No,248,Yes,No,66,No,8,1.25,1.55,Anti-VEGF,Eylea,7,No,Yes,7.1,Mixed,Good,26.2
+CR0539,50,F,White,Medium,Motor vehicle accident,9,5.51,176,Yes,263,0,No,360,0,No,345,Yes,No,30,No,8,1.05,1.08,Anti-VEGF,Eylea,7,No,Yes,11.5,Classic,Good,22.6
+CR0540,26,M,Asian,High,Blunt trauma,7,2.77,2608,No,302,0,Yes,250,0,Yes,272,Yes,No,100,Yes,6,0.0,0.0,Observation,None,0,No,No,,None,NA,40.5
+CR0541,47,M,Other,Low,Motor vehicle accident,10,2.55,573,No,229,0,No,239,1,No,341,Yes,No,80,Yes,9,0.75,0.94,Anti-VEGF,Eylea,12,No,Yes,10.6,Classic,Good,28.0
+CR0542,18,M,White,High,Motor vehicle accident,6,1.35,1059,No,259,2,Yes,362,1,Yes,323,No,No,80,Yes,10,0.0,0.0,Observation,None,0,No,No,,None,NA,12.6
+CR0543,42,F,Hispanic,Low,Blunt trauma,7,4.42,423,Yes,194,19,Yes,242,1,No,395,Yes,Yes,70,No,9,1.1,1.1,Observation,None,0,No,No,,None,NA,21.1
+CR0544,56,M,White,Medium,Blunt trauma,7,2.27,350,Yes,293,3,No,305,1,No,279,Yes,No,91,Yes,9,1.13,1.07,Observation,None,0,No,No,,None,NA,26.1
+CR0545,10,M,White,Medium,Other,6,3.86,418,Yes,197,1,Yes,389,1,Yes,309,No,No,93,Yes,7,1.37,1.55,Anti-VEGF,Eylea,5,No,Yes,11.3,Classic,Moderate,28.9
+CR0546,23,M,Hispanic,High,Other,3,1.23,421,Yes,306,6,No,317,3,No,375,No,No,60,Yes,8,1.31,1.83,Anti-VEGF,Avastin,4,No,Yes,6.4,Classic,Poor,32.0
+CR0547,43,M,Asian,Medium,Motor vehicle accident,2,9.19,628,No,234,4,Yes,319,2,Yes,303,No,No,45,No,7,0.43,0.36,Observation,None,0,No,No,,None,NA,28.0
+CR0548,31,M,Asian,Medium,Blunt trauma,1,6.2,627,No,150,0,No,343,1,No,318,Yes,No,47,Yes,8,0.2,0.16,Anti-VEGF,Avastin,4,No,Yes,11.2,Classic,Good,22.4
+CR0549,40,F,Black,High,Blunt trauma,10,2.75,549,No,327,5,Yes,306,1,No,291,No,No,83,No,9,0.82,0.93,Anti-VEGF,Avastin,6,No,Yes,24.3,Occult,Good,31.4
+CR0550,25,M,White,Medium,Motor vehicle accident,4,3.21,115,Yes,309,1,Yes,319,2,No,308,Yes,Yes,45,Yes,8,1.52,1.42,Anti-VEGF,Lucentis,5,No,Yes,3.7,Occult,Good,24.9
+CR0551,36,M,Hispanic,Low,Assault,4,1.52,548,Yes,361,0,No,262,1,No,366,No,Yes,64,No,9,0.84,1.15,Anti-VEGF,Eylea,5,No,Yes,3.3,Mixed,Moderate,23.8
+CR0552,32,M,White,Medium,Blunt trauma,8,4.08,148,Yes,154,0,Yes,337,2,No,448,Yes,Yes,23,No,8,1.11,1.14,Anti-VEGF,Eylea,8,No,Yes,12.8,Classic,Good,44.0
+CR0553,52,F,Black,Medium,Fall,5,0.5,107,Yes,240,1,Yes,300,3,No,202,Yes,Yes,50,No,7,1.59,1.59,Anti-VEGF,Avastin,2,No,Yes,11.0,Occult,Good,29.3
+CR0554,38,M,White,High,Blunt trauma,6,7.26,2158,No,287,1,No,206,3,No,231,No,No,38,No,6,0.94,0.91,Anti-VEGF,Eylea,4,Yes,Yes,1.0,Classic,Good,21.5
+CR0555,40,M,Black,Medium,Other,3,3.91,742,No,314,1,Yes,292,2,Yes,310,No,Yes,32,Yes,10,0.55,1.12,Anti-VEGF,Avastin,3,No,Yes,6.0,Classic,Moderate,29.1
+CR0556,28,F,White,High,Motor vehicle accident,11,1.02,861,No,192,0,No,180,3,No,323,No,No,73,Yes,5,0.56,0.95,Anti-VEGF,Avastin,1,No,Yes,16.7,Occult,Poor,20.3
+CR0557,27,F,White,Medium,Fall,10,7.14,411,Yes,305,4,Yes,315,3,No,304,Yes,No,53,Yes,5,1.04,1.22,Anti-VEGF,Lucentis,1,No,Yes,1.9,Classic,Moderate,28.3
+CR0558,28,F,Asian,Low,Motor vehicle accident,10,8.68,1917,No,245,13,Yes,268,0,No,281,Yes,Yes,83,No,10,0.54,0.61,Observation,None,0,No,No,,None,NA,14.6
+CR0559,40,F,White,Medium,Sports injury,6,3.34,812,No,168,4,No,375,3,Yes,233,No,No,64,Yes,10,0.66,0.51,Anti-VEGF,Lucentis,5,No,Yes,1.6,Occult,Good,34.1
+CR0560,28,M,Black,High,Blunt trauma,9,1.25,1172,No,234,1,Yes,304,0,No,277,No,No,81,No,9,0.2,0.3,Observation,None,0,No,No,,None,NA,35.5
+CR0561,39,F,White,Medium,Blunt trauma,3,2.58,367,Yes,310,0,Yes,326,3,Yes,377,No,Yes,25,No,5,1.4,1.62,Anti-VEGF,Eylea,1,No,Yes,2.8,Mixed,Moderate,28.6
+CR0562,66,M,White,Medium,Assault,1,3.69,2575,No,171,0,Yes,227,1,Yes,326,No,No,67,No,7,0.47,0.54,Anti-VEGF,Eylea,1,No,Yes,5.9,Occult,Good,24.9
+CR0563,48,F,White,Medium,Assault,1,3.14,1373,No,318,0,No,314,1,No,367,Yes,Yes,89,No,10,0.55,1.16,Observation,None,0,No,Yes,1.8,Occult,NA,30.7
+CR0564,30,M,White,Low,Assault,7,1.02,1539,No,297,2,Yes,247,2,No,235,No,Yes,52,No,10,0.52,0.43,Observation,None,0,No,No,,None,NA,31.9
+CR0565,53,F,Hispanic,Low,Sports injury,6,3.65,151,Yes,264,2,Yes,334,2,No,421,Yes,No,48,No,9,1.01,1.64,Anti-VEGF,Lucentis,2,No,Yes,1.9,Classic,Moderate,34.1
+CR0566,28,M,White,Medium,Fall,7,5.46,252,Yes,181,3,Yes,224,2,Yes,280,Yes,No,17,No,7,0.92,1.26,Anti-VEGF,Lucentis,2,No,Yes,1.0,Mixed,Moderate,28.9
+CR0567,10,M,Asian,Medium,Blunt trauma,1,0.81,269,Yes,186,3,Yes,285,2,No,353,No,No,56,Yes,5,1.28,1.47,Anti-VEGF,Eylea,1,Yes,Yes,5.8,Classic,Good,13.5
+CR0568,19,M,Black,High,Motor vehicle accident,6,0.9,252,Yes,256,1,Yes,222,2,No,311,No,Yes,38,No,5,1.12,1.19,Anti-VEGF,Lucentis,4,No,Yes,5.8,Classic,Good,29.6
+CR0569,10,F,White,High,Motor vehicle accident,8,1.47,1547,No,212,1,Yes,286,3,No,282,Yes,No,51,No,9,0.82,1.08,Anti-VEGF,Lucentis,3,No,Yes,12.9,Classic,Good,36.2
+CR0570,29,F,Black,Medium,Sports injury,6,2.11,25,Yes,259,3,Yes,381,3,No,350,Yes,No,23,Yes,5,1.0,1.13,Anti-VEGF,Eylea,5,No,Yes,6.2,Occult,Good,37.7
+CR0571,35,M,Black,Medium,Motor vehicle accident,8,4.5,63,Yes,334,1,Yes,316,2,Yes,362,No,Yes,79,No,10,1.27,1.91,Anti-VEGF,Avastin,1,No,Yes,7.7,Occult,Moderate,40.5
+CR0572,60,M,Hispanic,Medium,Blunt trauma,4,5.42,256,Yes,263,0,Yes,278,1,No,500,No,No,79,Yes,7,1.03,1.14,Anti-VEGF,Eylea,4,No,Yes,8.3,Mixed,Good,24.6
+CR0573,39,M,White,Medium,Sports injury,9,1.2,178,Yes,261,1,Yes,180,3,No,364,Yes,No,31,No,9,1.43,1.48,Observation,None,0,No,No,,None,NA,16.8
+CR0574,31,M,White,High,Fall,7,2.91,211,Yes,262,0,Yes,253,1,Yes,363,Yes,Yes,87,No,7,1.04,1.24,Observation,None,0,No,No,,None,NA,19.0
+CR0575,47,F,Asian,Medium,Motor vehicle accident,4,5.27,1279,No,340,0,No,303,0,Yes,400,Yes,No,92,No,8,0.37,0.31,Observation,None,0,No,No,,None,NA,25.7
+CR0576,10,M,Asian,High,Blunt trauma,4,9.54,662,No,357,5,Yes,254,1,Yes,357,No,No,87,Yes,6,0.0,0.09,Anti-VEGF,Eylea,2,No,Yes,2.2,Mixed,Good,27.9
+CR0577,38,M,Asian,High,Blunt trauma,7,2.9,4,Yes,305,5,Yes,351,3,Yes,317,No,No,20,No,9,1.53,1.68,Anti-VEGF,Lucentis,3,No,Yes,2.0,Occult,Moderate,34.2
+CR0578,46,F,White,Low,Blunt trauma,9,3.01,448,Yes,288,0,Yes,283,1,Yes,342,No,No,97,No,9,0.62,1.09,Observation,None,0,No,Yes,1.7,Occult,NA,26.9
+CR0579,12,M,Hispanic,High,Blunt trauma,6,3.36,419,Yes,293,0,Yes,333,1,No,379,No,No,68,No,6,1.21,1.72,Anti-VEGF,Lucentis,6,Yes,Yes,3.5,Occult,Poor,24.4
+CR0580,52,M,Black,Medium,Sports injury,4,1.93,96,Yes,365,4,No,290,2,No,417,No,Yes,39,No,10,1.08,1.54,Anti-VEGF,Avastin,2,Yes,Yes,3.3,Mixed,Good,38.9
+CR0581,40,M,Black,High,Sports injury,10,2.73,901,No,308,0,No,266,1,No,214,Yes,Yes,30,No,8,0.05,0.0,Observation,None,0,No,No,,None,NA,22.5
+CR0582,28,M,White,Low,Sports injury,8,0.5,968,No,371,1,Yes,256,1,No,200,Yes,No,65,Yes,10,0.43,0.41,Observation,None,0,No,No,,None,NA,26.0
+CR0583,44,M,Black,Medium,Motor vehicle accident,6,1.53,1020,No,254,0,Yes,229,1,No,414,No,No,65,No,10,0.07,0.14,Observation,None,0,No,No,,None,NA,18.3
+CR0584,69,M,White,High,Fall,6,3.6,1042,No,199,0,Yes,334,1,No,264,No,No,84,Yes,10,0.73,0.68,Observation,None,0,No,No,,None,NA,26.4
+CR0585,37,M,White,Medium,Blunt trauma,4,1.14,0,Yes,239,4,Yes,258,1,No,203,No,No,64,Yes,6,0.82,1.18,Anti-VEGF,Eylea,4,No,Yes,5.3,Occult,Good,21.5
+CR0586,38,F,Hispanic,Medium,Motor vehicle accident,7,4.57,2461,No,246,4,No,306,0,No,200,No,No,42,No,6,0.04,0.24,Observation,None,0,No,No,,None,NA,12.8
+CR0587,28,M,White,Low,Fall,5,0.5,1346,No,376,0,Yes,253,2,No,446,No,No,44,Yes,10,0.77,0.72,Observation,None,0,No,No,,None,NA,27.5
+CR0588,22,F,White,High,Blunt trauma,12,4.45,1874,No,324,1,Yes,225,3,No,381,Yes,No,34,No,8,0.74,1.24,Anti-VEGF,Avastin,8,No,Yes,8.7,Occult,Poor,29.4
+CR0589,47,M,White,Low,Blunt trauma,6,4.44,12,Yes,241,0,Yes,307,2,Yes,264,Yes,No,25,Yes,7,1.23,1.51,Anti-VEGF,Eylea,2,No,Yes,7.7,Occult,Good,28.0
+CR0590,22,M,Asian,Low,Assault,6,9.65,2172,Yes,328,0,No,242,1,No,267,Yes,No,76,Yes,9,0.92,1.4,Anti-VEGF,Avastin,3,No,Yes,3.3,Occult,Moderate,22.6
+CR0591,36,M,Black,Low,Motor vehicle accident,7,1.87,1327,No,272,14,Yes,259,0,No,323,Yes,No,39,No,7,0.59,0.61,Observation,None,0,No,No,,None,NA,26.4
+CR0592,27,M,White,Medium,Sports injury,11,2.5,1452,No,378,3,No,217,2,No,380,No,No,52,No,9,0.5,0.56,Observation,None,0,No,No,,None,NA,34.9
+CR0593,42,M,Hispanic,Medium,Blunt trauma,9,6.8,78,Yes,259,2,Yes,255,3,Yes,299,Yes,No,36,Yes,10,0.86,1.06,Observation,None,0,No,No,,None,NA,24.9
+CR0594,40,F,Hispanic,Medium,Sports injury,6,6.23,1073,No,187,4,Yes,281,1,No,264,Yes,No,69,No,9,0.18,0.12,Observation,None,0,No,No,,None,NA,16.4
+CR0595,50,M,White,Low,Motor vehicle accident,8,5.04,2573,No,268,5,No,265,2,Yes,399,No,Yes,59,No,7,0.71,0.6,Observation,None,0,No,No,,None,NA,31.1
+CR0596,27,M,Black,Medium,Blunt trauma,7,3.22,907,No,260,4,Yes,320,2,Yes,318,Yes,No,29,No,8,0.44,0.55,Anti-VEGF,Lucentis,11,No,Yes,2.8,Classic,Good,32.9
+CR0597,30,F,Hispanic,Medium,Sports injury,6,6.68,676,No,199,0,Yes,287,3,Yes,306,No,No,45,Yes,8,1.07,0.9,Anti-VEGF,Lucentis,7,No,Yes,3.1,Classic,Good,26.5
+CR0598,20,M,Black,Medium,Blunt trauma,4,11.9,2329,No,315,0,Yes,434,0,No,361,No,No,72,No,8,0.01,0.15,Anti-VEGF,Eylea,1,No,Yes,3.5,Occult,Good,40.2
+CR0599,28,M,White,Medium,Motor vehicle accident,6,3.85,468,Yes,365,3,Yes,301,1,No,200,No,No,100,Yes,7,1.2,1.76,Anti-VEGF,Eylea,2,No,Yes,1.3,Mixed,Poor,28.6
+CR0600,40,M,Hispanic,Low,Blunt trauma,4,2.6,731,No,212,1,Yes,193,0,Yes,353,No,Yes,84,Yes,8,0.19,0.12,Observation,None,0,No,No,,None,NA,8.5
+CR0601,46,M,Black,High,Blunt trauma,11,4.18,517,No,338,12,No,269,3,No,348,Yes,No,17,Yes,8,1.08,1.14,Anti-VEGF,Eylea,7,No,Yes,6.3,Occult,Good,27.5
+CR0602,21,M,White,Low,Blunt trauma,5,2.87,2160,No,243,3,Yes,273,2,Yes,223,Yes,No,75,No,8,0.73,0.77,Observation,None,0,No,No,,None,NA,24.3
+CR0603,48,M,White,Medium,Blunt trauma,11,2.01,63,Yes,278,9,No,249,3,Yes,200,No,No,60,Yes,10,1.3,1.61,Anti-VEGF,Eylea,1,No,Yes,16.7,Mixed,Good,24.3
+CR0604,55,F,White,Low,Assault,7,4.58,556,No,272,0,Yes,283,0,No,280,No,No,75,Yes,8,0.47,0.66,Anti-VEGF,Eylea,4,No,Yes,8.4,Classic,Good,15.0
+CR0605,41,M,White,Medium,Blunt trauma,7,1.66,929,No,278,5,Yes,247,1,Yes,332,No,No,66,Yes,7,0.76,0.79,Observation,None,0,No,No,,None,NA,31.8
+CR0606,63,M,Hispanic,Medium,Motor vehicle accident,7,3.79,1255,Yes,308,1,Yes,296,2,No,339,Yes,Yes,13,No,9,1.09,1.31,Anti-VEGF,Eylea,5,No,Yes,5.2,Occult,Good,48.0
+CR0607,23,F,White,Low,Blunt trauma,3,0.57,699,No,218,13,No,184,1,Yes,439,No,No,83,No,9,0.0,0.0,Observation,None,0,No,No,,None,NA,16.2
+CR0608,16,M,White,High,Motor vehicle accident,6,7.48,1916,No,357,0,No,337,1,Yes,332,No,Yes,61,Yes,8,0.75,0.86,Anti-VEGF,Eylea,5,Yes,Yes,6.9,Occult,Good,25.0
+CR0609,10,M,Black,Low,Assault,2,1.28,2277,No,310,2,No,201,0,No,222,No,No,57,No,9,0.23,0.5,Anti-VEGF,Eylea,3,No,Yes,3.1,Mixed,Good,19.2
+CR0610,57,M,White,Medium,Blunt trauma,7,0.7,53,Yes,330,4,Yes,266,3,No,302,Yes,Yes,55,No,6,1.89,2.13,Anti-VEGF,Eylea,5,No,Yes,2.9,Classic,Good,23.4
+CR0611,44,F,Other,Medium,Other,6,6.08,411,Yes,233,1,Yes,243,2,Yes,229,No,Yes,70,Yes,8,0.95,1.35,Anti-VEGF,Eylea,1,Yes,Yes,3.1,Occult,Good,17.8
+CR0612,34,M,White,High,Blunt trauma,9,6.86,18,Yes,213,1,Yes,295,2,No,307,No,No,30,No,10,1.0,1.15,Anti-VEGF,Eylea,8,No,Yes,1.8,Classic,Poor,19.6
+CR0613,39,M,White,Medium,Sports injury,4,3.17,319,Yes,350,12,No,270,1,No,418,No,No,91,Yes,10,1.14,1.27,Observation,None,0,No,No,,None,NA,20.0
+CR0614,18,M,White,High,Motor vehicle accident,3,2.32,615,No,210,1,Yes,292,2,No,352,Yes,No,44,No,9,0.79,0.85,Anti-VEGF,Eylea,6,No,Yes,14.5,Occult,Good,17.4
+CR0615,71,M,White,High,Assault,6,1.91,1933,No,288,2,Yes,335,1,Yes,269,No,No,82,Yes,9,0.56,0.36,Anti-VEGF,Eylea,6,No,Yes,14.2,Mixed,Good,18.3
+CR0616,36,F,White,High,Sports injury,11,3.05,1499,No,341,0,Yes,318,3,No,361,Yes,No,23,No,10,0.61,0.41,Observation,None,0,No,No,,None,NA,21.7
+CR0617,36,F,Hispanic,High,Motor vehicle accident,8,2.42,109,Yes,272,5,Yes,281,2,No,265,Yes,No,35,No,10,0.81,0.96,Observation,None,0,No,No,,None,NA,15.1
+CR0618,45,M,Other,Low,Blunt trauma,6,2.2,78,Yes,350,3,Yes,302,3,Yes,200,No,No,18,No,8,1.08,1.55,Observation,None,0,No,Yes,9.0,Occult,NA,32.9
+CR0619,42,M,White,Low,Blunt trauma,7,1.16,711,No,263,1,No,378,3,No,233,Yes,No,15,No,9,0.37,0.54,Anti-VEGF,Lucentis,5,No,Yes,3.8,Mixed,Good,27.3
+CR0620,38,M,Black,Medium,Assault,2,0.88,607,No,203,0,Yes,320,1,No,352,No,No,85,Yes,8,0.97,0.63,Anti-VEGF,Eylea,5,No,Yes,9.3,Mixed,Good,28.5
+CR0621,23,F,Hispanic,Medium,Motor vehicle accident,12,2.67,247,Yes,302,2,No,265,3,No,374,No,No,29,No,6,0.99,1.6,Anti-VEGF,Eylea,8,No,Yes,3.5,Classic,Poor,36.2
+CR0622,42,M,Hispanic,High,Motor vehicle accident,8,2.98,1837,Yes,291,0,No,343,2,No,440,Yes,No,21,No,8,1.03,1.39,Anti-VEGF,Eylea,12,No,Yes,4.2,Mixed,Good,25.6
+CR0623,63,M,White,Medium,Fall,5,1.35,2097,No,441,0,Yes,299,1,No,343,No,Yes,50,Yes,9,0.62,0.43,Observation,None,0,No,No,,None,NA,25.7
+CR0624,55,M,White,Low,Motor vehicle accident,7,1.53,412,Yes,223,2,Yes,231,0,No,414,No,No,44,Yes,10,0.8,1.04,Observation,None,0,No,No,,None,NA,16.6
+CR0625,58,M,White,Low,Other,2,2.97,1768,No,264,0,Yes,270,1,No,364,Yes,Yes,35,Yes,10,0.3,0.62,Anti-VEGF,Eylea,9,No,Yes,8.8,Classic,Good,23.4
+CR0626,27,M,Hispanic,Medium,Sports injury,12,1.14,387,Yes,236,0,No,206,3,No,385,No,No,42,No,6,1.21,1.36,Anti-VEGF,Lucentis,2,No,Yes,4.4,Classic,Moderate,21.4
+CR0627,20,M,Hispanic,Low,Sports injury,3,5.17,1067,No,271,3,Yes,180,2,No,397,Yes,No,0,No,8,0.45,0.52,Anti-VEGF,Lucentis,6,No,Yes,5.2,Occult,Good,16.7
+CR0628,33,M,White,High,Assault,7,3.68,516,No,269,0,Yes,232,0,No,354,No,No,84,Yes,6,0.24,0.21,Observation,None,0,No,No,,None,NA,10.1
+CR0629,35,F,White,Low,Blunt trauma,4,1.34,104,Yes,227,1,Yes,286,2,Yes,395,Yes,Yes,49,Yes,7,1.2,1.28,Anti-VEGF,Avastin,5,No,Yes,1.1,Occult,Moderate,15.8
+CR0630,51,M,Asian,High,Blunt trauma,8,3.55,2104,No,308,0,Yes,286,0,No,271,Yes,No,73,No,10,0.04,0.0,Observation,None,0,No,No,,None,NA,12.0
+CR0631,10,M,Hispanic,Medium,Motor vehicle accident,9,1.16,484,Yes,267,2,Yes,209,3,Yes,200,Yes,No,41,No,8,1.52,1.93,Anti-VEGF,Lucentis,3,No,Yes,1.9,Occult,Good,36.6
+CR0632,57,M,Other,Medium,Blunt trauma,8,4.45,1060,No,360,3,Yes,180,0,No,365,No,No,69,Yes,9,0.32,0.18,Observation,None,0,No,No,,None,NA,19.9
+CR0633,32,M,Hispanic,Medium,Sports injury,7,1.2,366,Yes,241,3,No,353,3,No,346,No,No,44,Yes,6,1.1,1.57,Anti-VEGF,Eylea,5,No,Yes,3.5,Classic,Good,26.9
+CR0634,28,M,White,High,Assault,10,2.28,15,Yes,391,0,No,284,2,No,258,No,No,44,Yes,8,1.02,1.53,Anti-VEGF,Eylea,3,No,Yes,4.0,Mixed,Poor,24.5
+CR0635,19,M,Black,Low,Motor vehicle accident,2,2.8,84,Yes,296,0,Yes,357,2,No,231,Yes,No,66,No,9,1.39,1.47,Anti-VEGF,Lucentis,2,No,Yes,4.0,Occult,Good,29.3
+CR0636,10,M,Black,High,Motor vehicle accident,5,6.79,548,No,356,0,Yes,354,3,No,329,No,No,70,No,6,0.95,1.01,Anti-VEGF,Avastin,6,No,Yes,7.5,Classic,Good,30.2
+CR0637,47,M,White,Medium,Other,4,1.28,936,No,286,1,No,316,1,Yes,370,Yes,No,100,No,8,0.51,0.31,Observation,None,0,No,No,,None,NA,11.1
+CR0638,36,M,Black,High,Motor vehicle accident,12,1.23,326,Yes,233,8,Yes,282,0,No,356,Yes,No,59,Yes,6,0.65,0.79,Observation,None,0,No,No,,None,NA,23.7
+CR0639,15,M,Hispanic,High,Motor vehicle accident,6,0.61,951,No,264,0,No,260,1,Yes,248,No,No,90,No,9,0.59,0.61,Anti-VEGF,Avastin,5,No,Yes,10.0,Occult,Good,27.4
+CR0640,15,F,White,Medium,Motor vehicle accident,8,8.15,959,No,196,0,Yes,315,0,No,264,Yes,No,85,No,10,0.3,0.21,Observation,None,0,No,No,,None,NA,22.4
+CR0641,29,M,Hispanic,Medium,Assault,8,2.57,973,No,273,0,Yes,272,3,Yes,366,Yes,No,27,No,10,1.19,1.02,Anti-VEGF,Lucentis,7,No,Yes,6.7,Classic,Good,29.7
+CR0642,60,F,Black,High,Sports injury,4,5.26,542,No,290,2,Yes,250,1,Yes,325,No,Yes,57,Yes,10,0.44,0.48,Anti-VEGF,Avastin,3,No,Yes,5.2,Occult,Good,18.7
+CR0643,31,M,Asian,High,Fall,4,1.55,1971,No,282,3,Yes,180,1,No,394,No,No,67,No,10,0.87,0.84,Observation,None,0,No,No,,None,NA,30.4
+CR0644,12,M,White,Medium,Fall,5,1.67,537,No,359,3,No,275,1,No,297,Yes,No,53,No,10,0.5,0.31,Observation,None,0,No,No,,None,NA,19.9
+CR0645,31,M,White,Low,Motor vehicle accident,6,2.41,478,Yes,271,5,Yes,334,1,No,371,Yes,No,47,Yes,9,0.69,1.05,Anti-VEGF,Eylea,5,No,Yes,2.2,Occult,Good,27.1
+CR0646,30,M,Black,Low,Motor vehicle accident,4,2.47,177,Yes,166,1,Yes,342,3,No,317,Yes,No,49,Yes,8,2.0,2.24,Anti-VEGF,Lucentis,2,No,Yes,4.3,Occult,Good,34.7
+CR0647,10,F,White,High,Fall,1,4.07,294,Yes,450,0,Yes,282,3,Yes,269,No,No,40,No,8,0.89,1.21,Observation,None,0,No,Yes,8.1,Classic,NA,20.7
+CR0648,34,M,Hispanic,Medium,Motor vehicle accident,10,2.63,34,Yes,238,1,No,235,3,Yes,384,No,No,40,No,10,0.76,1.1,Anti-VEGF,Eylea,2,No,Yes,14.1,Mixed,Moderate,17.4
+CR0649,31,F,Hispanic,High,Fall,12,1.85,803,No,338,3,Yes,325,1,No,250,No,Yes,93,No,7,0.0,0.18,Anti-VEGF,Eylea,12,No,Yes,5.3,Classic,Good,34.5
+CR0650,45,M,White,High,Assault,5,8.25,228,Yes,189,2,No,279,2,No,325,No,No,36,No,6,1.78,2.19,Anti-VEGF,Eylea,5,No,Yes,14.1,Occult,Good,39.2
+CR0651,62,M,Black,Medium,Sports injury,5,1.15,290,Yes,294,2,Yes,261,0,No,332,No,Yes,91,Yes,10,1.33,1.92,Anti-VEGF,Eylea,3,No,Yes,3.3,Classic,Moderate,32.3
+CR0652,51,M,Black,Medium,Sports injury,1,1.28,1178,No,232,3,Yes,207,2,Yes,311,No,No,25,No,5,0.64,0.96,Anti-VEGF,Eylea,2,No,Yes,2.0,Occult,Good,36.4
+CR0653,30,M,White,High,Fall,8,1.16,317,Yes,150,3,No,385,2,No,389,Yes,No,25,No,10,1.21,1.18,Observation,None,0,No,No,,None,NA,9.9
+CR0654,18,M,Asian,High,Fall,9,4.18,221,Yes,263,6,Yes,316,2,No,360,Yes,No,40,No,9,1.16,1.5,Anti-VEGF,Avastin,6,No,Yes,4.0,Classic,Poor,27.1
+CR0655,73,M,Hispanic,High,Motor vehicle accident,3,3.47,148,Yes,276,2,Yes,322,3,No,351,No,Yes,82,No,8,0.81,0.95,Anti-VEGF,Avastin,9,No,Yes,2.2,Occult,Moderate,24.7
+CR0656,35,M,Black,Low,Blunt trauma,3,2.21,1192,No,266,4,Yes,236,0,Yes,324,Yes,No,100,Yes,9,0.66,0.72,Observation,None,0,No,No,,None,NA,28.2
+CR0657,35,M,Hispanic,Low,Motor vehicle accident,9,1.11,111,Yes,294,0,Yes,283,0,No,449,No,No,96,No,10,1.13,1.21,Observation,None,0,No,No,,None,NA,24.0
+CR0658,34,M,Black,High,Sports injury,7,2.79,483,Yes,263,3,Yes,275,1,Yes,422,Yes,Yes,47,No,7,0.64,1.03,Anti-VEGF,Eylea,3,No,Yes,2.8,Occult,Good,38.2
+CR0659,37,F,Asian,High,Motor vehicle accident,1,4.6,565,No,284,6,Yes,319,0,Yes,384,No,Yes,77,No,9,0.38,0.37,Anti-VEGF,Eylea,1,No,Yes,15.9,Classic,Moderate,25.1
+CR0660,32,F,Black,Low,Sports injury,7,6.98,930,No,290,1,Yes,347,0,No,372,Yes,No,91,Yes,10,0.28,0.23,Anti-VEGF,Lucentis,2,No,Yes,14.9,Classic,Good,20.9
+CR0661,26,M,Hispanic,Low,Motor vehicle accident,5,1.49,802,No,277,4,Yes,208,1,No,277,Yes,Yes,100,No,7,0.4,0.27,Observation,None,0,No,No,,None,NA,30.6
+CR0662,26,M,Hispanic,Medium,Sports injury,6,2.2,1331,No,269,3,Yes,226,1,No,316,No,No,41,No,5,0.28,0.35,Observation,None,0,No,No,,None,NA,20.2
+CR0663,34,M,White,High,Blunt trauma,9,3.45,36,Yes,226,0,Yes,312,1,No,364,No,No,89,Yes,7,0.92,1.48,Anti-VEGF,Eylea,7,No,Yes,6.0,Occult,Poor,38.5
+CR0664,26,F,Hispanic,High,Sports injury,9,1.83,281,Yes,315,2,No,254,3,No,393,No,No,61,No,7,1.12,1.27,Anti-VEGF,Eylea,3,No,Yes,5.7,Classic,Poor,29.5
+CR0665,24,M,White,Medium,Motor vehicle accident,6,0.72,262,Yes,263,0,No,320,2,Yes,382,No,Yes,49,Yes,6,1.37,1.75,Anti-VEGF,Avastin,2,No,Yes,2.7,Occult,Poor,47.6
+CR0666,36,M,White,Medium,Blunt trauma,11,2.21,126,Yes,258,10,Yes,261,3,No,360,No,No,12,No,9,1.24,1.58,Anti-VEGF,Eylea,2,No,Yes,4.4,Occult,Good,39.4
+CR0667,31,F,White,High,Blunt trauma,6,0.81,273,Yes,310,5,Yes,217,2,No,460,No,No,45,No,8,0.93,1.45,Anti-VEGF,Lucentis,12,No,Yes,3.8,Occult,Moderate,28.7
+CR0668,57,M,Other,Medium,Sports injury,9,4.87,296,Yes,292,0,No,192,2,Yes,310,Yes,No,48,No,10,1.09,1.5,Anti-VEGF,Avastin,1,No,Yes,1.5,Mixed,Moderate,30.2
+CR0669,10,M,Hispanic,High,Motor vehicle accident,6,1.95,590,No,238,0,Yes,304,3,Yes,390,Yes,No,43,No,7,0.71,0.79,Anti-VEGF,Lucentis,12,No,Yes,15.7,Occult,Good,30.2
+CR0670,51,M,Hispanic,Low,Blunt trauma,10,2.38,871,No,355,2,Yes,305,0,No,382,Yes,No,61,No,8,0.25,0.11,Observation,None,0,No,No,,None,NA,10.9
+CR0671,53,M,Hispanic,High,Other,11,1.31,383,Yes,208,1,No,328,2,No,351,No,Yes,23,No,9,1.27,1.63,Anti-VEGF,Lucentis,5,No,Yes,3.9,Mixed,Good,26.1
+CR0672,10,M,Black,High,Sports injury,2,2.46,1016,No,218,0,Yes,296,3,Yes,353,Yes,No,49,No,10,0.68,0.55,Anti-VEGF,Eylea,2,No,Yes,2.0,Mixed,Good,25.5
+CR0673,29,M,Asian,Medium,Other,11,5.88,327,Yes,320,2,Yes,180,3,No,352,No,No,26,No,8,1.11,1.07,Anti-VEGF,Eylea,6,No,Yes,1.4,Mixed,Good,31.9
+CR0674,29,M,Black,Medium,Motor vehicle accident,9,5.24,274,Yes,385,1,No,305,2,No,270,No,Yes,26,No,8,0.76,0.99,Anti-VEGF,Lucentis,6,No,Yes,7.0,Classic,Good,23.5
+CR0675,13,M,White,Low,Motor vehicle accident,9,0.94,623,No,245,0,Yes,207,1,No,348,No,Yes,72,Yes,10,0.45,0.43,Anti-VEGF,Lucentis,6,No,Yes,14.9,Mixed,Good,28.8
+CR0676,23,F,White,Medium,Assault,4,0.5,19,Yes,304,4,Yes,186,3,Yes,372,Yes,Yes,43,Yes,8,1.56,1.87,Anti-VEGF,Lucentis,1,No,Yes,18.1,Mixed,Good,27.1
+CR0677,18,M,Hispanic,High,Motor vehicle accident,9,2.22,66,Yes,208,7,Yes,180,3,Yes,342,Yes,No,60,No,6,1.22,1.37,Observation,None,0,No,No,,None,NA,20.6
+CR0678,61,M,Hispanic,Medium,Sports injury,10,1.96,432,Yes,224,4,Yes,180,0,No,200,No,No,51,No,8,0.67,1.13,Anti-VEGF,Avastin,3,No,Yes,7.6,Occult,Good,41.7
+CR0679,49,M,White,High,Blunt trauma,5,1.87,2290,No,347,5,No,293,0,No,208,Yes,Yes,49,Yes,9,0.11,0.1,Observation,None,0,No,No,,None,NA,28.8
+CR0680,54,F,White,Low,Motor vehicle accident,11,1.58,1022,No,301,0,Yes,243,1,Yes,262,Yes,No,67,No,5,0.02,0.38,Anti-VEGF,Avastin,6,No,Yes,6.5,Occult,Moderate,19.5
+CR0681,45,M,Hispanic,Medium,Blunt trauma,1,0.92,73,Yes,349,0,Yes,204,2,Yes,312,Yes,No,3,No,9,1.39,1.46,Anti-VEGF,Avastin,5,No,Yes,5.3,Mixed,Good,29.6
+CR0682,18,M,White,Medium,Blunt trauma,3,10.08,1498,No,345,0,No,281,1,No,266,Yes,Yes,86,No,9,0.57,0.73,Anti-VEGF,Avastin,4,No,Yes,5.2,Occult,Good,27.6
+CR0683,27,F,Hispanic,High,Blunt trauma,7,8.14,1054,No,154,4,Yes,224,0,No,365,Yes,No,35,Yes,10,0.49,0.41,Observation,None,0,No,No,,None,NA,14.8
+CR0684,42,F,Other,Medium,Blunt trauma,7,1.8,755,No,208,8,Yes,329,0,No,403,No,No,89,No,7,0.36,0.59,Anti-VEGF,Eylea,6,No,Yes,1.3,Occult,Poor,47.2
+CR0685,16,M,White,Low,Other,7,2.76,1373,Yes,296,3,Yes,352,1,No,413,No,No,97,No,7,0.75,0.76,Observation,None,0,No,No,,None,NA,15.8
+CR0686,45,F,White,Low,Blunt trauma,1,4.93,414,Yes,178,6,Yes,269,3,Yes,343,No,No,45,No,8,1.17,1.42,Observation,None,0,No,No,,None,NA,16.3
+CR0687,31,M,Hispanic,High,Sports injury,12,2.75,200,Yes,216,3,Yes,348,1,Yes,395,Yes,No,37,No,8,0.82,1.02,Anti-VEGF,Lucentis,1,No,Yes,3.5,Mixed,Good,44.0
+CR0688,29,M,Hispanic,High,Fall,1,1.69,573,No,365,1,No,348,0,No,280,No,No,77,No,9,0.2,0.07,Observation,None,0,No,No,,None,NA,27.8
+CR0689,45,M,Black,Low,Sports injury,3,0.73,636,Yes,247,1,No,284,2,Yes,309,No,No,24,No,9,1.0,1.55,Anti-VEGF,Eylea,2,No,Yes,6.3,Occult,Poor,26.5
+CR0690,41,M,Other,Low,Blunt trauma,1,2.52,618,No,322,0,Yes,366,3,No,238,Yes,No,15,No,9,1.03,0.94,Observation,None,0,No,No,,None,NA,26.1
+CR0691,29,M,White,High,Sports injury,7,0.82,666,No,278,0,Yes,248,2,No,404,Yes,No,51,Yes,10,1.11,1.19,Anti-VEGF,Lucentis,3,No,Yes,7.3,Classic,Moderate,28.1
+CR0692,52,M,Black,Medium,Sports injury,11,5.62,2376,No,239,3,Yes,182,2,No,457,Yes,No,55,No,10,0.38,0.62,Observation,None,0,No,No,,None,NA,18.6
+CR0693,18,M,Hispanic,High,Sports injury,8,2.44,1860,No,180,1,Yes,202,0,Yes,295,No,No,100,No,8,0.26,0.28,Anti-VEGF,Lucentis,5,No,Yes,12.7,Occult,Moderate,23.6
+CR0694,44,M,Hispanic,Low,Fall,9,3.65,1668,No,293,2,Yes,246,2,Yes,200,No,No,34,No,10,0.65,0.79,Observation,None,0,No,No,,None,NA,6.0
+CR0695,43,F,White,High,Other,1,1.92,1293,No,367,2,No,306,1,No,253,No,Yes,78,No,7,0.2,0.07,Observation,None,0,No,No,,None,NA,8.6
+CR0696,30,M,Hispanic,High,Sports injury,7,4.47,2297,Yes,240,0,Yes,222,2,No,274,Yes,Yes,73,No,9,1.11,1.65,Anti-VEGF,Eylea,4,Yes,Yes,5.2,Occult,Poor,21.2
+CR0697,39,M,Black,Low,Motor vehicle accident,6,1.47,82,Yes,284,1,Yes,246,3,Yes,227,No,Yes,81,No,8,1.34,1.67,Anti-VEGF,Avastin,3,No,Yes,1.9,Mixed,Moderate,33.4
+CR0698,16,M,White,High,Sports injury,6,3.11,246,Yes,188,1,Yes,217,3,No,247,Yes,No,61,No,10,1.23,1.4,Observation,None,0,No,No,,None,NA,21.2
+CR0699,48,F,White,Medium,Blunt trauma,2,1.86,546,No,239,1,Yes,247,2,No,334,Yes,Yes,33,No,8,0.76,0.57,Observation,None,0,No,No,,None,NA,28.7
+CR0700,32,M,Hispanic,Medium,Assault,8,2.09,1499,No,300,5,Yes,347,3,No,366,No,No,40,No,9,0.75,0.72,Anti-VEGF,Eylea,10,No,Yes,4.5,Occult,Moderate,20.4
+CR0701,27,F,White,High,Blunt trauma,6,4.89,562,No,324,1,Yes,297,3,Yes,200,Yes,Yes,36,Yes,10,0.03,0.2,Anti-VEGF,Avastin,6,No,Yes,11.6,Mixed,Good,44.3
+CR0702,50,M,White,Medium,Motor vehicle accident,9,1.3,1102,No,313,2,Yes,251,0,No,282,No,No,89,Yes,9,0.06,0.0,Observation,None,0,No,No,,None,NA,33.6
+CR0703,24,M,White,Medium,Fall,6,3.26,119,Yes,158,6,Yes,341,2,No,322,No,Yes,23,No,9,1.46,1.48,Anti-VEGF,Lucentis,8,No,Yes,6.6,Occult,Good,30.3
+CR0704,13,M,Hispanic,High,Sports injury,3,6.07,232,Yes,252,6,Yes,281,0,No,245,No,No,81,Yes,6,0.93,1.12,Anti-VEGF,Eylea,5,No,Yes,4.0,Occult,Good,24.5
+CR0705,11,M,Black,Medium,Motor vehicle accident,7,4.76,1052,No,221,6,Yes,286,3,No,336,Yes,No,46,No,7,0.04,0.0,Observation,None,0,No,No,,None,NA,14.9
+CR0706,44,M,Hispanic,Low,Motor vehicle accident,3,1.5,144,Yes,261,0,Yes,337,1,Yes,311,No,No,82,No,10,0.57,0.59,Anti-VEGF,Lucentis,1,No,Yes,19.2,Classic,Good,31.6
+CR0707,15,F,White,Low,Fall,10,3.59,346,Yes,273,0,No,262,3,Yes,288,No,No,19,No,9,1.43,1.57,Anti-VEGF,Lucentis,5,No,Yes,5.4,Occult,Good,45.1
+CR0708,61,M,Black,High,Motor vehicle accident,7,0.5,246,Yes,343,0,Yes,325,2,Yes,259,No,No,44,Yes,9,0.96,0.83,Anti-VEGF,Avastin,1,No,Yes,4.4,Mixed,Good,29.2
+CR0709,10,M,Black,High,Fall,3,5.0,344,Yes,297,0,Yes,322,2,No,339,No,Yes,75,Yes,8,0.42,0.38,Observation,None,0,No,No,,None,NA,7.3
+CR0710,60,F,Hispanic,High,Blunt trauma,12,11.88,985,No,365,7,Yes,272,0,No,266,No,Yes,65,No,5,0.56,0.81,Anti-VEGF,Lucentis,5,No,Yes,13.5,Classic,Good,45.2
+CR0711,38,M,Asian,Medium,Fall,7,3.13,366,Yes,238,3,No,210,2,Yes,200,No,Yes,45,No,8,1.28,1.87,Anti-VEGF,Lucentis,3,No,Yes,1.8,Mixed,Poor,26.8
+CR0712,33,F,White,Medium,Fall,2,6.27,648,No,194,0,Yes,280,3,Yes,321,Yes,No,3,No,8,0.54,0.72,Observation,None,0,No,No,,None,NA,31.6
+CR0713,26,M,Black,Medium,Blunt trauma,7,0.7,84,Yes,367,0,Yes,336,0,Yes,233,No,Yes,80,No,7,1.11,1.4,Anti-VEGF,Lucentis,4,No,Yes,3.9,Classic,Good,35.0
+CR0714,40,M,White,High,Motor vehicle accident,4,1.02,1307,No,306,0,Yes,320,1,Yes,204,No,Yes,79,Yes,7,0.25,0.33,Observation,None,0,No,No,,None,NA,18.8
+CR0715,34,M,Black,High,Blunt trauma,9,1.91,369,Yes,235,2,Yes,365,0,No,329,No,No,77,No,8,0.64,1.03,Anti-VEGF,Eylea,5,No,Yes,4.5,Classic,Poor,37.7
+CR0716,51,M,White,Medium,Sports injury,9,2.21,836,No,306,3,Yes,255,1,Yes,308,No,No,89,Yes,9,0.33,0.26,Observation,None,0,No,No,,None,NA,14.1
+CR0717,36,F,White,Medium,Motor vehicle accident,12,3.15,1033,No,330,5,Yes,318,0,Yes,259,Yes,No,69,No,7,0.0,0.0,Observation,None,0,No,No,,None,NA,17.7
+CR0718,37,M,White,High,Sports injury,6,1.51,188,Yes,287,8,No,229,2,No,336,No,No,63,Yes,9,1.2,1.37,Anti-VEGF,Eylea,2,No,Yes,1.0,Classic,Poor,25.8
+CR0719,29,M,Black,Medium,Blunt trauma,6,2.78,1728,No,236,0,Yes,290,3,No,349,No,No,22,No,10,0.88,1.26,Anti-VEGF,Eylea,2,No,Yes,5.8,Occult,Poor,28.4
+CR0720,34,M,White,High,Blunt trauma,8,4.88,766,No,253,1,Yes,335,1,No,336,Yes,No,100,Yes,8,0.34,0.3,Anti-VEGF,Lucentis,5,No,Yes,7.2,Classic,Good,34.4
+CR0721,39,M,Hispanic,Low,Blunt trauma,3,3.58,447,Yes,297,0,Yes,325,2,Yes,334,Yes,Yes,44,Yes,10,1.28,1.33,Observation,None,0,No,No,,None,NA,24.3
+CR0722,10,F,White,Low,Motor vehicle accident,7,1.86,161,Yes,291,1,Yes,285,3,Yes,207,No,No,38,No,10,0.85,1.2,Anti-VEGF,Eylea,1,No,Yes,3.2,Occult,Good,17.6
+CR0723,14,M,White,High,Sports injury,7,4.23,2282,No,352,7,Yes,266,0,No,410,Yes,No,46,No,6,0.47,0.26,Observation,None,0,No,No,,None,NA,15.7
+CR0724,46,M,Hispanic,High,Fall,2,1.8,1125,No,263,2,No,230,1,Yes,359,Yes,Yes,52,No,6,0.53,0.74,Anti-VEGF,Eylea,4,No,Yes,14.0,Occult,Moderate,27.1
+CR0725,37,F,White,Medium,Sports injury,6,2.67,186,Yes,222,4,No,268,2,Yes,253,Yes,No,47,Yes,8,0.93,1.35,Anti-VEGF,Lucentis,1,No,Yes,10.4,Occult,Moderate,34.7
+CR0726,32,M,White,High,Motor vehicle accident,10,4.71,329,Yes,434,2,Yes,214,2,No,319,No,No,25,No,9,1.2,1.25,Observation,None,0,No,No,,None,NA,8.8
+CR0727,35,F,Black,Medium,Other,10,2.16,1327,No,290,0,Yes,262,2,No,332,Yes,Yes,59,No,8,0.38,0.44,Anti-VEGF,Eylea,3,No,Yes,18.9,Occult,Good,35.7
+CR0728,40,M,White,Low,Sports injury,2,0.81,951,No,330,0,Yes,189,1,Yes,317,No,No,80,No,8,0.73,0.69,Observation,None,0,No,No,,None,NA,11.0
+CR0729,26,M,White,Medium,Assault,2,2.61,1161,No,311,2,Yes,214,2,Yes,445,No,No,11,No,9,0.73,0.91,Anti-VEGF,Lucentis,3,No,Yes,2.0,Occult,Good,32.0
+CR0730,23,M,White,Low,Motor vehicle accident,5,4.74,465,Yes,291,3,Yes,322,3,No,200,No,No,55,Yes,5,1.34,1.76,Anti-VEGF,Lucentis,1,No,Yes,5.6,Mixed,Poor,38.9
+CR0731,37,M,Asian,Medium,Blunt trauma,10,5.04,1008,No,266,0,No,317,0,Yes,216,No,No,71,No,10,0.18,0.0,Observation,None,0,No,No,,None,NA,10.2
+CR0732,20,F,Black,High,Blunt trauma,3,0.98,390,Yes,150,3,No,265,2,No,200,No,No,39,No,7,1.29,1.4,Anti-VEGF,Eylea,5,No,Yes,7.8,Occult,Good,31.9
+CR0733,41,M,Black,Medium,Sports injury,8,4.11,189,Yes,216,4,Yes,283,2,No,325,No,Yes,60,No,10,1.4,1.55,Anti-VEGF,Avastin,3,No,Yes,5.6,Classic,Good,28.5
+CR0734,10,M,Black,Medium,Blunt trauma,2,2.06,801,No,299,1,Yes,289,0,No,358,Yes,Yes,47,No,6,0.7,0.57,Observation,None,0,No,No,,None,NA,12.2
+CR0735,50,M,White,Medium,Motor vehicle accident,7,6.55,2984,No,150,4,Yes,303,2,No,345,No,Yes,17,No,7,0.46,0.54,Anti-VEGF,Eylea,7,No,Yes,9.9,Occult,Good,20.2
+CR0736,42,M,White,High,Motor vehicle accident,5,0.83,297,Yes,284,1,Yes,297,3,Yes,299,No,Yes,46,No,7,1.45,1.67,Anti-VEGF,Eylea,6,No,Yes,5.9,Occult,Good,24.3
+CR0737,38,M,Hispanic,High,Sports injury,9,4.06,494,Yes,319,3,Yes,213,2,Yes,348,Yes,No,6,No,10,1.45,1.56,Observation,None,0,No,No,,None,NA,13.5
+CR0738,49,F,White,Low,Sports injury,4,1.89,896,No,329,4,Yes,180,1,No,299,No,No,62,No,5,0.39,0.25,Observation,None,0,No,No,,None,NA,18.4
+CR0739,59,M,White,High,Blunt trauma,7,1.53,623,No,315,14,Yes,229,0,No,371,Yes,No,94,Yes,9,0.65,0.61,Observation,None,0,No,No,,None,NA,16.6
+CR0740,50,M,White,Low,Motor vehicle accident,4,4.85,1483,No,337,1,Yes,272,1,No,397,No,No,72,No,10,0.49,0.57,Observation,None,0,No,No,,None,NA,23.4
+CR0741,10,M,White,Low,Sports injury,8,5.38,1147,No,376,1,Yes,328,2,No,254,Yes,No,12,No,9,0.35,0.44,Anti-VEGF,Eylea,11,No,Yes,1.9,Occult,Good,36.5
+CR0742,15,M,Other,Low,Other,10,0.5,48,Yes,345,0,No,291,3,No,299,No,No,43,No,8,1.07,1.68,Anti-VEGF,Eylea,6,No,Yes,10.1,Mixed,Poor,17.8
+CR0743,25,M,White,Medium,Sports injury,3,4.91,5000,No,291,0,Yes,306,1,No,311,Yes,No,66,No,10,0.09,0.16,Anti-VEGF,Eylea,6,No,Yes,5.5,Mixed,Good,28.0
+CR0744,35,M,Black,Medium,Assault,10,2.37,1116,No,271,3,Yes,235,2,No,419,Yes,Yes,25,No,10,0.59,0.48,Observation,None,0,No,No,,None,NA,12.4
+CR0745,42,F,White,Low,Fall,7,2.56,1595,No,286,7,Yes,276,1,No,263,No,No,100,No,8,0.41,0.59,Anti-VEGF,Avastin,7,No,Yes,24.0,Classic,Good,31.210305295727494
+CR0746,24,M,Other,High,Sports injury,3,0.79,842,No,263,1,Yes,283,1,No,396,No,No,86,No,9,0.5,0.31,Observation,None,0,No,No,,None,NA,7.4
+CR0747,37,M,White,Medium,Blunt trauma,6,3.87,1551,No,347,0,Yes,242,1,Yes,217,No,No,69,Yes,10,0.79,0.68,Observation,None,0,No,No,,None,NA,6.9
+CR0748,23,M,White,Medium,Sports injury,3,10.24,95,Yes,314,1,Yes,226,2,No,407,Yes,No,57,No,10,1.1,1.28,Anti-VEGF,Lucentis,6,No,Yes,2.0,Occult,Good,25.8
+CR0749,25,F,Hispanic,Medium,Sports injury,8,1.61,341,Yes,257,1,Yes,268,3,Yes,379,Yes,No,34,No,8,1.18,1.35,Observation,None,0,No,No,,None,NA,23.1
+CR0750,13,M,Hispanic,Medium,Sports injury,8,5.73,1672,No,359,1,Yes,313,3,Yes,309,No,Yes,29,No,10,0.7,1.19,Anti-VEGF,Avastin,6,No,Yes,5.5,Occult,Poor,33.1
+CR0751,21,M,White,High,Motor vehicle accident,2,2.49,180,Yes,262,0,No,234,0,No,384,No,Yes,80,Yes,8,0.34,0.67,Anti-VEGF,Avastin,3,No,Yes,13.7,Mixed,Good,21.6
+CR0752,14,M,White,Medium,Motor vehicle accident,6,1.66,65,Yes,223,3,Yes,269,3,No,284,Yes,No,50,No,8,1.42,1.59,Observation,None,0,No,No,,None,NA,10.8
+CR0753,20,M,White,Low,Motor vehicle accident,9,0.64,1241,Yes,279,0,Yes,347,2,No,255,No,No,58,No,7,1.06,1.39,Anti-VEGF,Eylea,3,No,Yes,6.0,Occult,Good,31.9
+CR0754,50,M,White,High,Motor vehicle accident,11,6.28,1443,No,230,2,Yes,254,2,Yes,439,Yes,No,68,No,7,0.62,0.67,Observation,None,0,No,No,,None,NA,16.5
+CR0755,20,M,White,Low,Blunt trauma,7,2.72,142,Yes,336,4,Yes,280,3,No,282,Yes,No,63,No,9,1.2,1.23,Anti-VEGF,Lucentis,1,No,Yes,8.8,Occult,Good,37.1
+CR0756,74,M,Black,Medium,Fall,11,1.74,1541,No,229,0,No,274,1,Yes,367,Yes,No,92,Yes,8,0.48,0.65,Observation,None,0,No,No,,None,NA,11.1
+CR0757,42,M,White,Low,Blunt trauma,7,1.98,928,No,273,2,Yes,270,2,No,397,No,No,59,No,7,0.27,0.33,Observation,None,0,No,No,,None,NA,6.0
+CR0758,37,F,White,Medium,Blunt trauma,6,4.09,587,No,336,3,Yes,363,0,Yes,376,No,No,98,Yes,8,0.3,0.57,Anti-VEGF,Avastin,3,No,Yes,17.8,Mixed,Poor,34.9
+CR0759,22,F,Black,Low,Motor vehicle accident,10,1.73,1418,No,237,3,Yes,295,0,No,361,No,Yes,89,Yes,8,0.15,0.14,Observation,None,0,No,No,,None,NA,6.0
+CR0760,45,M,Other,High,Sports injury,6,1.1,434,Yes,304,1,Yes,201,3,No,367,No,Yes,8,No,10,1.26,1.26,Anti-VEGF,Eylea,1,No,Yes,5.3,Occult,Good,18.4
+CR0761,26,M,Black,Low,Motor vehicle accident,6,2.29,172,Yes,221,1,No,356,3,Yes,394,Yes,No,49,No,10,1.0,1.31,Anti-VEGF,Lucentis,5,No,Yes,2.5,Occult,Moderate,24.6
+CR0762,36,M,White,High,Blunt trauma,6,2.23,268,Yes,294,5,Yes,293,3,No,342,No,No,67,No,8,1.37,1.67,Anti-VEGF,Eylea,8,No,Yes,9.5,Mixed,Moderate,27.7
+CR0763,73,M,White,Low,Sports injury,10,2.19,562,No,314,4,Yes,261,2,No,317,No,No,23,No,10,0.61,0.52,Observation,None,0,No,No,,None,NA,24.8
+CR0764,33,M,Asian,Low,Motor vehicle accident,9,1.75,606,No,277,1,No,347,1,Yes,224,No,No,67,No,8,0.13,0.3,Anti-VEGF,Avastin,10,No,Yes,7.6,Mixed,Good,21.9
+CR0765,52,M,White,High,Assault,6,5.86,1310,No,282,0,No,241,1,Yes,342,Yes,No,73,No,9,0.69,0.65,Observation,None,0,No,No,,None,NA,30.5
+CR0766,24,M,White,High,Assault,5,12.0,1253,No,306,0,Yes,365,3,Yes,391,No,No,43,Yes,10,0.62,0.49,Anti-VEGF,Eylea,8,No,Yes,1.0,Classic,Good,17.9
+CR0767,34,F,Black,Low,Motor vehicle accident,6,0.98,696,No,263,0,Yes,284,1,Yes,242,No,No,63,Yes,8,0.36,0.23,Anti-VEGF,Eylea,11,Yes,Yes,20.0,Occult,Good,27.0
+CR0768,61,M,Black,High,Motor vehicle accident,7,0.5,1214,No,333,2,Yes,330,2,No,303,No,No,41,Yes,9,0.8,0.55,Observation,None,0,No,No,,None,NA,26.6
+CR0769,25,M,Black,Low,Sports injury,4,2.07,170,Yes,362,0,Yes,433,2,No,349,No,Yes,50,No,7,1.37,1.85,Anti-VEGF,Lucentis,1,No,Yes,15.6,Occult,Moderate,37.1
+CR0770,62,F,White,High,Blunt trauma,9,0.5,41,Yes,224,1,No,289,3,Yes,425,No,No,0,No,7,1.13,1.21,Observation,None,0,No,No,,None,NA,6.0
+CR0771,45,M,White,High,Motor vehicle accident,6,0.58,1654,No,386,4,Yes,275,1,No,238,Yes,Yes,76,No,9,0.48,0.79,Anti-VEGF,Eylea,2,No,Yes,5.2,Mixed,Moderate,48.0
+CR0772,26,M,Other,Low,Motor vehicle accident,5,1.63,62,Yes,261,1,Yes,226,3,No,375,No,No,32,No,10,1.42,2.09,Anti-VEGF,Eylea,6,No,Yes,5.1,Mixed,Good,27.4
+CR0773,44,M,White,Medium,Assault,2,4.07,226,Yes,399,4,No,273,3,Yes,294,No,No,5,No,8,1.57,1.89,Anti-VEGF,Eylea,5,No,Yes,16.5,Mixed,Poor,32.2
+CR0774,49,M,Black,Low,Blunt trauma,4,2.05,950,No,262,4,Yes,228,3,Yes,272,No,No,51,Yes,10,0.77,0.75,Observation,None,0,No,No,,None,NA,17.3
+CR0775,44,F,Hispanic,High,Sports injury,11,0.5,421,Yes,322,0,Yes,270,0,No,255,No,No,81,Yes,10,0.92,1.34,Anti-VEGF,Eylea,6,No,Yes,13.8,Occult,Good,47.1
+CR0776,11,M,Black,Medium,Sports injury,5,2.03,1672,No,322,3,No,424,1,No,274,Yes,No,78,Yes,7,0.22,0.12,Observation,None,0,No,No,,None,NA,30.3
+CR0777,24,M,White,Medium,Motor vehicle accident,3,2.15,283,Yes,256,4,No,285,3,No,354,No,No,52,No,8,0.87,1.17,Anti-VEGF,Eylea,1,Yes,Yes,7.8,Classic,Moderate,46.9
+CR0778,31,F,White,Medium,Blunt trauma,6,2.18,9,Yes,284,1,No,252,3,No,304,Yes,No,46,No,9,1.39,1.54,Observation,None,0,No,No,,None,NA,23.8
+CR0779,33,F,Black,Medium,Other,5,5.29,286,Yes,366,0,Yes,269,3,Yes,369,Yes,No,25,No,8,1.05,1.88,Observation,None,0,No,Yes,13.0,Occult,NA,37.3
+CR0780,44,F,Hispanic,Medium,Motor vehicle accident,1,4.7,690,No,260,2,No,259,0,No,241,No,Yes,89,Yes,6,0.07,0.08,Observation,None,0,No,No,,None,NA,11.6
+CR0781,37,M,Asian,Medium,Sports injury,5,2.64,377,Yes,254,7,Yes,332,0,No,368,Yes,No,92,No,10,0.96,1.03,Anti-VEGF,Eylea,2,No,Yes,4.3,Occult,Good,27.9
+CR0782,14,M,White,High,Blunt trauma,7,8.98,612,No,210,3,Yes,275,1,No,350,Yes,No,53,Yes,9,0.41,0.5,Anti-VEGF,Lucentis,9,No,Yes,1.5,Occult,Moderate,37.3
+CR0783,40,F,White,Low,Motor vehicle accident,7,1.63,1673,No,374,0,No,360,0,No,214,Yes,No,92,No,8,0.36,0.26,Observation,None,0,No,No,,None,NA,22.5
+CR0784,44,F,Asian,High,Motor vehicle accident,5,2.26,1948,No,251,3,Yes,264,3,No,425,No,No,34,No,9,0.43,0.2,Observation,None,0,No,No,,None,NA,20.8
+CR0785,43,M,Hispanic,Medium,Blunt trauma,6,2.45,247,Yes,351,1,No,267,2,No,343,No,No,52,No,6,0.87,1.05,Anti-VEGF,Eylea,8,No,Yes,11.3,Occult,Good,23.8
+CR0786,51,M,Asian,High,Blunt trauma,12,0.63,496,Yes,243,2,Yes,235,2,No,373,Yes,No,43,No,8,1.51,1.61,Observation,None,0,No,No,,None,NA,29.3
+CR0787,47,M,White,Medium,Fall,6,2.49,637,No,350,3,Yes,260,0,No,400,Yes,No,71,Yes,10,0.14,0.09,Observation,None,0,No,No,,None,NA,29.2
+CR0788,41,F,Black,Medium,Blunt trauma,4,0.51,2382,No,328,2,No,193,1,No,387,No,Yes,85,Yes,10,0.4,0.38,Anti-VEGF,Avastin,5,No,Yes,8.3,Occult,Moderate,38.3
+CR0789,33,M,Hispanic,High,Blunt trauma,4,1.42,5000,No,266,5,Yes,180,1,No,311,No,Yes,68,No,8,0.51,0.49,Observation,None,0,No,No,,None,NA,22.3
+CR0790,10,M,Black,High,Motor vehicle accident,6,2.73,214,Yes,235,3,Yes,311,0,No,370,Yes,No,96,Yes,8,0.53,0.58,Anti-VEGF,Lucentis,5,No,Yes,1.1,Mixed,Good,30.1
+CR0791,41,M,White,High,Fall,8,0.75,1038,No,240,2,Yes,192,1,No,200,No,No,99,No,9,0.79,0.72,Observation,None,0,No,No,,None,NA,29.0
+CR0792,38,M,White,Medium,Blunt trauma,4,3.2,379,Yes,240,0,No,300,2,No,347,No,No,29,No,8,1.1,1.19,Anti-VEGF,Lucentis,4,No,Yes,3.2,Classic,Good,37.5
+CR0793,39,F,Black,Low,Sports injury,8,1.23,6,Yes,343,5,Yes,254,3,Yes,441,No,No,36,Yes,6,1.19,1.81,Anti-VEGF,Avastin,5,No,Yes,4.2,Occult,Poor,22.9
+CR0794,15,M,White,High,Blunt trauma,1,1.86,7,Yes,289,8,Yes,326,2,Yes,271,No,No,32,No,8,1.37,1.47,Anti-VEGF,Avastin,11,No,Yes,4.6,Occult,Good,32.5
+CR0795,18,F,Black,Medium,Blunt trauma,6,3.61,493,Yes,213,0,Yes,193,2,No,384,No,No,47,Yes,9,1.33,1.88,Anti-VEGF,Eylea,1,No,Yes,2.8,Occult,Moderate,35.3
+CR0796,50,F,Asian,High,Blunt trauma,9,2.34,536,No,264,2,No,309,3,Yes,444,Yes,No,66,No,5,1.24,1.2,Observation,None,0,No,No,,None,NA,14.6
+CR0797,34,M,White,Medium,Fall,5,3.14,18,Yes,272,0,No,296,3,Yes,368,Yes,No,6,No,6,1.14,1.28,Observation,None,0,No,No,,None,NA,27.2
+CR0798,45,M,Hispanic,Low,Blunt trauma,7,3.45,929,No,151,4,No,298,3,No,391,Yes,No,11,No,7,1.3,1.36,Anti-VEGF,Lucentis,5,No,Yes,2.1,Occult,Good,35.7
+CR0799,35,M,White,High,Blunt trauma,4,2.31,278,Yes,268,3,Yes,336,3,No,210,No,No,38,No,8,1.41,1.73,Anti-VEGF,Eylea,1,No,Yes,1.0,Classic,Poor,26.7
+CR0800,35,F,Black,Medium,Motor vehicle accident,8,3.27,656,No,323,0,Yes,283,1,Yes,254,No,No,78,No,8,0.87,0.86,Observation,None,0,No,No,,None,NA,9.1
+CR0801,49,M,Other,High,Fall,1,1.4,286,Yes,271,6,Yes,180,3,Yes,420,No,No,21,No,7,1.5,1.64,Anti-VEGF,Lucentis,5,No,Yes,1.0,Classic,Good,34.7
+CR0802,27,M,White,High,Blunt trauma,10,3.58,146,Yes,295,0,Yes,302,1,No,387,Yes,No,78,Yes,7,0.79,1.19,Anti-VEGF,Avastin,2,No,Yes,4.9,Classic,Moderate,45.7
+CR0803,36,F,White,High,Motor vehicle accident,4,2.08,418,Yes,309,4,Yes,295,2,Yes,354,No,Yes,25,No,10,0.89,1.33,Anti-VEGF,Lucentis,1,Yes,Yes,6.2,Classic,Moderate,32.0
+CR0804,28,M,White,High,Blunt trauma,10,5.97,211,Yes,259,1,No,267,3,No,301,No,Yes,31,No,6,0.8,1.29,Anti-VEGF,Eylea,4,No,Yes,2.1,Occult,Good,35.1
+CR0805,28,F,White,Medium,Motor vehicle accident,5,2.78,612,No,323,1,No,237,1,Yes,339,No,No,100,No,8,0.0,0.0,Observation,None,0,No,No,,None,NA,10.7
+CR0806,30,M,Hispanic,Medium,Sports injury,8,1.58,177,Yes,367,0,Yes,261,3,No,441,No,No,33,No,10,1.1,1.44,Anti-VEGF,Eylea,4,No,Yes,12.8,Classic,Good,29.6
+CR0807,38,M,Asian,Medium,Sports injury,5,3.62,568,No,188,0,Yes,352,2,No,312,No,Yes,32,No,9,0.92,0.94,Observation,None,0,No,No,,None,NA,19.1
+CR0808,27,M,White,High,Motor vehicle accident,11,6.14,136,Yes,259,3,No,234,2,No,368,No,Yes,42,No,9,0.98,1.15,Anti-VEGF,Eylea,1,No,Yes,3.6,Occult,Good,22.9
+CR0809,53,F,White,High,Motor vehicle accident,3,1.7,889,No,419,2,Yes,192,3,Yes,367,No,No,61,Yes,8,0.58,0.73,Anti-VEGF,Lucentis,3,No,Yes,4.6,Classic,Good,33.5
+CR0810,21,M,White,Medium,Blunt trauma,3,1.47,1121,No,290,0,Yes,206,1,No,273,No,No,74,No,5,0.62,0.56,Observation,None,0,No,No,,None,NA,23.2
+CR0811,32,F,Hispanic,Low,Motor vehicle accident,6,0.5,93,Yes,277,0,Yes,278,2,No,278,Yes,No,28,No,9,0.88,0.94,Observation,None,0,No,No,,None,NA,17.6
+CR0812,28,F,White,High,Blunt trauma,2,2.77,504,No,264,0,Yes,363,3,Yes,426,No,No,51,No,9,1.21,1.05,Observation,None,0,No,No,,None,NA,19.9
+CR0813,56,M,Black,Low,Fall,4,1.92,58,Yes,356,4,No,390,2,No,359,No,No,56,Yes,6,1.03,1.48,Anti-VEGF,Eylea,6,No,Yes,4.4,Occult,Moderate,46.4
+CR0814,37,F,Black,Medium,Other,11,3.61,729,No,223,3,Yes,312,2,No,272,No,No,62,No,8,0.83,0.72,Observation,None,0,No,No,,None,NA,15.0
+CR0815,50,M,Black,Medium,Other,12,3.67,245,Yes,335,0,Yes,230,2,No,298,No,No,39,Yes,10,1.05,1.34,Anti-VEGF,Avastin,6,No,Yes,1.0,Occult,Good,20.9
+CR0816,12,M,White,Medium,Fall,6,0.66,599,No,263,2,Yes,236,1,Yes,251,No,No,84,No,7,0.46,0.41,Observation,None,0,No,No,,None,NA,10.8
+CR0817,39,M,Hispanic,High,Sports injury,11,4.68,582,No,235,0,No,323,2,Yes,394,No,No,55,Yes,8,0.88,0.8,Observation,None,0,No,No,,None,NA,22.0
+CR0818,48,F,White,High,Sports injury,7,1.29,2065,No,266,7,Yes,346,1,No,302,No,No,78,No,8,0.51,0.37,Observation,None,0,No,No,,None,NA,6.0
+CR0819,36,M,White,Medium,Blunt trauma,5,1.71,637,No,277,7,Yes,247,1,No,303,Yes,Yes,100,Yes,10,0.82,0.9,Observation,None,0,No,No,,None,NA,15.9
+CR0820,50,M,Hispanic,High,Sports injury,8,3.21,699,No,250,3,No,351,0,No,378,No,No,88,Yes,10,0.1,0.01,Observation,None,0,No,No,,None,NA,12.3
+CR0821,27,M,Hispanic,Low,Motor vehicle accident,7,0.92,410,Yes,346,7,No,268,3,No,202,No,No,77,No,9,0.93,1.37,Anti-VEGF,Eylea,3,No,Yes,10.0,Occult,Good,29.5
+CR0822,56,M,White,Medium,Motor vehicle accident,12,1.48,2381,No,235,5,No,315,0,Yes,317,Yes,No,93,Yes,8,0.0,0.0,Observation,None,0,No,No,,None,NA,19.6
+CR0823,69,M,White,High,Fall,5,0.84,1201,No,288,5,No,337,3,No,319,No,Yes,1,No,6,1.06,1.16,Observation,None,0,No,No,,None,NA,22.8
+CR0824,29,F,White,Medium,Blunt trauma,8,4.97,268,Yes,312,2,Yes,205,2,Yes,300,No,No,32,Yes,8,1.33,1.54,Anti-VEGF,Lucentis,11,Yes,Yes,7.7,Occult,Good,34.9
+CR0825,28,F,White,High,Motor vehicle accident,1,1.83,1487,No,287,1,Yes,302,2,No,281,No,No,7,No,9,0.53,0.71,Anti-VEGF,Eylea,3,No,Yes,13.1,Mixed,Good,39.1
+CR0826,56,M,White,Medium,Assault,2,0.76,453,Yes,326,0,Yes,351,3,No,270,No,No,27,No,9,1.32,1.32,Anti-VEGF,Eylea,7,No,Yes,12.5,Classic,Good,27.2
+CR0827,58,F,White,Medium,Blunt trauma,1,0.81,1411,No,253,1,Yes,251,0,No,339,Yes,Yes,67,Yes,10,0.57,0.39,Observation,None,0,No,No,,None,NA,14.7
+CR0828,27,M,Black,Low,Motor vehicle accident,12,4.42,1384,No,317,2,No,227,1,No,249,No,No,92,No,8,0.4,0.38,Observation,None,0,No,No,,None,NA,26.8
+CR0829,28,F,Hispanic,Low,Assault,9,1.19,167,Yes,319,0,No,304,3,Yes,331,No,No,31,Yes,9,0.81,0.86,Anti-VEGF,Eylea,5,No,Yes,7.0,Occult,Good,16.7
+CR0830,30,M,Black,Medium,Sports injury,9,1.68,966,No,338,0,No,286,2,No,281,Yes,No,67,No,8,0.16,0.24,Observation,None,0,No,No,,None,NA,26.1
+CR0831,14,M,Black,Medium,Motor vehicle accident,6,2.57,274,Yes,166,1,Yes,263,2,Yes,285,Yes,Yes,26,No,7,0.83,1.23,Anti-VEGF,Eylea,2,No,Yes,8.1,Occult,Moderate,31.1
+CR0832,21,M,White,Low,Blunt trauma,5,1.94,282,Yes,310,0,No,279,3,Yes,333,No,No,34,No,8,1.28,1.38,Anti-VEGF,Eylea,1,No,Yes,1.9,Classic,Good,33.6
+CR0833,19,F,Asian,High,Motor vehicle accident,3,0.5,281,Yes,334,2,No,196,3,Yes,285,No,No,15,No,8,1.01,1.02,Observation,None,0,No,No,,None,NA,22.9
+CR0834,23,M,Hispanic,High,Fall,5,3.89,1034,No,255,7,Yes,300,2,No,408,No,No,68,Yes,10,0.86,1.02,Anti-VEGF,Avastin,1,No,Yes,3.7,Occult,Moderate,31.1
+CR0835,34,M,Hispanic,High,Sports injury,6,2.06,208,Yes,247,4,No,359,3,Yes,310,No,No,71,Yes,8,0.93,0.97,Observation,None,0,No,No,,None,NA,21.4
+CR0836,38,M,Hispanic,High,Motor vehicle accident,8,3.12,0,Yes,237,3,Yes,244,2,No,393,Yes,No,37,No,10,0.93,1.2,Anti-VEGF,Avastin,8,No,Yes,4.4,Classic,Good,21.1
+CR0837,58,M,Asian,Medium,Blunt trauma,7,4.1,1004,No,218,2,Yes,238,3,No,266,Yes,No,10,No,8,0.29,0.33,Anti-VEGF,Lucentis,2,No,Yes,3.3,Mixed,Good,24.8
+CR0838,20,M,Black,Medium,Blunt trauma,2,0.5,150,Yes,319,2,Yes,288,2,No,265,Yes,No,35,No,7,0.99,1.52,Anti-VEGF,Avastin,6,No,Yes,12.3,Classic,Moderate,44.2
+CR0839,49,M,White,Medium,Other,1,4.12,88,Yes,416,0,Yes,422,0,Yes,203,No,Yes,79,Yes,7,0.8,1.09,Anti-VEGF,Eylea,1,No,Yes,5.7,Classic,Good,35.4
+CR0840,31,F,Black,High,Motor vehicle accident,2,11.13,216,Yes,246,6,Yes,334,2,Yes,285,Yes,No,27,No,6,1.37,1.38,Observation,None,0,No,No,,None,NA,28.5
+CR0841,34,M,Hispanic,Medium,Sports injury,6,3.36,382,Yes,252,0,Yes,275,1,No,303,No,No,100,Yes,8,0.98,1.12,Anti-VEGF,Lucentis,12,No,Yes,2.6,Occult,Good,27.2
+CR0842,45,M,Hispanic,High,Blunt trauma,11,6.03,516,No,280,0,No,281,0,No,325,No,Yes,100,Yes,5,0.49,0.35,Observation,None,0,No,No,,None,NA,20.6
+CR0843,18,M,Black,Medium,Sports injury,7,4.85,36,Yes,183,4,Yes,339,2,Yes,368,No,No,5,Yes,8,1.35,1.57,Anti-VEGF,Eylea,1,Yes,Yes,11.8,Occult,Moderate,34.2
+CR0844,40,F,White,Medium,Assault,9,4.02,2820,No,238,0,No,234,0,No,363,No,No,51,No,10,0.4,0.17,Observation,None,0,No,No,,None,NA,29.6
+CR0845,37,F,White,High,Sports injury,6,4.97,1007,No,276,1,Yes,310,2,No,399,No,No,49,Yes,9,0.38,0.42,Observation,None,0,No,No,,None,NA,18.8
+CR0846,42,M,Asian,High,Blunt trauma,6,5.56,312,Yes,226,0,Yes,224,1,No,257,Yes,No,53,No,9,1.05,1.44,Anti-VEGF,Eylea,6,No,Yes,5.9,Occult,Good,33.8
+CR0847,39,M,Black,High,Sports injury,2,5.71,306,Yes,351,0,Yes,326,2,No,322,Yes,No,43,Yes,6,1.47,1.77,Anti-VEGF,Lucentis,1,No,Yes,9.7,Classic,Poor,35.7
+CR0848,71,M,Black,Low,Fall,10,0.81,476,Yes,202,0,Yes,265,1,No,249,Yes,Yes,75,No,8,0.87,0.86,Observation,None,0,No,No,,None,NA,27.5
+CR0849,25,M,White,Low,Motor vehicle accident,9,5.18,787,No,334,0,Yes,290,0,No,348,No,No,74,Yes,7,0.44,0.72,Anti-VEGF,Lucentis,4,No,Yes,3.2,Mixed,Moderate,28.4
+CR0850,27,F,White,Medium,Assault,3,2.03,126,Yes,368,3,Yes,262,2,Yes,446,Yes,Yes,60,Yes,10,1.23,1.31,Anti-VEGF,Eylea,1,No,Yes,6.2,Mixed,Good,40.3
+CR0851,25,M,Asian,High,Sports injury,7,5.85,167,Yes,302,5,Yes,314,3,No,236,No,No,76,Yes,7,1.16,1.55,Anti-VEGF,Avastin,6,No,Yes,2.5,Occult,Good,18.6
+CR0852,26,M,Black,Medium,Assault,6,3.58,1569,No,271,1,Yes,271,3,No,368,Yes,No,47,No,8,0.98,0.86,Observation,None,0,No,No,,None,NA,11.0
+CR0853,25,M,Hispanic,Medium,Sports injury,7,0.8,236,Yes,294,6,No,387,3,Yes,393,Yes,No,15,No,9,1.15,1.04,Observation,None,0,No,No,,None,NA,23.8
+CR0854,52,F,Black,Low,Blunt trauma,11,6.4,382,Yes,253,0,Yes,350,3,No,257,Yes,Yes,42,No,8,1.36,1.79,Anti-VEGF,Lucentis,2,No,Yes,6.0,Mixed,Poor,33.6
+CR0855,56,M,Black,High,Motor vehicle accident,7,1.3,1640,No,157,1,Yes,214,0,Yes,350,No,No,63,Yes,10,0.24,0.13,Observation,None,0,No,No,,None,NA,18.1
+CR0856,26,M,White,High,Blunt trauma,7,1.95,870,Yes,221,0,Yes,289,2,Yes,294,No,No,79,Yes,7,1.11,1.22,Observation,None,0,No,No,,None,NA,16.5
+CR0857,22,M,Hispanic,Medium,Assault,1,7.42,334,Yes,279,2,Yes,316,1,No,311,No,No,88,Yes,8,1.18,1.48,Anti-VEGF,Eylea,1,No,Yes,7.7,Occult,Moderate,26.6
+CR0858,42,F,White,Medium,Fall,2,2.79,920,No,223,1,Yes,257,2,No,292,No,No,48,Yes,9,0.11,0.25,Anti-VEGF,Eylea,7,No,Yes,2.9,Classic,Good,22.8
+CR0859,26,M,White,High,Sports injury,4,1.88,15,Yes,255,2,No,340,1,No,304,No,No,87,Yes,8,1.1,1.24,Observation,None,0,No,No,,None,NA,19.6
+CR0860,44,M,Black,High,Motor vehicle accident,1,2.36,1064,No,308,4,No,334,1,No,400,No,No,74,No,8,0.63,0.98,Anti-VEGF,Lucentis,4,No,Yes,8.1,Occult,Poor,17.6
+CR0861,38,M,Asian,Medium,Blunt trauma,8,1.85,534,No,288,2,Yes,275,0,No,314,No,Yes,100,Yes,5,0.16,0.24,Anti-VEGF,Lucentis,10,Yes,Yes,3.1,Classic,Good,39.1
+CR0862,12,M,White,Low,Fall,8,4.41,1342,No,343,2,Yes,329,0,Yes,277,No,No,63,No,9,0.29,0.24,Observation,None,0,No,No,,None,NA,23.1
+CR0863,58,M,Hispanic,Low,Motor vehicle accident,3,1.9,2474,No,297,8,Yes,180,3,No,324,No,No,59,No,10,0.51,0.35,Anti-VEGF,Eylea,6,No,Yes,16.8,Mixed,Good,40.4
+CR0864,61,M,White,Medium,Blunt trauma,9,2.42,2080,No,301,1,No,347,2,No,200,No,No,71,No,9,0.4,0.39,Observation,None,0,No,No,,None,NA,21.3
+CR0865,25,M,White,Medium,Sports injury,3,3.8,1919,No,237,1,Yes,324,2,No,262,No,No,23,No,10,0.67,0.83,Anti-VEGF,Lucentis,11,No,Yes,5.2,Classic,Good,29.7
+CR0866,29,M,White,High,Blunt trauma,5,3.5,574,No,200,3,Yes,225,1,No,407,No,No,81,No,8,1.11,1.09,Observation,None,0,No,No,,None,NA,21.0
+CR0867,39,M,White,Medium,Motor vehicle accident,4,1.39,357,Yes,255,2,No,292,3,Yes,309,No,Yes,48,No,7,1.42,1.5,Observation,None,0,No,No,,None,NA,14.4
+CR0868,40,F,Black,Medium,Motor vehicle accident,6,4.45,500,No,236,0,No,180,2,No,286,Yes,No,18,No,5,0.39,0.78,Observation,None,0,No,Yes,2.6,Occult,NA,20.1
+CR0869,44,M,White,Medium,Blunt trauma,4,1.63,936,No,269,1,No,241,3,No,332,No,No,12,No,9,0.94,1.03,Anti-VEGF,Lucentis,4,No,Yes,3.2,Classic,Good,22.1
+CR0870,65,F,Black,Medium,Other,6,1.0,1723,No,216,1,No,334,1,Yes,371,Yes,No,56,No,8,0.6,0.76,Anti-VEGF,Avastin,3,Yes,Yes,6.0,Occult,Good,26.6
+CR0871,32,M,Asian,High,Blunt trauma,6,0.5,185,Yes,330,1,No,279,3,No,413,No,Yes,38,No,9,0.82,1.01,Anti-VEGF,Eylea,3,No,Yes,12.9,Classic,Good,22.9
+CR0872,23,M,White,High,Blunt trauma,12,2.17,2002,No,236,0,Yes,276,2,No,288,No,No,48,Yes,9,0.52,0.33,Observation,None,0,No,No,,None,NA,30.8
+CR0873,14,M,Hispanic,High,Blunt trauma,1,0.52,1350,No,258,7,Yes,282,1,Yes,290,No,No,67,No,10,0.41,0.34,Observation,None,0,No,No,,None,NA,14.4
+CR0874,24,M,White,High,Fall,3,1.23,3085,No,278,4,No,276,3,No,304,Yes,No,78,Yes,8,0.78,0.69,Anti-VEGF,Lucentis,6,No,Yes,4.7,Mixed,Good,33.1
+CR0875,34,M,Black,High,Motor vehicle accident,1,2.47,1697,Yes,347,1,Yes,329,3,No,392,Yes,No,60,No,8,1.24,1.37,Anti-VEGF,Eylea,6,No,Yes,8.9,Classic,Good,34.7
+CR0876,61,M,White,Low,Sports injury,7,5.48,262,Yes,385,3,No,249,2,No,323,Yes,No,49,No,7,1.14,1.5,Anti-VEGF,Lucentis,3,No,Yes,4.9,Mixed,Moderate,39.9
+CR0877,27,M,White,Medium,Blunt trauma,1,2.0,89,Yes,389,6,Yes,300,2,Yes,471,Yes,No,31,No,8,0.87,1.22,Anti-VEGF,Lucentis,1,No,Yes,1.9,Mixed,Good,35.5
+CR0878,38,F,White,Medium,Blunt trauma,9,0.65,95,Yes,203,0,Yes,222,2,Yes,308,No,No,41,No,10,1.02,1.32,Anti-VEGF,Lucentis,2,No,Yes,3.2,Occult,Good,28.6
+CR0879,34,M,White,Low,Motor vehicle accident,7,2.3,275,Yes,257,0,Yes,317,3,Yes,443,No,No,62,No,5,1.18,1.41,Anti-VEGF,Lucentis,6,No,Yes,6.4,Classic,Good,43.6
+CR0880,52,F,White,Low,Fall,7,5.33,761,No,246,2,Yes,263,2,No,257,No,No,58,No,10,0.89,0.96,Observation,None,0,No,No,,None,NA,10.0
+CR0881,72,M,Black,Medium,Assault,7,1.96,1305,No,302,4,Yes,277,0,No,222,No,No,93,Yes,10,0.13,0.08,Observation,None,0,No,No,,None,NA,12.5
+CR0882,27,M,Asian,Low,Blunt trauma,3,6.12,1836,Yes,298,0,No,261,2,No,312,Yes,No,33,No,9,1.04,1.27,Anti-VEGF,Lucentis,2,No,Yes,1.0,Classic,Good,31.8
+CR0883,27,M,Hispanic,High,Motor vehicle accident,4,2.46,782,No,245,12,Yes,268,0,No,399,Yes,No,64,Yes,8,0.21,0.12,Observation,None,0,No,No,,None,NA,20.7
+CR0884,50,M,Black,High,Assault,5,4.13,4,Yes,240,1,No,229,3,Yes,286,Yes,No,11,No,7,1.65,1.84,Anti-VEGF,Lucentis,10,No,Yes,7.2,Mixed,Moderate,36.5
+CR0885,45,M,White,Medium,Motor vehicle accident,7,2.95,164,Yes,220,1,Yes,296,2,No,276,No,No,50,No,7,1.27,1.43,Observation,None,0,No,No,,None,NA,21.3
+CR0886,62,M,White,Medium,Fall,4,5.92,84,Yes,150,1,Yes,307,2,No,391,No,No,9,No,6,0.87,0.83,Anti-VEGF,Eylea,1,No,Yes,2.8,Classic,Good,33.0
+CR0887,43,M,White,Medium,Blunt trauma,2,9.37,361,Yes,202,0,Yes,213,3,No,369,No,No,39,Yes,8,1.35,1.66,Observation,None,0,No,Yes,5.7,Classic,NA,38.0
+CR0888,29,M,White,High,Assault,12,1.7,556,No,332,4,Yes,250,0,No,264,Yes,Yes,66,Yes,6,0.05,0.02,Observation,None,0,No,No,,None,NA,21.1
+CR0889,43,M,Black,High,Fall,1,2.82,35,Yes,367,9,No,281,1,No,260,Yes,No,79,Yes,9,1.02,1.09,Anti-VEGF,Avastin,7,No,Yes,3.3,Occult,Good,35.4
+CR0890,51,F,Black,Medium,Assault,9,5.47,342,Yes,360,1,No,250,2,No,378,No,No,63,No,8,1.44,1.64,Anti-VEGF,Eylea,6,No,Yes,8.2,Classic,Good,24.0
+CR0891,47,F,White,High,Sports injury,9,3.02,157,Yes,334,9,No,268,2,No,205,Yes,No,67,No,7,0.61,0.98,Anti-VEGF,Avastin,4,No,Yes,5.2,Classic,Moderate,24.5
+CR0892,42,F,White,Medium,Motor vehicle accident,5,0.5,833,No,219,5,No,360,1,No,395,No,Yes,89,No,8,0.2,0.42,Anti-VEGF,Avastin,2,Yes,Yes,13.3,Occult,Poor,37.0
+CR0893,51,F,Hispanic,Medium,Assault,3,1.98,499,Yes,209,1,Yes,229,3,No,368,Yes,No,24,No,10,1.29,1.5,Anti-VEGF,Eylea,1,No,Yes,1.0,Occult,Good,31.0
+CR0894,52,M,Hispanic,Medium,Blunt trauma,3,3.01,547,No,171,3,No,180,2,No,200,Yes,Yes,39,No,9,0.5,0.56,Anti-VEGF,Eylea,5,No,Yes,7.2,Classic,Good,31.4
+CR0895,55,M,White,Low,Motor vehicle accident,8,7.03,446,Yes,245,1,No,250,3,Yes,321,No,No,22,No,8,1.3,1.33,Anti-VEGF,Avastin,5,No,Yes,2.8,Occult,Good,24.5
+CR0896,44,F,Asian,Low,Sports injury,7,2.71,2499,No,285,2,No,263,3,Yes,200,Yes,No,26,Yes,9,0.73,0.73,Observation,None,0,No,No,,None,NA,16.7
+CR0897,32,M,Asian,Medium,Fall,9,1.15,193,Yes,219,0,Yes,255,2,Yes,235,No,No,49,No,9,0.68,0.58,Anti-VEGF,Eylea,6,No,Yes,7.1,Occult,Good,32.3
+CR0898,37,M,White,Medium,Assault,11,3.06,581,Yes,305,3,No,293,2,No,284,No,No,20,No,10,1.26,1.55,Observation,None,0,No,No,,None,NA,17.6
+CR0899,53,M,White,Medium,Blunt trauma,8,6.56,1065,Yes,319,0,Yes,228,2,Yes,231,No,No,30,No,7,0.77,0.92,Observation,None,0,No,No,,None,NA,13.1
+CR0900,22,M,Black,High,Fall,3,1.48,651,No,251,5,No,221,2,Yes,475,No,No,18,Yes,10,0.65,1.0,Anti-VEGF,Lucentis,9,No,Yes,10.0,Occult,Moderate,23.2
+CR0901,40,M,Asian,High,Sports injury,4,1.65,2116,No,199,5,Yes,246,2,No,380,No,No,53,No,8,0.49,0.64,Anti-VEGF,Avastin,2,No,Yes,16.3,Classic,Good,24.9
+CR0902,29,F,Hispanic,High,Blunt trauma,10,1.5,379,Yes,362,0,Yes,247,2,Yes,415,Yes,No,32,No,10,1.7,1.89,Anti-VEGF,Eylea,4,No,Yes,13.4,Occult,Good,27.3
+CR0903,35,M,White,Medium,Motor vehicle accident,4,0.74,498,Yes,282,1,Yes,386,2,No,310,No,No,0,No,7,1.07,1.09,Observation,None,0,No,No,,None,NA,17.8
+CR0904,54,M,White,Medium,Blunt trauma,2,2.61,74,Yes,396,1,Yes,357,2,No,322,No,No,72,No,10,1.19,1.39,Anti-VEGF,Avastin,2,No,Yes,10.2,Occult,Good,42.5
+CR0905,37,F,Black,Low,Motor vehicle accident,8,2.39,751,No,285,2,Yes,196,1,No,430,Yes,No,95,Yes,10,0.59,0.62,Observation,None,0,No,No,,None,NA,27.4
+CR0906,35,M,Black,High,Other,6,0.5,271,Yes,289,1,No,183,3,Yes,350,No,No,0,No,6,1.33,1.66,Observation,None,0,No,Yes,4.3,Occult,NA,32.4
+CR0907,14,M,White,High,Sports injury,11,1.24,139,Yes,222,2,Yes,275,2,Yes,362,No,No,54,No,10,1.09,1.21,Observation,None,0,No,No,,None,NA,34.9
+CR0908,46,M,Hispanic,Low,Sports injury,7,2.88,629,No,254,1,Yes,375,3,Yes,256,No,No,70,Yes,6,0.5,0.43,Anti-VEGF,Lucentis,5,No,Yes,2.2,Classic,Moderate,29.1
+CR0909,44,M,Black,High,Other,2,4.07,607,No,186,0,Yes,313,1,No,255,No,Yes,71,Yes,7,0.42,0.29,Observation,None,0,No,No,,None,NA,23.8
+CR0910,67,F,Hispanic,Medium,Motor vehicle accident,11,4.87,63,Yes,199,0,Yes,278,3,No,338,No,No,42,Yes,8,0.78,0.85,Anti-VEGF,Lucentis,1,No,Yes,1.1,Classic,Good,32.6
+CR0911,30,M,Hispanic,Medium,Fall,4,4.3,958,No,324,0,Yes,257,3,Yes,346,No,No,33,No,10,0.87,1.17,Anti-VEGF,Avastin,10,No,Yes,2.2,Mixed,Good,33.8
+CR0912,38,F,Hispanic,Medium,Motor vehicle accident,5,2.5,782,No,263,4,Yes,333,3,No,250,No,No,50,No,8,1.48,1.33,Anti-VEGF,Lucentis,1,No,Yes,1.0,Occult,Good,24.0
+CR0913,38,M,White,High,Fall,6,0.62,167,Yes,254,9,Yes,288,1,Yes,345,No,Yes,95,No,9,0.99,1.13,Observation,None,0,No,No,,None,NA,17.6
+CR0914,58,F,Black,High,Blunt trauma,1,2.09,507,No,235,1,Yes,366,0,No,234,No,No,51,Yes,9,0.38,0.49,Observation,None,0,No,No,,None,NA,13.5
+CR0915,33,F,White,High,Assault,6,0.5,1019,No,256,2,Yes,195,1,No,320,No,Yes,60,Yes,10,0.06,0.11,Observation,None,0,No,No,,None,NA,23.3
+CR0916,39,F,Black,Medium,Blunt trauma,3,2.89,603,No,347,0,Yes,301,1,No,219,Yes,No,77,Yes,9,0.25,0.35,Observation,None,0,No,No,,None,NA,20.0
+CR0917,44,M,White,Medium,Motor vehicle accident,6,1.43,402,Yes,288,2,Yes,251,3,No,412,No,No,46,Yes,7,1.47,1.92,Anti-VEGF,Avastin,3,No,Yes,1.5,Occult,Good,14.9
+CR0918,37,F,Black,High,Fall,5,0.5,311,Yes,209,0,No,300,3,No,298,No,Yes,48,Yes,8,0.89,1.1,Anti-VEGF,Lucentis,12,No,Yes,6.1,Mixed,Good,34.1
+CR0919,28,M,White,Medium,Motor vehicle accident,9,3.3,754,No,341,2,Yes,292,0,No,271,No,No,71,Yes,6,0.12,0.49,Observation,None,0,No,Yes,1.7,Occult,NA,31.7
+CR0920,37,M,White,Low,Sports injury,9,6.51,2238,No,383,8,Yes,305,1,No,239,No,Yes,57,No,9,0.59,0.67,Anti-VEGF,Eylea,1,No,Yes,6.6,Occult,Good,43.6
+CR0921,51,F,White,High,Motor vehicle accident,3,0.53,891,No,309,0,Yes,328,0,No,233,No,No,94,Yes,7,0.5,0.5,Observation,None,0,No,No,,None,NA,27.4
+CR0922,19,M,White,Medium,Sports injury,6,3.49,62,Yes,333,4,Yes,349,3,No,350,Yes,No,15,No,7,1.22,1.36,Observation,None,0,No,No,,None,NA,28.9
+CR0923,36,F,Hispanic,Medium,Blunt trauma,6,1.81,493,Yes,353,0,Yes,377,3,No,390,Yes,No,30,No,10,1.28,1.74,Anti-VEGF,Avastin,2,No,Yes,3.2,Classic,Good,21.0
+CR0924,24,M,Hispanic,High,Blunt trauma,3,1.3,1771,No,180,1,Yes,280,1,No,383,No,No,75,No,8,0.48,0.57,Anti-VEGF,Lucentis,3,No,Yes,8.9,Mixed,Good,38.9
+CR0925,52,M,Black,High,Blunt trauma,9,1.3,79,Yes,391,0,Yes,252,1,No,417,No,No,84,No,9,0.64,0.7,Anti-VEGF,Lucentis,2,No,Yes,5.4,Occult,Good,28.4
+CR0926,12,M,White,Medium,Motor vehicle accident,8,1.81,3598,No,345,1,Yes,218,2,No,442,No,No,34,No,8,0.58,0.59,Observation,None,0,No,No,,None,NA,14.5
+CR0927,26,M,White,Low,Blunt trauma,4,1.81,2381,Yes,309,0,Yes,301,3,Yes,387,No,No,55,Yes,6,1.31,1.62,Anti-VEGF,Lucentis,2,No,Yes,13.4,Occult,Good,22.646101514744455
+CR0928,40,M,White,Low,Motor vehicle accident,6,2.42,65,Yes,272,1,Yes,321,2,Yes,284,No,No,65,Yes,8,1.08,1.1,Observation,None,0,No,No,,None,NA,30.5
+CR0929,58,M,White,Medium,Motor vehicle accident,2,1.18,2167,No,199,1,No,212,3,Yes,331,Yes,No,27,Yes,8,0.27,0.19,Anti-VEGF,Eylea,6,No,Yes,9.3,Occult,Good,27.7
+CR0930,34,M,Asian,Medium,Blunt trauma,7,1.41,360,Yes,260,1,Yes,337,3,No,200,Yes,No,47,No,10,1.63,2.12,Anti-VEGF,Lucentis,10,No,Yes,1.6,Mixed,Moderate,29.0
+CR0931,26,M,White,Medium,Sports injury,3,3.73,1489,Yes,306,3,Yes,274,3,Yes,364,Yes,No,44,Yes,8,0.98,1.03,Observation,None,0,No,No,,None,NA,22.6
+CR0932,63,M,White,Medium,Assault,12,1.09,433,Yes,213,7,No,217,3,No,330,No,No,33,No,8,1.27,1.66,Anti-VEGF,Eylea,1,No,Yes,2.3,Occult,Poor,44.9
+CR0933,13,M,White,Medium,Blunt trauma,9,3.03,465,Yes,275,1,No,237,2,No,431,Yes,No,1,No,9,1.18,1.56,Observation,None,0,No,Yes,5.4,Classic,NA,28.2
+CR0934,10,M,White,High,Sports injury,6,1.89,804,No,208,0,Yes,232,1,No,267,No,Yes,82,No,9,0.34,0.31,Observation,None,0,No,No,,None,NA,19.9
+CR0935,41,M,Black,Medium,Sports injury,7,1.59,1191,Yes,256,0,No,233,2,Yes,356,Yes,No,49,Yes,9,1.16,1.37,Observation,None,0,No,No,,None,NA,27.7
+CR0936,27,M,Black,Medium,Motor vehicle accident,11,7.93,27,Yes,198,5,Yes,308,2,No,249,No,No,61,No,10,0.91,1.21,Anti-VEGF,Avastin,8,No,Yes,4.1,Occult,Good,27.8
+CR0937,19,F,White,Medium,Sports injury,7,0.76,719,No,192,2,Yes,323,0,No,312,Yes,No,68,Yes,9,0.84,0.74,Observation,None,0,No,No,,None,NA,13.4
+CR0938,45,F,White,Low,Motor vehicle accident,3,6.81,165,Yes,300,1,Yes,364,2,No,205,No,No,26,Yes,8,1.03,1.43,Anti-VEGF,Lucentis,6,No,Yes,5.6,Occult,Good,12.5
+CR0939,38,M,White,High,Motor vehicle accident,6,4.49,339,Yes,245,0,Yes,245,1,Yes,414,No,Yes,56,No,10,1.17,1.65,Anti-VEGF,Eylea,2,Yes,Yes,6.7,Classic,Moderate,40.7
+CR0940,26,M,White,High,Blunt trauma,10,1.47,342,Yes,250,1,Yes,297,2,No,393,Yes,No,0,No,8,0.83,1.33,Anti-VEGF,Eylea,3,Yes,Yes,2.4,Mixed,Moderate,31.9
+CR0941,15,F,White,High,Sports injury,7,4.57,506,No,241,0,Yes,247,2,No,286,No,No,31,Yes,7,0.78,0.97,Anti-VEGF,Eylea,8,No,Yes,6.9,Classic,Good,34.4
+CR0942,48,M,Asian,Low,Sports injury,7,0.5,325,Yes,443,8,Yes,281,3,No,338,Yes,No,95,No,8,1.07,1.34,Anti-VEGF,Eylea,12,No,Yes,7.4,Occult,Moderate,26.1
+CR0943,44,M,Black,Medium,Blunt trauma,10,1.35,90,Yes,316,6,Yes,205,2,No,322,No,No,65,No,7,0.75,0.81,Anti-VEGF,Eylea,12,No,Yes,5.7,Occult,Good,35.4
+CR0944,33,M,Black,High,Motor vehicle accident,10,1.1,125,Yes,322,0,Yes,223,2,No,277,No,No,20,No,6,0.83,1.23,Anti-VEGF,Eylea,4,No,Yes,16.2,Occult,Poor,25.3
+CR0945,62,F,White,Medium,Other,11,3.32,27,Yes,233,2,Yes,320,3,No,328,No,No,29,No,7,1.04,1.39,Anti-VEGF,Eylea,7,No,Yes,1.1,Occult,Good,31.3
+CR0946,18,M,White,Medium,Motor vehicle accident,2,4.12,508,No,310,0,Yes,205,1,No,289,No,No,64,No,6,0.48,0.5,Anti-VEGF,Eylea,7,No,Yes,14.9,Mixed,Moderate,30.9
+CR0947,12,M,Black,Low,Motor vehicle accident,7,3.28,2471,No,266,1,Yes,310,3,No,388,Yes,No,67,Yes,10,1.47,1.32,Anti-VEGF,Avastin,1,Yes,Yes,3.8,Occult,Good,39.0
+CR0948,24,F,Black,Medium,Assault,8,2.75,98,Yes,232,6,No,246,2,No,305,No,No,84,Yes,10,1.78,1.71,Anti-VEGF,Avastin,5,No,Yes,2.7,Classic,Good,35.2
+CR0949,34,F,Hispanic,Medium,Sports injury,8,4.79,2338,No,395,2,Yes,183,2,Yes,487,No,No,41,No,9,0.52,0.34,Observation,None,0,No,No,,None,NA,15.0
+CR0950,38,M,White,Low,Sports injury,7,4.33,1057,No,314,1,Yes,180,0,No,314,Yes,No,80,No,10,0.54,0.47,Anti-VEGF,Avastin,6,No,Yes,11.8,Occult,Good,34.8
+CR0951,31,M,Black,High,Fall,3,1.44,811,No,311,0,No,353,2,Yes,327,No,Yes,50,No,7,0.29,0.25,Observation,None,0,No,No,,None,NA,17.1
+CR0952,40,F,White,High,Fall,9,1.58,829,No,221,4,Yes,184,3,Yes,356,Yes,Yes,39,No,10,0.22,0.05,Observation,None,0,No,No,,None,NA,13.5
+CR0953,16,M,Hispanic,Medium,Motor vehicle accident,8,4.16,1402,No,203,2,No,276,3,Yes,378,No,Yes,45,No,8,0.76,1.16,Observation,None,0,No,Yes,3.2,Classic,NA,34.4
+CR0954,56,M,Black,Low,Motor vehicle accident,2,2.4,90,Yes,276,1,Yes,297,3,Yes,325,No,No,40,No,6,1.39,1.85,Observation,None,0,No,Yes,9.6,Classic,NA,31.6
+CR0955,33,M,Black,Medium,Motor vehicle accident,6,2.53,562,No,245,0,Yes,214,1,No,355,Yes,No,84,No,6,0.65,0.4,Observation,None,0,No,No,,None,NA,10.4
+CR0956,51,F,White,High,Other,3,2.79,955,No,316,1,Yes,252,1,No,332,Yes,No,34,No,8,0.72,0.67,Observation,None,0,No,No,,None,NA,15.9
+CR0957,40,M,Black,High,Sports injury,5,0.5,707,No,320,9,Yes,303,1,Yes,265,No,No,65,No,5,0.37,0.44,Anti-VEGF,Avastin,3,No,Yes,6.3,Classic,Good,36.0
+CR0958,41,F,White,Medium,Blunt trauma,1,1.38,1430,No,283,2,Yes,294,1,No,246,No,No,51,Yes,8,0.47,0.61,Observation,None,0,No,No,,None,NA,23.1
+CR0959,43,F,White,High,Fall,6,3.53,60,Yes,329,1,No,256,1,No,368,No,No,88,No,6,1.16,1.4,Anti-VEGF,Lucentis,1,No,Yes,10.5,Classic,Good,33.4
+CR0960,41,M,White,Medium,Motor vehicle accident,7,1.37,938,Yes,291,2,No,291,3,No,426,No,No,24,No,7,1.55,1.48,Anti-VEGF,Eylea,4,No,Yes,2.1,Occult,Good,44.8
+CR0961,44,M,Black,Low,Blunt trauma,7,2.07,610,No,227,4,Yes,274,3,No,205,Yes,No,8,No,7,0.52,0.6,Anti-VEGF,Eylea,3,No,Yes,6.3,Occult,Good,38.0
+CR0962,54,M,White,Medium,Motor vehicle accident,8,3.52,381,Yes,268,1,No,231,2,No,219,No,Yes,4,No,10,1.15,1.53,Anti-VEGF,Eylea,1,No,Yes,2.6,Classic,Moderate,29.1
+CR0963,37,M,White,Medium,Motor vehicle accident,9,4.97,332,Yes,288,0,Yes,340,2,Yes,218,No,Yes,48,No,7,1.26,1.55,Anti-VEGF,Eylea,7,No,Yes,6.5,Mixed,Good,26.8
+CR0964,45,M,Asian,Medium,Assault,4,5.38,775,No,335,2,Yes,290,0,Yes,374,No,Yes,56,No,7,0.34,0.94,Anti-VEGF,Eylea,11,No,Yes,2.3,Classic,Moderate,24.6
+CR0965,33,F,White,High,Blunt trauma,3,5.59,1773,No,293,3,Yes,187,2,Yes,380,No,No,37,No,9,0.44,0.56,Anti-VEGF,Lucentis,9,No,Yes,1.5,Mixed,Moderate,26.3
+CR0966,56,M,Black,Low,Fall,10,2.23,548,No,245,3,No,306,1,No,251,Yes,No,100,Yes,10,0.45,0.33,Observation,None,0,No,No,,None,NA,7.2
+CR0967,24,F,White,Medium,Sports injury,3,2.05,1393,No,337,6,Yes,249,3,No,474,Yes,No,47,Yes,8,0.88,0.88,Observation,None,0,No,No,,None,NA,10.3
+CR0968,62,M,White,Medium,Blunt trauma,12,0.86,411,Yes,302,1,Yes,265,3,Yes,293,Yes,Yes,29,No,10,1.06,1.53,Anti-VEGF,Lucentis,1,No,Yes,3.7,Occult,Good,35.3
+CR0969,34,M,Hispanic,Medium,Other,10,6.54,86,Yes,372,0,No,280,3,Yes,420,No,No,16,No,8,0.95,1.12,Observation,None,0,No,No,,None,NA,32.3
+CR0970,13,M,White,Medium,Motor vehicle accident,6,1.98,50,Yes,285,9,Yes,240,3,Yes,376,No,Yes,48,No,7,1.76,1.91,Anti-VEGF,Eylea,2,No,Yes,10.8,Classic,Good,30.4
+CR0971,36,M,Black,Medium,Blunt trauma,12,6.43,42,Yes,217,1,Yes,370,0,No,252,No,Yes,72,Yes,8,0.85,1.2,Anti-VEGF,Eylea,2,No,Yes,1.2,Mixed,Good,24.4
+CR0972,24,M,Black,High,Motor vehicle accident,2,3.09,382,Yes,350,2,Yes,205,3,Yes,290,Yes,No,51,No,9,1.48,1.95,Anti-VEGF,Eylea,5,No,Yes,12.1,Occult,Good,18.538365271180673
+CR0973,47,M,Black,Low,Fall,5,5.13,329,Yes,245,3,Yes,282,3,Yes,258,Yes,No,0,No,8,1.3,1.32,Observation,None,0,No,No,,None,NA,33.6
+CR0974,25,M,Black,Low,Motor vehicle accident,7,2.35,1012,No,297,2,Yes,299,3,Yes,225,Yes,No,62,No,9,1.01,0.91,Anti-VEGF,Avastin,1,No,Yes,6.5,Occult,Good,19.3
+CR0975,28,M,White,Medium,Blunt trauma,5,3.77,1086,No,291,0,No,282,1,No,302,No,No,40,No,7,0.47,0.68,Anti-VEGF,Eylea,1,No,Yes,17.0,Classic,Moderate,18.2
+CR0976,10,M,White,Low,Blunt trauma,11,5.25,41,Yes,282,4,Yes,270,3,Yes,236,No,No,30,No,9,1.4,1.65,Anti-VEGF,Avastin,5,No,Yes,5.2,Occult,Good,27.6
+CR0977,28,M,Hispanic,High,Blunt trauma,2,1.65,199,Yes,269,4,Yes,261,1,No,307,Yes,No,100,Yes,8,0.67,1.23,Anti-VEGF,Avastin,9,No,Yes,5.7,Occult,Moderate,29.7
+CR0978,10,M,Black,Medium,Fall,7,5.61,256,Yes,180,2,Yes,239,3,Yes,455,No,No,0,No,8,0.81,1.09,Anti-VEGF,Lucentis,2,No,Yes,4.2,Classic,Moderate,30.1
+CR0979,11,F,Hispanic,Medium,Motor vehicle accident,7,0.97,634,No,219,2,Yes,238,2,No,368,Yes,No,38,No,9,0.48,0.59,Anti-VEGF,Eylea,8,No,Yes,3.9,Classic,Good,23.2
+CR0980,46,M,Hispanic,Medium,Blunt trauma,7,7.79,124,Yes,347,0,Yes,337,3,No,281,Yes,Yes,34,No,9,0.89,1.47,Anti-VEGF,Eylea,4,No,Yes,8.4,Occult,Moderate,33.3
+CR0981,46,M,Hispanic,Medium,Blunt trauma,4,2.8,115,Yes,305,0,No,257,3,No,275,Yes,No,39,Yes,7,0.72,0.95,Anti-VEGF,Eylea,9,No,Yes,2.1,Classic,Good,25.8
+CR0982,41,M,Black,High,Motor vehicle accident,6,1.4,2302,No,394,1,Yes,386,0,No,291,Yes,No,82,Yes,10,0.38,0.29,Observation,None,0,No,No,,None,NA,16.0
+CR0983,20,M,White,High,Assault,10,4.42,1304,No,217,1,Yes,313,3,Yes,464,Yes,No,40,Yes,9,0.31,0.6,Anti-VEGF,Eylea,5,No,Yes,5.1,Classic,Moderate,27.8
+CR0984,34,M,Hispanic,Medium,Motor vehicle accident,4,3.2,159,Yes,278,9,Yes,180,3,Yes,243,Yes,No,13,No,7,1.49,1.79,Anti-VEGF,Avastin,1,No,Yes,1.1,Occult,Moderate,24.6
+CR0985,34,M,Black,High,Other,9,0.5,417,Yes,349,4,Yes,324,1,No,319,No,Yes,76,Yes,10,1.31,1.56,Anti-VEGF,Lucentis,3,Yes,Yes,1.6,Mixed,Good,20.0
+CR0986,17,M,White,Medium,Motor vehicle accident,7,1.81,351,Yes,246,3,No,277,3,No,352,No,No,39,No,9,0.89,1.06,Anti-VEGF,Eylea,1,No,Yes,4.7,Classic,Good,20.5
+CR0987,57,M,Hispanic,High,Blunt trauma,9,1.02,1252,No,250,2,No,210,1,No,405,No,Yes,73,No,8,0.52,0.46,Observation,None,0,No,No,,None,NA,11.2
+CR0988,48,M,Asian,High,Assault,8,1.11,571,No,262,0,Yes,345,2,No,296,No,No,81,No,7,1.06,1.05,Anti-VEGF,Eylea,3,No,Yes,5.0,Classic,Good,33.6
+CR0989,31,M,Black,Medium,Motor vehicle accident,4,1.07,109,Yes,253,11,No,258,2,No,252,Yes,Yes,66,No,8,0.98,1.09,Anti-VEGF,Avastin,1,No,Yes,4.3,Mixed,Good,33.2
+CR0990,35,M,White,Medium,Sports injury,7,3.64,1074,No,311,1,Yes,253,3,No,340,No,No,76,No,7,0.9,1.1,Anti-VEGF,Eylea,4,No,Yes,2.4,Classic,Good,27.8
+CR0991,38,F,White,Low,Other,10,4.66,404,Yes,173,0,Yes,298,1,Yes,412,Yes,No,81,No,8,1.55,1.93,Anti-VEGF,Eylea,5,No,Yes,7.7,Occult,Moderate,28.2
+CR0992,10,M,Hispanic,Medium,Blunt trauma,6,1.29,244,Yes,378,2,Yes,337,2,No,300,No,No,75,Yes,8,0.68,1.07,Anti-VEGF,Eylea,2,No,Yes,1.7,Mixed,Good,39.3
+CR0993,31,M,Asian,High,Blunt trauma,12,0.5,376,Yes,222,6,Yes,285,2,Yes,261,No,Yes,22,No,9,0.85,0.96,Anti-VEGF,Avastin,8,No,Yes,15.2,Mixed,Poor,34.1
+CR0994,24,M,White,Low,Sports injury,6,9.01,550,No,152,6,No,282,1,No,327,Yes,No,67,No,7,0.59,0.56,Anti-VEGF,Eylea,8,No,Yes,11.8,Classic,Good,42.5
+CR0995,19,M,White,Medium,Blunt trauma,3,2.82,336,Yes,279,0,Yes,245,3,Yes,206,No,Yes,28,No,10,1.79,2.03,Anti-VEGF,Lucentis,8,No,Yes,7.1,Occult,Moderate,25.4
+CR0996,30,M,Hispanic,High,Blunt trauma,6,4.45,221,Yes,257,6,Yes,336,1,Yes,304,Yes,Yes,65,No,8,0.77,0.84,Observation,None,0,No,No,,None,NA,10.7
+CR0997,61,M,White,Medium,Blunt trauma,11,2.14,406,Yes,269,0,No,286,3,No,402,Yes,Yes,40,Yes,8,1.86,2.16,Observation,None,0,No,Yes,1.4,Classic,NA,38.0
+CR0998,44,M,Black,Low,Blunt trauma,5,0.5,15,Yes,298,0,Yes,268,3,No,381,Yes,No,44,No,9,1.28,1.24,Anti-VEGF,Eylea,2,No,Yes,4.3,Mixed,Good,29.8
+CR0999,26,M,Other,Medium,Fall,10,3.39,1184,No,318,5,No,262,2,Yes,309,Yes,No,48,Yes,9,0.11,0.13,Observation,None,0,No,No,,None,NA,13.6
+CR1000,43,M,White,High,Blunt trauma,10,7.25,149,Yes,381,5,Yes,331,3,Yes,436,Yes,No,74,Yes,8,1.65,2.01,Anti-VEGF,Eylea,8,No,Yes,7.4,Mixed,Poor,33.9

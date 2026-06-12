@@ -1,0 +1,15 @@
+feature,importance
+distance_from_fovea_um,0.17921848441223023
+baseline_va_logmar,0.1582975457887232
+foveal_involvement_binary,0.1161686302921154
+ez_integrity_percent,0.1037561867997978
+rupture_length_mm,0.08974538935524612
+age,0.08683029489510748
+choroidal_thickness_um,0.08295362113490815
+baseline_cst_um,0.06999467723077987
+outer_retinal_disruption_score,0.06374462948966528
+subretinal_fluid_binary,0.01692190132255074
+rpe_disruption_binary,0.009904227016228399
+subretinal_hemorrhage_binary,0.009800760986496666
+intraretinal_cysts_binary,0.007700629114008421
+sex_binary,0.00496302216214236

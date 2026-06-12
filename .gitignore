@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Local tooling / launch config
+.claude/
+
+# Generated decks (regenerated from generate_presentation_v2.py)
+*.pptx
