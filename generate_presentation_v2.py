@@ -69,7 +69,7 @@ def textbox(slide, x, y, w, h, anchor=MSO_ANCHOR.TOP, align=PP_ALIGN.LEFT):
 
 def para(tf, text, size, color, bold=False, italic=False, font=BODY,
          align=PP_ALIGN.LEFT, space_before=0, space_after=6, first=False,
-         line=None):
+         line=None, link=None):
     p = tf.paragraphs[0] if first else tf.add_paragraph()
     p.alignment = align
     p.space_before = Pt(space_before)
@@ -79,6 +79,9 @@ def para(tf, text, size, color, bold=False, italic=False, font=BODY,
     run = p.add_run()
     run.text = text
     _set_font(run, size, color, bold, italic, font)
+    if link:
+        run.hyperlink.address = link
+        _set_font(run, size, color, bold, italic, font)  # keep our color, not theme
     return p
 
 
@@ -175,6 +178,24 @@ def card(slide, x, y, w, h, fill=LIGHT, line=RULE, line_w=Pt(1),
     except Exception:
         pass
     return sp
+
+
+# ---- helper: chat-style "prompt to Claude" callout ------------------------
+# Shows the hypothetical natural-language prompt that produced the slide's
+# artifact, so residents can see HOW each result was asked for.
+def prompt_bar(slide, y, text, accent=TEAL, h=Inches(0.58)):
+    card(slide, MARGIN, y, CONTENT_W, h, fill=LIGHT, line=RULE)
+    rect(slide, MARGIN, y, Inches(0.12), h, fill=accent,
+         shape=MSO_SHAPE.ROUNDED_RECTANGLE)
+    _, tf = textbox(slide, MARGIN + Inches(0.32), y, Inches(1.05), h,
+                    anchor=MSO_ANCHOR.MIDDLE)
+    para(tf, 'PROMPT', 11, accent, bold=True, font=HEAD, first=True,
+         space_after=0)
+    _, tf = textbox(slide, MARGIN + Inches(1.4), y, CONTENT_W - Inches(1.7), h,
+                    anchor=MSO_ANCHOR.MIDDLE)
+    para(tf, '\u201c' + text + '\u201d', 13, INK, italic=True, font=BODY,
+         first=True, space_after=0, line=1.05)
+    return y + h
 
 
 # ===========================================================================
@@ -368,10 +389,10 @@ s = add_slide()
 gradient_bg(s, CRIMSON, RGBColor(0x8E, 0x24, 0x1A))
 _, tf = textbox(s, Inches(1), Inches(2.9), Inches(11.3), Inches(1.0),
                 anchor=MSO_ANCHOR.MIDDLE)
-para(tf, 'LIVE DEMONSTRATION', 52, WHITE, bold=True, font=HEAD, first=True,
+para(tf, 'THE DEMONSTRATION', 52, WHITE, bold=True, font=HEAD, first=True,
      align=PP_ALIGN.CENTER, space_after=0)
 _, tf = textbox(s, Inches(1), Inches(4.05), Inches(11.3), Inches(0.6))
-para(tf, 'Watch the agent work autonomously, end to end', 20,
+para(tf, 'A walkthrough of how Claude Code built the pipeline, end to end', 20,
      RGBColor(0xF6, 0xD5, 0xD0), font=BODY, first=True, align=PP_ALIGN.CENTER,
      space_after=0)
 
@@ -425,7 +446,11 @@ footer(s, 8)
 s = add_slide()
 top = header(s, 'Phase 1 \u2014 the agent writes the code',
              kicker='You prompt, it builds')
-panel = card(s, MARGIN, top, CONTENT_W, Inches(4.55), fill=PANEL, line=PANEL,
+prompt_bar(s, top, 'Generate a synthetic dataset of 1,000 choroidal-rupture '
+           'patients with 25+ clinically-grounded variables, and save it as a CSV.',
+           accent=TEAL)
+top = top + Inches(0.72)
+panel = card(s, MARGIN, top, CONTENT_W, Inches(4.25), fill=PANEL, line=PANEL,
              radius=0.04)
 # title bar of "editor"
 bar = rect(s, MARGIN, top, CONTENT_W, Inches(0.5), fill=RGBColor(0x14, 0x1E, 0x29),
@@ -460,96 +485,92 @@ for i, (line, kind) in enumerate(code):
     col = (RGBColor(0x6F, 0x9B, 0x76) if kind == 'cmt'
            else RGBColor(0x82, 0xC8, 0xE6) if kind == 'kw'
            else RGBColor(0xE6, 0xED, 0xF3))
-    para(tf, line if line else '\u00a0', 13.5, col, font=MONO,
-         first=(i == 0), space_after=3, line=1.1)
+    para(tf, line if line else '\u00a0', 12.5, col, font=MONO,
+         first=(i == 0), space_after=2, line=1.05)
 footer(s, 9)
 
 # ===========================================================================
 # SLIDE 10 - Data output (native table)
 # ===========================================================================
 s = add_slide()
-top = header(s, 'Output: 1000 patients \u00d7 33 variables',
+top = header(s, '1000 patients \u00d7 33 variables \u2014 a wide dataset',
              kicker='The generated database', accent=GREEN)
-cols = ['ID', 'Age', 'Sex', 'Rupture\n(mm)', 'Foveal', 'Base VA\n(logMAR)',
-        'CNV', 'Time\n(mo)']
-data = [
-    ['CR0001', '42', 'M', '1.43', 'Yes', '0.87', 'Yes', '3.4'],
-    ['CR0002', '32', 'M', '2.07', 'Yes', '0.86', 'Yes', '6.5'],
-    ['CR0003', '44', 'M', '1.97', 'Yes', '1.02', 'Yes', '6.9'],
-    ['CR0004', '57', 'F', '6.50', 'No', '0.00', 'No', '\u2014'],
-    ['CR0005', '31', 'F', '1.01', 'Yes', '1.04', 'No', '\u2014'],
+# Framing line: emphasise the WIDTH (every patient carries 33 columns).
+_, tf = textbox(s, MARGIN, top, CONTENT_W, Inches(0.4))
+para(tf, 'Every patient row carries 33 columns \u2014 grouped into six clinical '
+     'domains, from demographics to OCT biomarkers to long-term outcomes.',
+     13, GRAY, font=BODY, first=True, space_after=0)
+
+SLATE = RGBColor(0x44, 0x55, 0x66)
+groups = [
+    ('Demographics & history', NAVY,
+     ['Patient ID', 'Age', 'Sex', 'Race', 'Occupational risk',
+      'Injury mechanism']),
+    ('Rupture & exam', TEAL,
+     ['Rupture clock-hour', 'Rupture length', 'Distance from fovea',
+      'Foveal involvement', 'Choroidal thickness', 'Time to presentation',
+      'Subretinal hemorrhage']),
+    ('OCT biomarkers', AMBER,
+     ['Baseline CST', 'Outer-retinal disruption', 'RPE disruption',
+      'Subfoveal choroid', 'Subretinal fluid', 'Intraretinal cysts',
+      'EZ integrity', 'ELM intact', 'OCT quality score']),
+    ('Visual acuity', GREEN,
+     ['Baseline VA (logMAR)', 'Final VA (logMAR)']),
+    ('Treatment', CRIMSON,
+     ['Treatment approach', 'Anti-VEGF agent', 'Number of injections',
+      'Supplemental laser']),
+    ('Outcomes', SLATE,
+     ['CNV developed', 'Time to CNV', 'CNV type', 'Treatment response',
+      'Follow-up duration']),
 ]
-nrows, ncols = len(data) + 1, len(cols)
-tbl_w = CONTENT_W
-tbl_h = Inches(2.9)
-gtbl = s.shapes.add_table(nrows, ncols, MARGIN, top, tbl_w, tbl_h).table
-# column widths
-widths = [1.7, 1.0, 0.9, 1.5, 1.3, 1.7, 1.1, 1.4]
-tot = sum(widths)
-for j, wfrac in enumerate(widths):
-    gtbl.columns[j].width = Emu(int(tbl_w * wfrac / tot))
-# disable default styling banding by setting first row
-gtbl.first_row = True
-gtbl.horz_banding = True
-# header row
-for j, c in enumerate(cols):
-    cell = gtbl.cell(0, j)
-    cell.fill.solid(); cell.fill.fore_color.rgb = NAVY
-    cell.vertical_anchor = MSO_ANCHOR.MIDDLE
-    cell.margin_top = Pt(2); cell.margin_bottom = Pt(2)
-    tf = cell.text_frame; tf.word_wrap = True
-    p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
-    r = p.add_run(); r.text = c
-    _set_font(r, 13, WHITE, bold=True, font=HEAD)
-# body
-for i, row in enumerate(data, start=1):
-    for j, val in enumerate(row):
-        cell = gtbl.cell(i, j)
-        cell.fill.solid()
-        cell.fill.fore_color.rgb = WHITE if i % 2 else LIGHT
-        cell.vertical_anchor = MSO_ANCHOR.MIDDLE
-        tf = cell.text_frame
-        p = tf.paragraphs[0]; p.alignment = PP_ALIGN.CENTER
-        r = p.add_run(); r.text = val
-        emph = (j == 6 and val == 'Yes')
-        _set_font(r, 14, CRIMSON if emph else INK, bold=emph, font=BODY)
-# summary chips
-chip_y = top + Inches(3.25)
-chips = [('1000', 'patients'), ('33', 'variables'),
-         ('63.4%', 'developed CNV'), ('6.7 mo', 'median time to CNV')]
-cw = Inches(2.9)
-cgap = (CONTENT_W - cw * 4) / 3
-for i, (big, small) in enumerate(chips):
-    cx = MARGIN + i * (cw + cgap)
-    cd = card(s, cx, chip_y, cw, Inches(1.0), fill=LIGHT, line=RULE)
-    _, tf = textbox(s, cx, chip_y + Inches(0.12), cw, Inches(0.8),
-                    anchor=MSO_ANCHOR.MIDDLE, align=PP_ALIGN.CENTER)
-    para(tf, big, 24, GREEN, bold=True, font=HEAD, first=True,
-         align=PP_ALIGN.CENTER, space_after=0)
-    para(tf, small, 12, GRAY, font=BODY, align=PP_ALIGN.CENTER, space_after=0)
+
+# 3-column x 2-row grid of category cards listing all 33 variable names.
+panel_top = top + Inches(0.55)
+ncol, nrow = 3, 2
+hgap, vgap = Inches(0.3), Inches(0.25)
+card_w = (CONTENT_W - hgap * (ncol - 1)) / ncol
+card_h = Inches(2.0)
+for idx, (gname, gcol, varnames) in enumerate(groups):
+    r, c = divmod(idx, ncol)
+    cx = MARGIN + c * (card_w + hgap)
+    cy = panel_top + r * (card_h + vgap)
+    card(s, cx, cy, card_w, card_h, fill=LIGHT, line=RULE)
+    # colored accent rule under the category title
+    _, tf = textbox(s, cx + Inches(0.18), cy + Inches(0.13),
+                    card_w - Inches(0.36), card_h - Inches(0.24))
+    para(tf, f'{gname}  ({len(varnames)})', 12.5, gcol, bold=True,
+         font=HEAD, first=True, space_after=5)
+    for v in varnames:
+        para(tf, v, 9.5, INK, font=BODY, space_after=1, line=1.0)
 footer(s, 10)
 
 
 # ---- helper: full-bleed figure slide -------------------------------------
 # (defined here so the EDA slide below can use it)
 def figure_slide(num, kicker, title, img, takeaway, accent=TEAL,
-                 img_h=Inches(4.55)):
+                 img_h=Inches(4.55), prompt=None):
     s = add_slide()
     top = header(s, title, kicker=kicker, accent=accent)
+    img_top = top + Inches(0.05)
+    eff_h = img_h
+    if prompt:
+        prompt_bar(s, top, prompt, accent=accent)
+        img_top = top + Inches(0.72)
+        eff_h = min(img_h, Inches(3.8))
     if os.path.exists(f'{BASE}/{img}'):
         from PIL import Image
         iw, ih = Image.open(f'{BASE}/{img}').size
         ratio = iw / ih
-        h = img_h
+        h = eff_h
         w = Emu(int(h * ratio))
         if w > CONTENT_W:
             w = CONTENT_W
             h = Emu(int(w / ratio))
         x = MARGIN + (CONTENT_W - w) // 2
-        s.shapes.add_picture(f'{BASE}/{img}', x, top + Inches(0.05), width=w, height=h)
+        s.shapes.add_picture(f'{BASE}/{img}', x, img_top, width=w, height=h)
     if takeaway:
-        _, tf = textbox(s, MARGIN, Inches(6.45), CONTENT_W, Inches(0.5))
-        para(tf, takeaway, 15, GRAY, italic=True, first=True,
+        _, tf = textbox(s, MARGIN, Inches(6.5), CONTENT_W, Inches(0.5))
+        para(tf, takeaway, 14, GRAY, italic=True, first=True,
              align=PP_ALIGN.CENTER, space_after=0)
     footer(s, num)
     return s
@@ -561,27 +582,38 @@ figure_slide(11, 'Phase 2 \u00b7 exploratory analysis',
              'figure_eda_clean.png',
              'Before any model: foveal involvement, larger ruptures and proximity '
              'to the fovea all track with CNV \u2014 most cases appear within ~6 months.',
-             accent=NAVY, img_h=Inches(4.5))
+             accent=NAVY, img_h=Inches(4.5),
+             prompt='Before any modeling, explore the data \u2014 which factors track '
+                    'with CNV? Give me one clean 4-panel figure.')
 # SLIDE 12 - KM
 figure_slide(12, 'Phase 3 \u00b7 survival analysis',
              'Foveal involvement drives time to CNV', 'figure1_clean.png',
              'Patients with foveal involvement reach 50% CNV by ~6 months; the '
-             'separation is large and highly significant (log-rank p < 0.001).')
+             'separation is large and highly significant (log-rank p < 0.001).',
+             prompt='Run a Kaplan\u2013Meier survival analysis comparing eyes with vs. '
+                    'without foveal involvement, and plot time-to-CNV.')
 # SLIDE 13 - feature importance
 figure_slide(13, 'Phase 3 \u00b7 model drivers',
              'What predicts CNV development', 'figure2_clean.png',
              'Distance from fovea, baseline acuity, and foveal involvement '
-             'dominate the random-forest model.')
+             'dominate the random-forest model.',
+             prompt='Fit a random forest to predict CNV and show me which variables '
+                    'matter most.')
 # SLIDE 14 - ROC
 figure_slide(14, 'Phase 3 \u00b7 discrimination',
              'Model performance', 'figure3_clean.png',
-             'The model separates CNV from no-CNV well above chance on synthetic data.',
-             img_h=Inches(4.5))
+             'On held-out data, the model ranks a true-CNV eye above a CNV-free '
+             'eye ~77% of the time (AUC 0.77; chance = 0.50).',
+             img_h=Inches(4.5),
+             prompt='How well does the model tell future-CNV eyes from CNV-free '
+                    'eyes? Plot the ROC curve and report the AUC.')
 # SLIDE 15 - risk stratification
 figure_slide(15, 'Phase 4 \u00b7 clinical translation',
              'Risk groups behave as expected', 'figure4_clean.png',
              'Predicted risk tiers map cleanly onto observed CNV rates \u2014 the '
-             'basis for a triage tool.', img_h=Inches(4.5))
+             'basis for a triage tool.', img_h=Inches(4.5),
+             prompt='Sort patients into low / medium / high risk tiers and check the '
+                    'observed CNV rate in each \u2014 does it line up?')
 
 # ===========================================================================
 # SLIDE 15 - Interactive clinical tool
@@ -589,41 +621,48 @@ figure_slide(15, 'Phase 4 \u00b7 clinical translation',
 s = add_slide()
 top = header(s, 'From model to bedside tool', kicker='Phase 5 \u00b7 the web app',
              accent=GREEN)
+prompt_bar(s, top, 'Now turn this into an interactive web app: a clinician enters a '
+           'patient and sees their CNV risk, survival curve, and top drivers.',
+           accent=GREEN)
+top = top + Inches(0.72)
 # features column
-_, tf = textbox(s, MARGIN, top, Inches(5.4), Inches(3.5))
+_, tf = textbox(s, MARGIN, top, Inches(5.4), Inches(3.2))
 para(tf, 'A deployable app, built in the same session', 17, NAVY, bold=True,
-     font=HEAD, first=True, space_after=14)
+     font=HEAD, first=True, space_after=11)
 for t in ['Live risk gauge \u2014 updates as you type',
           'Individualized vs population survival curve',
           'Honest per-patient drivers (vs a typical case)',
           'Cohort context + downloadable report',
           'Open on any phone on the same wifi']:
-    p = tf.add_paragraph(); p.space_after = Pt(10)
+    p = tf.add_paragraph(); p.space_after = Pt(8)
     r = p.add_run(); r.text = '\u2014  ' + t
     _set_font(r, 15.5, INK, font=BODY)
 # launch strip: QR + URL
-qr_y = top + Inches(3.55)
+qr_y = top + Inches(3.05)
 import os as _os
 if _os.path.exists('app_qr.png'):
     s.shapes.add_picture('app_qr.png', MARGIN, qr_y, height=Inches(1.25))
-_, tf = textbox(s, MARGIN + Inches(1.45), qr_y + Inches(0.18), Inches(3.9), Inches(1.1))
-para(tf, 'SCAN TO OPEN', 12, GREEN, bold=True, font=HEAD, first=True, space_after=3)
-para(tf, 'run_app.sh  \u2192  http://<wifi-ip>:8501', 13, NAVY, bold=True,
-     font=MONO, space_after=2)
-para(tf, 'Live during the talk on the room wifi', 11, GRAY, font=BODY, italic=True)
+_, tf = textbox(s, MARGIN + Inches(1.45), qr_y + Inches(0.1), Inches(4.4), Inches(1.2))
+para(tf, 'SCAN TO OPEN', 12, GREEN, bold=True, font=HEAD, first=True, space_after=2)
+para(tf, 'run_app.sh  \u2192  http://<wifi-ip>:8501', 12.5, NAVY, bold=True,
+     font=MONO, space_after=8)
+para(tf, 'CODE ON GITHUB', 10.5, GREEN, bold=True, font=HEAD, space_after=2)
+para(tf, 'github.com/Mak-Djulbegovic/cnv-risk-prediction-demo', 10, NAVY,
+     font=MONO, space_after=0,
+     link='https://github.com/Mak-Djulbegovic/cnv-risk-prediction-demo')
 # two case cards
 case_x = Inches(6.6)
 cw = Inches(6.0)
 # low risk
-lc = card(s, case_x, top, cw, Inches(1.95), fill=LIGHT, line=GREEN, line_w=Pt(1.5))
-_, tf = textbox(s, case_x + Inches(0.4), top + Inches(0.22), cw - Inches(0.8), Inches(1.6))
+lc = card(s, case_x, top, cw, Inches(1.8), fill=LIGHT, line=GREEN, line_w=Pt(1.5))
+_, tf = textbox(s, case_x + Inches(0.4), top + Inches(0.2), cw - Inches(0.8), Inches(1.5))
 para(tf, 'CASE 1 \u00b7 LOW RISK', 13, GREEN, bold=True, font=HEAD, first=True, space_after=4)
 para(tf, '65 y \u00b7 peripheral rupture \u00b7 fovea spared', 14, GRAY, font=BODY, space_after=8)
 para(tf, '25% CNV probability \u00b7 >36-mo median', 20, GREEN, bold=True, font=HEAD, space_after=0)
 # high risk
-hc = card(s, case_x, top + Inches(2.25), cw, Inches(1.95), fill=LIGHT,
+hc = card(s, case_x, top + Inches(2.05), cw, Inches(1.8), fill=LIGHT,
           line=CRIMSON, line_w=Pt(1.5))
-_, tf = textbox(s, case_x + Inches(0.4), top + Inches(2.47), cw - Inches(0.8), Inches(1.6))
+_, tf = textbox(s, case_x + Inches(0.4), top + Inches(2.25), cw - Inches(0.8), Inches(1.5))
 para(tf, 'CASE 2 \u00b7 HIGH RISK', 13, CRIMSON, bold=True, font=HEAD, first=True, space_after=4)
 para(tf, '28 y \u00b7 large rupture \u00b7 foveal + hemorrhage', 14, GRAY, font=BODY, space_after=8)
 para(tf, '84% CNV probability \u00b7 6-mo median', 20, CRIMSON, bold=True, font=HEAD, space_after=0)
