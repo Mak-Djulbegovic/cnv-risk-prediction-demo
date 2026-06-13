@@ -75,10 +75,11 @@
   .card{border:1px solid var(--line); border-radius:12px; padding:18px 20px; background:#fff}
   .card h3{font-size:15px; color:var(--navy); margin:0 0 2px}
   .card .crule{height:3px; width:44px; background:var(--teal); border-radius:2px; margin:4px 0 14px}
-  .toprow{display:grid; grid-template-columns:1.05fr 1fr; gap:22px}
+  .toprow{display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:center}
   @media (max-width:920px){.toprow{grid-template-columns:1fr}}
   .gaugewrap{text-align:center}
-  .bandtag{font-size:18px; font-weight:800; margin-top:-6px}
+  #gauge{max-width:330px; margin:0 auto}
+  .bandtag{font-size:18px; font-weight:800; margin-top:2px}
   .metrics{display:grid; grid-template-columns:1fr 1fr; gap:12px}
   .metric{border:1px solid var(--line); border-radius:10px; padding:12px 14px; background:var(--paper)}
   .metric .k{font-size:11.5px; color:var(--mute); letter-spacing:.03em}
@@ -183,7 +184,7 @@
       <section class="card">
         <div class="toprow">
           <div class="gaugewrap">
-            <svg id="gauge" viewBox="0 0 320 200" role="img" aria-label="risk gauge"></svg>
+            <svg id="gauge" viewBox="0 26 320 156" role="img" aria-label="risk gauge"></svg>
             <div class="bandtag" id="bandtag"></div>
           </div>
           <div>
